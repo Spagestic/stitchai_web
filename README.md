@@ -1,6 +1,17 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Stitch AI 🧵⚽
 
-## Getting Started
+## Create custom sports jerseys with AI-powered design generation
+
+Stitch AI removes the physical friction of waiting in line at stadium customization booths while keeping the excitement of creating something unique. Inspired by the long queues outside football arenas in Portugal where fans wait to get personalized jerseys, this web app lets you design your dream sports jersey instantly using generative AI.
+
+## ✨ Features
+
+- **Template Selection** - Choose from a variety of base jersey templates
+- **AI-Powered Customization** - Describe your vision and let GenAI create unique designs
+- **Instant Preview** - See your customized jersey design in real-time
+- **No Lines, No Waiting** - Get the stadium customization experience from anywhere
+
+## 🚀 Getting Started
 
 First, run the development server:
 
@@ -16,21 +27,48 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠️ Tech Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Framework**: [Next.js](https://nextjs.org) (App Router)
+- **Styling**: Tailwind CSS
+- **UI Components**: shadcn/ui
+- **Authentication**: Appwrite
+- **AI**: Generative AI image models for jersey design creation
 
-## Learn More
+## 📁 Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+app/
+├── (app)/          # Protected app routes
+│   └── dashboard/  # Main dashboard
+├── auth/           # Authentication flows
+│   ├── login/
+│   ├── sign-up/
+│   └── ...
+components/
+├── auth/           # Authentication components
+└── ui/             # Reusable UI components (shadcn/ui)
+lib/
+├── appwrite.ts     # Appwrite client configuration
+└── utils.ts        # Utility functions
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🔧 Environment Setup
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Copy `example.env` to `.env.local` and configure your environment variables.
 
-## Deploy on Vercel
+## 📚 Learn More
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- [Next.js Documentation](https://nextjs.org/docs) - Learn about Next.js features and API
+- [shadcn/ui](https://ui.shadcn.com) - Re-usable components built with Radix UI and Tailwind CSS
+- [Appwrite](https://appwrite.io) - Backend as a Service for authentication
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🚢 Deploy
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme).
+
+Check out the [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+---
+
+_Bringing the stadium customization experience to your fingertips_ 🎨

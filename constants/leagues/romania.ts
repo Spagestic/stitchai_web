@@ -7,7 +7,7 @@ export const romaniaSuperLiga: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Romania SuperLiga",
-    logo: "@/assets/logos/Romania - SuperLiga/ACSC FC Arges.png",
+    logo: "/logos/Romania - SuperLiga/ACSC FC Arges.png",
   },
   {
     id: "afc-unirea-slobozia",
@@ -15,7 +15,7 @@ export const romaniaSuperLiga: Team[] = [
     primaryColor: "#FFFFFF",
     secondaryColor: "#0066CC",
     league: "Romania SuperLiga",
-    logo: "@/assets/logos/Romania - SuperLiga/AFC Unirea 04 Slobozia.png",
+    logo: "/logos/Romania - SuperLiga/AFC Unirea 04 Slobozia.png",
   },
   {
     id: "afk-csikszereda",
@@ -23,7 +23,7 @@ export const romaniaSuperLiga: Team[] = [
     primaryColor: "#FFFFFF",
     secondaryColor: "#FF0000",
     league: "Romania SuperLiga",
-    logo: "@/assets/logos/Romania - SuperLiga/AFK Csikszereda Miercurea Ciuc.png",
+    logo: "/logos/Romania - SuperLiga/AFK Csikszereda Miercurea Ciuc.png",
   },
   {
     id: "cfr-cluj",
@@ -31,7 +31,7 @@ export const romaniaSuperLiga: Team[] = [
     primaryColor: "#FFD700",
     secondaryColor: "#000000",
     league: "Romania SuperLiga",
-    logo: "@/assets/logos/Romania - SuperLiga/CFR Cluj.png",
+    logo: "/logos/Romania - SuperLiga/CFR Cluj.png",
   },
   {
     id: "cs-universitatea-craiova",
@@ -39,7 +39,7 @@ export const romaniaSuperLiga: Team[] = [
     primaryColor: "#0066CC",
     secondaryColor: "#FFFFFF",
     league: "Romania SuperLiga",
-    logo: "@/assets/logos/Romania - SuperLiga/CS Universitatea Craiova.png",
+    logo: "/logos/Romania - SuperLiga/CS Universitatea Craiova.png",
   },
   {
     id: "fc-botosani",
@@ -47,7 +47,7 @@ export const romaniaSuperLiga: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Romania SuperLiga",
-    logo: "@/assets/logos/Romania - SuperLiga/FC Botosani.png",
+    logo: "/logos/Romania - SuperLiga/FC Botosani.png",
   },
   {
     id: "fc-dinamo",
@@ -55,7 +55,7 @@ export const romaniaSuperLiga: Team[] = [
     primaryColor: "#FFFFFF",
     secondaryColor: "#FF0000",
     league: "Romania SuperLiga",
-    logo: "@/assets/logos/Romania - SuperLiga/FC Dinamo 1948.png",
+    logo: "/logos/Romania - SuperLiga/FC Dinamo 1948.png",
   },
   {
     id: "fc-hermannstadt",
@@ -63,7 +63,7 @@ export const romaniaSuperLiga: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Romania SuperLiga",
-    logo: "@/assets/logos/Romania - SuperLiga/FC Hermannstadt.png",
+    logo: "/logos/Romania - SuperLiga/FC Hermannstadt.png",
   },
   {
     id: "fc-metaloglobus",
@@ -71,7 +71,7 @@ export const romaniaSuperLiga: Team[] = [
     primaryColor: "#FFFFFF",
     secondaryColor: "#FF0000",
     league: "Romania SuperLiga",
-    logo: "@/assets/logos/Romania - SuperLiga/FC Metaloglobus Bucharest.png",
+    logo: "/logos/Romania - SuperLiga/FC Metaloglobus Bucharest.png",
   },
   {
     id: "fc-rapid",
@@ -79,7 +79,7 @@ export const romaniaSuperLiga: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Romania SuperLiga",
-    logo: "@/assets/logos/Romania - SuperLiga/FC Rapid 1923.png",
+    logo: "/logos/Romania - SuperLiga/FC Rapid 1923.png",
   },
   {
     id: "fc-universitatea-cluj",
@@ -87,7 +87,7 @@ export const romaniaSuperLiga: Team[] = [
     primaryColor: "#FFFFFF",
     secondaryColor: "#0066FF",
     league: "Romania SuperLiga",
-    logo: "@/assets/logos/Romania - SuperLiga/FC Universitatea Cluj.png",
+    logo: "/logos/Romania - SuperLiga/FC Universitatea Cluj.png",
   },
   {
     id: "fcsb",
@@ -95,7 +95,7 @@ export const romaniaSuperLiga: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#0066FF",
     league: "Romania SuperLiga",
-    logo: "@/assets/logos/Romania - SuperLiga/FCSB.png",
+    logo: "/logos/Romania - SuperLiga/FCSB.png",
   },
   {
     id: "fcv-farul-constanta",
@@ -103,7 +103,7 @@ export const romaniaSuperLiga: Team[] = [
     primaryColor: "#0066FF",
     secondaryColor: "#FFFFFF",
     league: "Romania SuperLiga",
-    logo: "@/assets/logos/Romania - SuperLiga/FCV Farul Constanta.png",
+    logo: "/logos/Romania - SuperLiga/FCV Farul Constanta.png",
   },
   {
     id: "petrolul-ploiesti",
@@ -111,7 +111,7 @@ export const romaniaSuperLiga: Team[] = [
     primaryColor: "#FFFFFF",
     secondaryColor: "#0066CC",
     league: "Romania SuperLiga",
-    logo: "@/assets/logos/Romania - SuperLiga/Petrolul Ploiesti.png",
+    logo: "/logos/Romania - SuperLiga/Petrolul Ploiesti.png",
   },
   {
     id: "sc-otelul-galati",
@@ -119,7 +119,7 @@ export const romaniaSuperLiga: Team[] = [
     primaryColor: "#006600",
     secondaryColor: "#FFFFFF",
     league: "Romania SuperLiga",
-    logo: "@/assets/logos/Romania - SuperLiga/SC Otelul Galati.png",
+    logo: "/logos/Romania - SuperLiga/SC Otelul Galati.png",
   },
   {
     id: "uta-arad",
@@ -127,6 +127,6 @@ export const romaniaSuperLiga: Team[] = [
     primaryColor: "#FFFFFF",
     secondaryColor: "#000000",
     league: "Romania SuperLiga",
-    logo: "@/assets/logos/Romania - SuperLiga/UTA Arad.png",
+    logo: "/logos/Romania - SuperLiga/UTA Arad.png",
   },
 ];

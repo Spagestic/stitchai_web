@@ -7,7 +7,7 @@ export const norwayEliteserien: Team[] = [
     primaryColor: "#FFD700",
     secondaryColor: "#000000",
     league: "Norway Eliteserien",
-    logo: "@/assets/logos/Norway - Eliteserien/Bryne FK.png",
+    logo: "/logos/Norway - Eliteserien/Bryne FK.png",
   },
   {
     id: "bodoglimt",
@@ -15,7 +15,7 @@ export const norwayEliteserien: Team[] = [
     primaryColor: "#FFD700",
     secondaryColor: "#000000",
     league: "Norway Eliteserien",
-    logo: "@/assets/logos/Norway - Eliteserien/FK BodøGlimt.png",
+    logo: "/logos/Norway - Eliteserien/FK BodøGlimt.png",
   },
   {
     id: "fk-haugesund",
@@ -23,7 +23,7 @@ export const norwayEliteserien: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Norway Eliteserien",
-    logo: "@/assets/logos/Norway - Eliteserien/FK Haugesund.png",
+    logo: "/logos/Norway - Eliteserien/FK Haugesund.png",
   },
   {
     id: "fredrikstad-fk",
@@ -31,7 +31,7 @@ export const norwayEliteserien: Team[] = [
     primaryColor: "#000000",
     secondaryColor: "#FFFFFF",
     league: "Norway Eliteserien",
-    logo: "@/assets/logos/Norway - Eliteserien/Fredrikstad FK.png",
+    logo: "/logos/Norway - Eliteserien/Fredrikstad FK.png",
   },
   {
     id: "hamarkameratene",
@@ -39,7 +39,7 @@ export const norwayEliteserien: Team[] = [
     primaryColor: "#FFFFFF",
     secondaryColor: "#0066FF",
     league: "Norway Eliteserien",
-    logo: "@/assets/logos/Norway - Eliteserien/Hamarkameratene.png",
+    logo: "/logos/Norway - Eliteserien/Hamarkameratene.png",
   },
   {
     id: "kfum-oslo",
@@ -47,7 +47,7 @@ export const norwayEliteserien: Team[] = [
     primaryColor: "#0066FF",
     secondaryColor: "#FFFFFF",
     league: "Norway Eliteserien",
-    logo: "@/assets/logos/Norway - Eliteserien/KFUM-Kameratene Oslo.png",
+    logo: "/logos/Norway - Eliteserien/KFUM-Kameratene Oslo.png",
   },
   {
     id: "kristiansund-bk",
@@ -55,7 +55,7 @@ export const norwayEliteserien: Team[] = [
     primaryColor: "#0066FF",
     secondaryColor: "#FFFFFF",
     league: "Norway Eliteserien",
-    logo: "@/assets/logos/Norway - Eliteserien/Kristiansund BK.png",
+    logo: "/logos/Norway - Eliteserien/Kristiansund BK.png",
   },
   {
     id: "molde-fk",
@@ -63,7 +63,7 @@ export const norwayEliteserien: Team[] = [
     primaryColor: "#0066FF",
     secondaryColor: "#FFFFFF",
     league: "Norway Eliteserien",
-    logo: "@/assets/logos/Norway - Eliteserien/Molde FK.png",
+    logo: "/logos/Norway - Eliteserien/Molde FK.png",
   },
   {
     id: "rosenborg-bk",
@@ -71,7 +71,7 @@ export const norwayEliteserien: Team[] = [
     primaryColor: "#000000",
     secondaryColor: "#FFFFFF",
     league: "Norway Eliteserien",
-    logo: "@/assets/logos/Norway - Eliteserien/Rosenborg BK.png",
+    logo: "/logos/Norway - Eliteserien/Rosenborg BK.png",
   },
   {
     id: "sandefjord-fotball",
@@ -79,7 +79,7 @@ export const norwayEliteserien: Team[] = [
     primaryColor: "#0066CC",
     secondaryColor: "#FFFFFF",
     league: "Norway Eliteserien",
-    logo: "@/assets/logos/Norway - Eliteserien/Sandefjord Fotball.png",
+    logo: "/logos/Norway - Eliteserien/Sandefjord Fotball.png",
   },
   {
     id: "sarpsborg-08",
@@ -87,7 +87,7 @@ export const norwayEliteserien: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Norway Eliteserien",
-    logo: "@/assets/logos/Norway - Eliteserien/Sarpsborg 08 FF.png",
+    logo: "/logos/Norway - Eliteserien/Sarpsborg 08 FF.png",
   },
   {
     id: "sk-brann",
@@ -95,7 +95,7 @@ export const norwayEliteserien: Team[] = [
     primaryColor: "#FFD700",
     secondaryColor: "#000000",
     league: "Norway Eliteserien",
-    logo: "@/assets/logos/Norway - Eliteserien/SK Brann.png",
+    logo: "/logos/Norway - Eliteserien/SK Brann.png",
   },
   {
     id: "stromsgodset-if",
@@ -103,7 +103,7 @@ export const norwayEliteserien: Team[] = [
     primaryColor: "#FFFFFF",
     secondaryColor: "#000000",
     league: "Norway Eliteserien",
-    logo: "@/assets/logos/Norway - Eliteserien/Strømsgodset IF.png",
+    logo: "/logos/Norway - Eliteserien/Strømsgodset IF.png",
   },
   {
     id: "tromso-il",
@@ -111,7 +111,7 @@ export const norwayEliteserien: Team[] = [
     primaryColor: "#0066CC",
     secondaryColor: "#FFFFFF",
     league: "Norway Eliteserien",
-    logo: "@/assets/logos/Norway - Eliteserien/Tromsø IL.png",
+    logo: "/logos/Norway - Eliteserien/Tromsø IL.png",
   },
   {
     id: "valerenga-elite",
@@ -119,7 +119,7 @@ export const norwayEliteserien: Team[] = [
     primaryColor: "#0066FF",
     secondaryColor: "#FFFFFF",
     league: "Norway Eliteserien",
-    logo: "@/assets/logos/Norway - Eliteserien/Vålerenga Fotball Elite.png",
+    logo: "/logos/Norway - Eliteserien/Vålerenga Fotball Elite.png",
   },
   {
     id: "viking-fk",
@@ -127,6 +127,6 @@ export const norwayEliteserien: Team[] = [
     primaryColor: "#FFD700",
     secondaryColor: "#000000",
     league: "Norway Eliteserien",
-    logo: "@/assets/logos/Norway - Eliteserien/Viking FK.png",
+    logo: "/logos/Norway - Eliteserien/Viking FK.png",
   },
 ];

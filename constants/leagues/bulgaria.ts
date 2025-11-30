@@ -7,7 +7,7 @@ export const bulgariaEfbetLiga: Team[] = [
     primaryColor: "#FFFFFF",
     secondaryColor: "#0066CC",
     league: "Bulgaria efbet Liga",
-    logo: "@/assets/logos/Bulgaria - efbet Liga/Arda Kardzhali.png",
+    logo: "/logos/Bulgaria - efbet Liga/Arda Kardzhali.png",
   },
   {
     id: "beroe-stara-zagora",
@@ -15,7 +15,7 @@ export const bulgariaEfbetLiga: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Bulgaria efbet Liga",
-    logo: "@/assets/logos/Bulgaria - efbet Liga/Beroe Stara Zagora.png",
+    logo: "/logos/Bulgaria - efbet Liga/Beroe Stara Zagora.png",
   },
   {
     id: "botev-plovdiv",
@@ -23,7 +23,7 @@ export const bulgariaEfbetLiga: Team[] = [
     primaryColor: "#FFFFFF",
     secondaryColor: "#000000",
     league: "Bulgaria efbet Liga",
-    logo: "@/assets/logos/Bulgaria - efbet Liga/Botev Plovdiv.png",
+    logo: "/logos/Bulgaria - efbet Liga/Botev Plovdiv.png",
   },
   {
     id: "botev-vratsa",
@@ -31,7 +31,7 @@ export const bulgariaEfbetLiga: Team[] = [
     primaryColor: "#FFFFFF",
     secondaryColor: "#000000",
     league: "Bulgaria efbet Liga",
-    logo: "@/assets/logos/Bulgaria - efbet Liga/Botev Vratsa.png",
+    logo: "/logos/Bulgaria - efbet Liga/Botev Vratsa.png",
   },
   {
     id: "cherno-more-varna",
@@ -39,7 +39,7 @@ export const bulgariaEfbetLiga: Team[] = [
     primaryColor: "#FFFFFF",
     secondaryColor: "#000000",
     league: "Bulgaria efbet Liga",
-    logo: "@/assets/logos/Bulgaria - efbet Liga/Cherno More Varna.png",
+    logo: "/logos/Bulgaria - efbet Liga/Cherno More Varna.png",
   },
   {
     id: "cska-1948",
@@ -47,7 +47,7 @@ export const bulgariaEfbetLiga: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Bulgaria efbet Liga",
-    logo: "@/assets/logos/Bulgaria - efbet Liga/CSKA 1948.png",
+    logo: "/logos/Bulgaria - efbet Liga/CSKA 1948.png",
   },
   {
     id: "cska-sofia",
@@ -55,7 +55,7 @@ export const bulgariaEfbetLiga: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Bulgaria efbet Liga",
-    logo: "@/assets/logos/Bulgaria - efbet Liga/CSKA-Sofia.png",
+    logo: "/logos/Bulgaria - efbet Liga/CSKA-Sofia.png",
   },
   {
     id: "dobrudzha-dobrich",
@@ -63,7 +63,7 @@ export const bulgariaEfbetLiga: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Bulgaria efbet Liga",
-    logo: "@/assets/logos/Bulgaria - efbet Liga/Dobrudzha Dobrich.png",
+    logo: "/logos/Bulgaria - efbet Liga/Dobrudzha Dobrich.png",
   },
   {
     id: "levski-sofia",
@@ -71,7 +71,7 @@ export const bulgariaEfbetLiga: Team[] = [
     primaryColor: "#0066CC",
     secondaryColor: "#FFFFFF",
     league: "Bulgaria efbet Liga",
-    logo: "@/assets/logos/Bulgaria - efbet Liga/Levski Sofia.png",
+    logo: "/logos/Bulgaria - efbet Liga/Levski Sofia.png",
   },
   {
     id: "lokomotiv-plovdiv",
@@ -79,7 +79,7 @@ export const bulgariaEfbetLiga: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Bulgaria efbet Liga",
-    logo: "@/assets/logos/Bulgaria - efbet Liga/Lokomotiv Plovdiv.png",
+    logo: "/logos/Bulgaria - efbet Liga/Lokomotiv Plovdiv.png",
   },
   {
     id: "lokomotiv-sofia",
@@ -87,7 +87,7 @@ export const bulgariaEfbetLiga: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Bulgaria efbet Liga",
-    logo: "@/assets/logos/Bulgaria - efbet Liga/Lokomotiv Sofia.png",
+    logo: "/logos/Bulgaria - efbet Liga/Lokomotiv Sofia.png",
   },
   {
     id: "ludogorets-razgrad",
@@ -95,7 +95,7 @@ export const bulgariaEfbetLiga: Team[] = [
     primaryColor: "#006600",
     secondaryColor: "#FFFFFF",
     league: "Bulgaria efbet Liga",
-    logo: "@/assets/logos/Bulgaria - efbet Liga/Ludogorets Razgrad.png",
+    logo: "/logos/Bulgaria - efbet Liga/Ludogorets Razgrad.png",
   },
   {
     id: "montana",
@@ -103,7 +103,7 @@ export const bulgariaEfbetLiga: Team[] = [
     primaryColor: "#FFFFFF",
     secondaryColor: "#000000",
     league: "Bulgaria efbet Liga",
-    logo: "@/assets/logos/Bulgaria - efbet Liga/Montana.png",
+    logo: "/logos/Bulgaria - efbet Liga/Montana.png",
   },
   {
     id: "septemvri-sofia",
@@ -111,7 +111,7 @@ export const bulgariaEfbetLiga: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Bulgaria efbet Liga",
-    logo: "@/assets/logos/Bulgaria - efbet Liga/Septemvri Sofia.png",
+    logo: "/logos/Bulgaria - efbet Liga/Septemvri Sofia.png",
   },
   {
     id: "slavia-sofia",
@@ -119,7 +119,7 @@ export const bulgariaEfbetLiga: Team[] = [
     primaryColor: "#FFFFFF",
     secondaryColor: "#FF0000",
     league: "Bulgaria efbet Liga",
-    logo: "@/assets/logos/Bulgaria - efbet Liga/Slavia Sofia.png",
+    logo: "/logos/Bulgaria - efbet Liga/Slavia Sofia.png",
   },
   {
     id: "spartak-varna",
@@ -127,6 +127,6 @@ export const bulgariaEfbetLiga: Team[] = [
     primaryColor: "#FFFFFF",
     secondaryColor: "#000000",
     league: "Bulgaria efbet Liga",
-    logo: "@/assets/logos/Bulgaria - efbet Liga/Spartak Varna.png",
+    logo: "/logos/Bulgaria - efbet Liga/Spartak Varna.png",
   },
 ];

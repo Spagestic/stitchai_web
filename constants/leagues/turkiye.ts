@@ -7,7 +7,7 @@ export const turkiyeSuperLig: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Türkiye Süper Lig",
-    logo: "@/assets/logos/Türkiye - Süper Lig/Alanyaspor.png",
+    logo: "/logos/Türkiye - Süper Lig/Alanyaspor.png",
   },
   {
     id: "antalyaspor",
@@ -15,7 +15,7 @@ export const turkiyeSuperLig: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Türkiye Süper Lig",
-    logo: "@/assets/logos/Türkiye - Süper Lig/Antalyaspor.png",
+    logo: "/logos/Türkiye - Süper Lig/Antalyaspor.png",
   },
   {
     id: "basaksehir-fk",
@@ -23,7 +23,7 @@ export const turkiyeSuperLig: Team[] = [
     primaryColor: "#0066FF",
     secondaryColor: "#FF6600",
     league: "Türkiye Süper Lig",
-    logo: "@/assets/logos/Türkiye - Süper Lig/Basaksehir FK.png",
+    logo: "/logos/Türkiye - Süper Lig/Basaksehir FK.png",
   },
   {
     id: "besiktas-jk",
@@ -31,7 +31,7 @@ export const turkiyeSuperLig: Team[] = [
     primaryColor: "#000000",
     secondaryColor: "#FFFFFF",
     league: "Türkiye Süper Lig",
-    logo: "@/assets/logos/Türkiye - Süper Lig/Besiktas JK.png",
+    logo: "/logos/Türkiye - Süper Lig/Besiktas JK.png",
   },
   {
     id: "caykur-rizespor",
@@ -39,7 +39,7 @@ export const turkiyeSuperLig: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Türkiye Süper Lig",
-    logo: "@/assets/logos/Türkiye - Süper Lig/Caykur Rizespor.png",
+    logo: "/logos/Türkiye - Süper Lig/Caykur Rizespor.png",
   },
   {
     id: "eyupspor",
@@ -47,7 +47,7 @@ export const turkiyeSuperLig: Team[] = [
     primaryColor: "#000000",
     secondaryColor: "#FFFFFF",
     league: "Türkiye Süper Lig",
-    logo: "@/assets/logos/Türkiye - Süper Lig/Eyüpspor.png",
+    logo: "/logos/Türkiye - Süper Lig/Eyüpspor.png",
   },
   {
     id: "fatih-karagumruk",
@@ -55,7 +55,7 @@ export const turkiyeSuperLig: Team[] = [
     primaryColor: "#FFFFFF",
     secondaryColor: "#FF0000",
     league: "Türkiye Süper Lig",
-    logo: "@/assets/logos/Türkiye - Süper Lig/Fatih Karagümrük.png",
+    logo: "/logos/Türkiye - Süper Lig/Fatih Karagümrük.png",
   },
   {
     id: "fenerbahce",
@@ -63,7 +63,7 @@ export const turkiyeSuperLig: Team[] = [
     primaryColor: "#FFD700",
     secondaryColor: "#000000",
     league: "Türkiye Süper Lig",
-    logo: "@/assets/logos/Türkiye - Süper Lig/Fenerbahce.png",
+    logo: "/logos/Türkiye - Süper Lig/Fenerbahce.png",
   },
   {
     id: "galatasaray",
@@ -71,7 +71,7 @@ export const turkiyeSuperLig: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFD700",
     league: "Türkiye Süper Lig",
-    logo: "@/assets/logos/Türkiye - Süper Lig/Galatasaray.png",
+    logo: "/logos/Türkiye - Süper Lig/Galatasaray.png",
   },
   {
     id: "gaziantep-fk",
@@ -79,7 +79,7 @@ export const turkiyeSuperLig: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#000000",
     league: "Türkiye Süper Lig",
-    logo: "@/assets/logos/Türkiye - Süper Lig/Gaziantep FK.png",
+    logo: "/logos/Türkiye - Süper Lig/Gaziantep FK.png",
   },
   {
     id: "genclerbirligi",
@@ -87,7 +87,7 @@ export const turkiyeSuperLig: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Türkiye Süper Lig",
-    logo: "@/assets/logos/Türkiye - Süper Lig/Genclerbirligi Ankara.png",
+    logo: "/logos/Türkiye - Süper Lig/Genclerbirligi Ankara.png",
   },
   {
     id: "goztepe",
@@ -95,7 +95,7 @@ export const turkiyeSuperLig: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Türkiye Süper Lig",
-    logo: "@/assets/logos/Türkiye - Süper Lig/Göztepe.png",
+    logo: "/logos/Türkiye - Süper Lig/Göztepe.png",
   },
   {
     id: "kasimpasa",
@@ -103,7 +103,7 @@ export const turkiyeSuperLig: Team[] = [
     primaryColor: "#000000",
     secondaryColor: "#FFFFFF",
     league: "Türkiye Süper Lig",
-    logo: "@/assets/logos/Türkiye - Süper Lig/Kasimpasa.png",
+    logo: "/logos/Türkiye - Süper Lig/Kasimpasa.png",
   },
   {
     id: "kayserispor",
@@ -111,7 +111,7 @@ export const turkiyeSuperLig: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Türkiye Süper Lig",
-    logo: "@/assets/logos/Türkiye - Süper Lig/Kayserispor.png",
+    logo: "/logos/Türkiye - Süper Lig/Kayserispor.png",
   },
   {
     id: "kocaelispor",
@@ -119,7 +119,7 @@ export const turkiyeSuperLig: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Türkiye Süper Lig",
-    logo: "@/assets/logos/Türkiye - Süper Lig/Kocaelispor.png",
+    logo: "/logos/Türkiye - Süper Lig/Kocaelispor.png",
   },
   {
     id: "konyaspor",
@@ -127,7 +127,7 @@ export const turkiyeSuperLig: Team[] = [
     primaryColor: "#008000",
     secondaryColor: "#FFFFFF",
     league: "Türkiye Süper Lig",
-    logo: "@/assets/logos/Türkiye - Süper Lig/Konyaspor.png",
+    logo: "/logos/Türkiye - Süper Lig/Konyaspor.png",
   },
   {
     id: "samsunspor",
@@ -135,7 +135,7 @@ export const turkiyeSuperLig: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Türkiye Süper Lig",
-    logo: "@/assets/logos/Türkiye - Süper Lig/Samsunspor.png",
+    logo: "/logos/Türkiye - Süper Lig/Samsunspor.png",
   },
   {
     id: "trabzonspor",
@@ -143,6 +143,6 @@ export const turkiyeSuperLig: Team[] = [
     primaryColor: "#8B0000",
     secondaryColor: "#FFFFFF",
     league: "Türkiye Süper Lig",
-    logo: "@/assets/logos/Türkiye - Süper Lig/Trabzonspor.png",
+    logo: "/logos/Türkiye - Süper Lig/Trabzonspor.png",
   },
 ];

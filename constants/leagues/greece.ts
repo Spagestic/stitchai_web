@@ -7,7 +7,7 @@ export const greeceSuperLeague1: Team[] = [
     primaryColor: "#0066CC",
     secondaryColor: "#FFFFFF",
     league: "Greece Super League 1",
-    logo: "@/assets/logos/Greece - Super League 1/AE Kifisias.png",
+    logo: "/logos/Greece - Super League 1/AE Kifisias.png",
   },
   {
     id: "ae-larisa",
@@ -15,7 +15,7 @@ export const greeceSuperLeague1: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Greece Super League 1",
-    logo: "@/assets/logos/Greece - Super League 1/AE Larisa.png",
+    logo: "/logos/Greece - Super League 1/AE Larisa.png",
   },
   {
     id: "aek-athens",
@@ -23,7 +23,7 @@ export const greeceSuperLeague1: Team[] = [
     primaryColor: "#FFD700",
     secondaryColor: "#000000",
     league: "Greece Super League 1",
-    logo: "@/assets/logos/Greece - Super League 1/AEK Athens.png",
+    logo: "/logos/Greece - Super League 1/AEK Athens.png",
   },
   {
     id: "apo-levadiakos",
@@ -31,7 +31,7 @@ export const greeceSuperLeague1: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Greece Super League 1",
-    logo: "@/assets/logos/Greece - Super League 1/APO Levadiakos.png",
+    logo: "/logos/Greece - Super League 1/APO Levadiakos.png",
   },
   {
     id: "aris-thessaloniki",
@@ -39,7 +39,7 @@ export const greeceSuperLeague1: Team[] = [
     primaryColor: "#FFD700",
     secondaryColor: "#000000",
     league: "Greece Super League 1",
-    logo: "@/assets/logos/Greece - Super League 1/Aris Thessaloniki.png",
+    logo: "/logos/Greece - Super League 1/Aris Thessaloniki.png",
   },
   {
     id: "asteras-aktor",
@@ -47,7 +47,7 @@ export const greeceSuperLeague1: Team[] = [
     primaryColor: "#FFD700",
     secondaryColor: "#000000",
     league: "Greece Super League 1",
-    logo: "@/assets/logos/Greece - Super League 1/Asteras Aktor.png",
+    logo: "/logos/Greece - Super League 1/Asteras Aktor.png",
   },
   {
     id: "atromitos-athens",
@@ -55,7 +55,7 @@ export const greeceSuperLeague1: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Greece Super League 1",
-    logo: "@/assets/logos/Greece - Super League 1/Atromitos Athens.png",
+    logo: "/logos/Greece - Super League 1/Atromitos Athens.png",
   },
   {
     id: "ofi-crete",
@@ -63,7 +63,7 @@ export const greeceSuperLeague1: Team[] = [
     primaryColor: "#0066CC",
     secondaryColor: "#FFFFFF",
     league: "Greece Super League 1",
-    logo: "@/assets/logos/Greece - Super League 1/OFI Crete FC.png",
+    logo: "/logos/Greece - Super League 1/OFI Crete FC.png",
   },
   {
     id: "olympiacos",
@@ -71,7 +71,7 @@ export const greeceSuperLeague1: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Greece Super League 1",
-    logo: "@/assets/logos/Greece - Super League 1/Olympiacos Piraeus.png",
+    logo: "/logos/Greece - Super League 1/Olympiacos Piraeus.png",
   },
   {
     id: "panathinaikos",
@@ -79,7 +79,7 @@ export const greeceSuperLeague1: Team[] = [
     primaryColor: "#006600",
     secondaryColor: "#FFFFFF",
     league: "Greece Super League 1",
-    logo: "@/assets/logos/Greece - Super League 1/Panathinaikos FC.png",
+    logo: "/logos/Greece - Super League 1/Panathinaikos FC.png",
   },
   {
     id: "panetolikos",
@@ -87,7 +87,7 @@ export const greeceSuperLeague1: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Greece Super League 1",
-    logo: "@/assets/logos/Greece - Super League 1/Panetolikos GFS.png",
+    logo: "/logos/Greece - Super League 1/Panetolikos GFS.png",
   },
   {
     id: "panserraikos",
@@ -95,7 +95,7 @@ export const greeceSuperLeague1: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Greece Super League 1",
-    logo: "@/assets/logos/Greece - Super League 1/Panserraikos.png",
+    logo: "/logos/Greece - Super League 1/Panserraikos.png",
   },
   {
     id: "paok-thessaloniki",
@@ -103,7 +103,7 @@ export const greeceSuperLeague1: Team[] = [
     primaryColor: "#000000",
     secondaryColor: "#FFFFFF",
     league: "Greece Super League 1",
-    logo: "@/assets/logos/Greece - Super League 1/PAOK Thessaloniki.png",
+    logo: "/logos/Greece - Super League 1/PAOK Thessaloniki.png",
   },
   {
     id: "volos-nps",
@@ -111,6 +111,6 @@ export const greeceSuperLeague1: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Greece Super League 1",
-    logo: "@/assets/logos/Greece - Super League 1/Volos NPS.png",
+    logo: "/logos/Greece - Super League 1/Volos NPS.png",
   },
 ];

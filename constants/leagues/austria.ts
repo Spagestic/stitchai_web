@@ -7,7 +7,7 @@ export const austriaBundesliga: Team[] = [
     primaryColor: "#FF6600",
     secondaryColor: "#000000",
     league: "Austria Bundesliga",
-    logo: "@/public/logos/Austria - Bundesliga/Austria Vienna.png",
+    logo: "/logos/Austria - Bundesliga/Austria Vienna.png",
   },
   {
     id: "blau-weiss-linz",
@@ -15,7 +15,7 @@ export const austriaBundesliga: Team[] = [
     primaryColor: "#0066CC",
     secondaryColor: "#FFFFFF",
     league: "Austria Bundesliga",
-    logo: "@/assets/logos/Austria - Bundesliga/FC Blau-Weiss Linz.png",
+    logo: "/logos/Austria - Bundesliga/FC Blau-Weiss Linz.png",
   },
   {
     id: "grazer-ak",
@@ -23,7 +23,7 @@ export const austriaBundesliga: Team[] = [
     primaryColor: "#000000",
     secondaryColor: "#FFFFFF",
     league: "Austria Bundesliga",
-    logo: "@/assets/logos/Austria - Bundesliga/Grazer AK 1902.png",
+    logo: "/logos/Austria - Bundesliga/Grazer AK 1902.png",
   },
   {
     id: "lask",
@@ -31,7 +31,7 @@ export const austriaBundesliga: Team[] = [
     primaryColor: "#000000",
     secondaryColor: "#FFFFFF",
     league: "Austria Bundesliga",
-    logo: "@/assets/logos/Austria - Bundesliga/LASK.png",
+    logo: "/logos/Austria - Bundesliga/LASK.png",
   },
   {
     id: "rapid-vienna",
@@ -39,7 +39,7 @@ export const austriaBundesliga: Team[] = [
     primaryColor: "#006600",
     secondaryColor: "#FFFFFF",
     league: "Austria Bundesliga",
-    logo: "@/assets/logos/Austria - Bundesliga/Rapid Vienna.png",
+    logo: "/logos/Austria - Bundesliga/Rapid Vienna.png",
   },
   {
     id: "red-bull-salzburg",
@@ -47,7 +47,7 @@ export const austriaBundesliga: Team[] = [
     primaryColor: "#FFFFFF",
     secondaryColor: "#000000",
     league: "Austria Bundesliga",
-    logo: "@/assets/logos/Austria - Bundesliga/Red Bull Salzburg.png",
+    logo: "/logos/Austria - Bundesliga/Red Bull Salzburg.png",
   },
   {
     id: "scr-altach",
@@ -55,7 +55,7 @@ export const austriaBundesliga: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Austria Bundesliga",
-    logo: "@/assets/logos/Austria - Bundesliga/SCR Altach.png",
+    logo: "/logos/Austria - Bundesliga/SCR Altach.png",
   },
   {
     id: "sk-sturm-graz",
@@ -63,7 +63,7 @@ export const austriaBundesliga: Team[] = [
     primaryColor: "#000000",
     secondaryColor: "#FFFFFF",
     league: "Austria Bundesliga",
-    logo: "@/assets/logos/Austria - Bundesliga/SK Sturm Graz.png",
+    logo: "/logos/Austria - Bundesliga/SK Sturm Graz.png",
   },
   {
     id: "sv-ried",
@@ -71,7 +71,7 @@ export const austriaBundesliga: Team[] = [
     primaryColor: "#FFFFFF",
     secondaryColor: "#0066CC",
     league: "Austria Bundesliga",
-    logo: "@/assets/logos/Austria - Bundesliga/SV Ried.png",
+    logo: "/logos/Austria - Bundesliga/SV Ried.png",
   },
   {
     id: "tsv-hartberg",
@@ -79,7 +79,7 @@ export const austriaBundesliga: Team[] = [
     primaryColor: "#FF6600",
     secondaryColor: "#FFFFFF",
     league: "Austria Bundesliga",
-    logo: "@/assets/logos/Austria - Bundesliga/TSV Hartberg.png",
+    logo: "/logos/Austria - Bundesliga/TSV Hartberg.png",
   },
   {
     id: "wolfsberger-ac",
@@ -87,7 +87,7 @@ export const austriaBundesliga: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Austria Bundesliga",
-    logo: "@/assets/logos/Austria - Bundesliga/Wolfsberger AC.png",
+    logo: "/logos/Austria - Bundesliga/Wolfsberger AC.png",
   },
   {
     id: "wsg-tirol",
@@ -95,6 +95,6 @@ export const austriaBundesliga: Team[] = [
     primaryColor: "#FFFFFF",
     secondaryColor: "#0066CC",
     league: "Austria Bundesliga",
-    logo: "@/assets/logos/Austria - Bundesliga/WSG Tirol.png",
+    logo: "/logos/Austria - Bundesliga/WSG Tirol.png",
   },
 ];

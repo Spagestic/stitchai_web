@@ -7,7 +7,7 @@ export const russiaPremierLiga: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Russia Premier Liga",
-    logo: "@/assets/logos/Russia - Premier Liga/Akhmat Grozny.png",
+    logo: "/logos/Russia - Premier Liga/Akhmat Grozny.png",
   },
   {
     id: "akron-togliatti",
@@ -15,7 +15,7 @@ export const russiaPremierLiga: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Russia Premier Liga",
-    logo: "@/assets/logos/Russia - Premier Liga/Akron Togliatti.png",
+    logo: "/logos/Russia - Premier Liga/Akron Togliatti.png",
   },
   {
     id: "baltika-kaliningrad",
@@ -23,7 +23,7 @@ export const russiaPremierLiga: Team[] = [
     primaryColor: "#FFFFFF",
     secondaryColor: "#0066FF",
     league: "Russia Premier Liga",
-    logo: "@/assets/logos/Russia - Premier Liga/Baltika Kaliningrad.png",
+    logo: "/logos/Russia - Premier Liga/Baltika Kaliningrad.png",
   },
   {
     id: "cska-moscow",
@@ -31,7 +31,7 @@ export const russiaPremierLiga: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#0066CC",
     league: "Russia Premier Liga",
-    logo: "@/assets/logos/Russia - Premier Liga/CSKA Moscow.png",
+    logo: "/logos/Russia - Premier Liga/CSKA Moscow.png",
   },
   {
     id: "dinamo-makhachkala",
@@ -39,7 +39,7 @@ export const russiaPremierLiga: Team[] = [
     primaryColor: "#0066CC",
     secondaryColor: "#FFFFFF",
     league: "Russia Premier Liga",
-    logo: "@/assets/logos/Russia - Premier Liga/Dinamo Makhachkala.png",
+    logo: "/logos/Russia - Premier Liga/Dinamo Makhachkala.png",
   },
   {
     id: "dynamo-moscow",
@@ -47,7 +47,7 @@ export const russiaPremierLiga: Team[] = [
     primaryColor: "#0066CC",
     secondaryColor: "#FFFFFF",
     league: "Russia Premier Liga",
-    logo: "@/assets/logos/Russia - Premier Liga/Dynamo Moscow.png",
+    logo: "/logos/Russia - Premier Liga/Dynamo Moscow.png",
   },
   {
     id: "fc-krasnodar",
@@ -55,7 +55,7 @@ export const russiaPremierLiga: Team[] = [
     primaryColor: "#006600",
     secondaryColor: "#FFFFFF",
     league: "Russia Premier Liga",
-    logo: "@/assets/logos/Russia - Premier Liga/FC Krasnodar.png",
+    logo: "/logos/Russia - Premier Liga/FC Krasnodar.png",
   },
   {
     id: "fc-pari-nizhniy-novgorod",
@@ -63,7 +63,7 @@ export const russiaPremierLiga: Team[] = [
     primaryColor: "#FFFFFF",
     secondaryColor: "#FF0000",
     league: "Russia Premier Liga",
-    logo: "@/assets/logos/Russia - Premier Liga/FC Pari Nizhniy Novgorod.png",
+    logo: "/logos/Russia - Premier Liga/FC Pari Nizhniy Novgorod.png",
   },
   {
     id: "fc-rostov",
@@ -71,7 +71,7 @@ export const russiaPremierLiga: Team[] = [
     primaryColor: "#0066FF",
     secondaryColor: "#FFFFFF",
     league: "Russia Premier Liga",
-    logo: "@/assets/logos/Russia - Premier Liga/FC Rostov.png",
+    logo: "/logos/Russia - Premier Liga/FC Rostov.png",
   },
   {
     id: "fc-sochi",
@@ -79,7 +79,7 @@ export const russiaPremierLiga: Team[] = [
     primaryColor: "#FFFFFF",
     secondaryColor: "#000000",
     league: "Russia Premier Liga",
-    logo: "@/assets/logos/Russia - Premier Liga/FC Sochi.png",
+    logo: "/logos/Russia - Premier Liga/FC Sochi.png",
   },
   {
     id: "krylya-sovetov",
@@ -87,7 +87,7 @@ export const russiaPremierLiga: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Russia Premier Liga",
-    logo: "@/assets/logos/Russia - Premier Liga/Krylya Sovetov Samara.png",
+    logo: "/logos/Russia - Premier Liga/Krylya Sovetov Samara.png",
   },
   {
     id: "lokomotiv-moscow",
@@ -95,7 +95,7 @@ export const russiaPremierLiga: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Russia Premier Liga",
-    logo: "@/assets/logos/Russia - Premier Liga/Lokomotiv Moscow.png",
+    logo: "/logos/Russia - Premier Liga/Lokomotiv Moscow.png",
   },
   {
     id: "rubin-kazan",
@@ -103,7 +103,7 @@ export const russiaPremierLiga: Team[] = [
     primaryColor: "#0066CC",
     secondaryColor: "#FFFFFF",
     league: "Russia Premier Liga",
-    logo: "@/assets/logos/Russia - Premier Liga/Rubin Kazan.png",
+    logo: "/logos/Russia - Premier Liga/Rubin Kazan.png",
   },
   {
     id: "spartak-moscow",
@@ -111,7 +111,7 @@ export const russiaPremierLiga: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Russia Premier Liga",
-    logo: "@/assets/logos/Russia - Premier Liga/Spartak Moscow.png",
+    logo: "/logos/Russia - Premier Liga/Spartak Moscow.png",
   },
   {
     id: "torpedo-moscow",
@@ -119,7 +119,7 @@ export const russiaPremierLiga: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Russia Premier Liga",
-    logo: "@/assets/logos/Russia - Premier Liga/Torpedo Moscow.png",
+    logo: "/logos/Russia - Premier Liga/Torpedo Moscow.png",
   },
   {
     id: "zenit-spb",
@@ -127,6 +127,6 @@ export const russiaPremierLiga: Team[] = [
     primaryColor: "#0066CC",
     secondaryColor: "#FFFFFF",
     league: "Russia Premier Liga",
-    logo: "@/assets/logos/Russia - Premier Liga/Zenit St. Petersburg.png",
+    logo: "/logos/Russia - Premier Liga/Zenit St. Petersburg.png",
   },
 ];

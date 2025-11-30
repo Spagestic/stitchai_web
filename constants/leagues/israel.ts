@@ -7,7 +7,7 @@ export const israelLigatHaAl: Team[] = [
     primaryColor: "#FFD700",
     secondaryColor: "#000000",
     league: "Israel Ligat ha'Al",
-    logo: "@/assets/logos/Israel - Ligat ha'Al/Beitar Jerusalem.png",
+    logo: "/logos/Israel - Ligat ha'Al/Beitar Jerusalem.png",
   },
   {
     id: "fc-ashdod",
@@ -15,7 +15,7 @@ export const israelLigatHaAl: Team[] = [
     primaryColor: "#0066CC",
     secondaryColor: "#FFFFFF",
     league: "Israel Ligat ha'Al",
-    logo: "@/assets/logos/Israel - Ligat ha'Al/FC Ashdod.png",
+    logo: "/logos/Israel - Ligat ha'Al/FC Ashdod.png",
   },
   {
     id: "hapoel-beer-sheva",
@@ -23,7 +23,7 @@ export const israelLigatHaAl: Team[] = [
     primaryColor: "#0066CC",
     secondaryColor: "#FFFFFF",
     league: "Israel Ligat ha'Al",
-    logo: "@/assets/logos/Israel - Ligat ha'Al/Hapoel Beer Sheva.png",
+    logo: "/logos/Israel - Ligat ha'Al/Hapoel Beer Sheva.png",
   },
   {
     id: "hapoel-haifa",
@@ -31,7 +31,7 @@ export const israelLigatHaAl: Team[] = [
     primaryColor: "#000000",
     secondaryColor: "#FFFFFF",
     league: "Israel Ligat ha'Al",
-    logo: "@/assets/logos/Israel - Ligat ha'Al/Hapoel Haifa.png",
+    logo: "/logos/Israel - Ligat ha'Al/Hapoel Haifa.png",
   },
   {
     id: "hapoel-jerusalem",
@@ -39,7 +39,7 @@ export const israelLigatHaAl: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Israel Ligat ha'Al",
-    logo: "@/assets/logos/Israel - Ligat ha'Al/Hapoel Jerusalem.png",
+    logo: "/logos/Israel - Ligat ha'Al/Hapoel Jerusalem.png",
   },
   {
     id: "hapoel-petah-tikva",
@@ -47,7 +47,7 @@ export const israelLigatHaAl: Team[] = [
     primaryColor: "#0066CC",
     secondaryColor: "#FFFFFF",
     league: "Israel Ligat ha'Al",
-    logo: "@/assets/logos/Israel - Ligat ha'Al/Hapoel Petah Tikva.png",
+    logo: "/logos/Israel - Ligat ha'Al/Hapoel Petah Tikva.png",
   },
   {
     id: "hapoel-tel-aviv",
@@ -55,7 +55,7 @@ export const israelLigatHaAl: Team[] = [
     primaryColor: "#FFD700",
     secondaryColor: "#000000",
     league: "Israel Ligat ha'Al",
-    logo: "@/assets/logos/Israel - Ligat ha'Al/Hapoel Tel Aviv.png",
+    logo: "/logos/Israel - Ligat ha'Al/Hapoel Tel Aviv.png",
   },
   {
     id: "ihud-bnei-sakhnin",
@@ -63,7 +63,7 @@ export const israelLigatHaAl: Team[] = [
     primaryColor: "#006600",
     secondaryColor: "#FFFFFF",
     league: "Israel Ligat ha'Al",
-    logo: "@/assets/logos/Israel - Ligat ha'Al/Ihud Bnei Sakhnin.png",
+    logo: "/logos/Israel - Ligat ha'Al/Ihud Bnei Sakhnin.png",
   },
   {
     id: "ironi-kiryat-shmona",
@@ -71,7 +71,7 @@ export const israelLigatHaAl: Team[] = [
     primaryColor: "#FFD700",
     secondaryColor: "#000000",
     league: "Israel Ligat ha'Al",
-    logo: "@/assets/logos/Israel - Ligat ha'Al/Ironi Kiryat Shmona.png",
+    logo: "/logos/Israel - Ligat ha'Al/Ironi Kiryat Shmona.png",
   },
   {
     id: "ironi-tiberias",
@@ -79,7 +79,7 @@ export const israelLigatHaAl: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Israel Ligat ha'Al",
-    logo: "@/assets/logos/Israel - Ligat ha'Al/Ironi Tiberias.png",
+    logo: "/logos/Israel - Ligat ha'Al/Ironi Tiberias.png",
   },
   {
     id: "maccabi-bnei-reineh",
@@ -87,7 +87,7 @@ export const israelLigatHaAl: Team[] = [
     primaryColor: "#FFD700",
     secondaryColor: "#000000",
     league: "Israel Ligat ha'Al",
-    logo: "@/assets/logos/Israel - Ligat ha'Al/Maccabi Bnei Reineh.png",
+    logo: "/logos/Israel - Ligat ha'Al/Maccabi Bnei Reineh.png",
   },
   {
     id: "maccabi-haifa",
@@ -95,7 +95,7 @@ export const israelLigatHaAl: Team[] = [
     primaryColor: "#FFFFFF",
     secondaryColor: "#000000",
     league: "Israel Ligat ha'Al",
-    logo: "@/assets/logos/Israel - Ligat ha'Al/Maccabi Haifa.png",
+    logo: "/logos/Israel - Ligat ha'Al/Maccabi Haifa.png",
   },
   {
     id: "maccabi-netanya",
@@ -103,7 +103,7 @@ export const israelLigatHaAl: Team[] = [
     primaryColor: "#FFD700",
     secondaryColor: "#000000",
     league: "Israel Ligat ha'Al",
-    logo: "@/assets/logos/Israel - Ligat ha'Al/Maccabi Netanya.png",
+    logo: "/logos/Israel - Ligat ha'Al/Maccabi Netanya.png",
   },
   {
     id: "maccabi-tel-aviv",
@@ -111,6 +111,6 @@ export const israelLigatHaAl: Team[] = [
     primaryColor: "#FFD700",
     secondaryColor: "#000000",
     league: "Israel Ligat ha'Al",
-    logo: "@/assets/logos/Israel - Ligat ha'Al/Maccabi Tel Aviv.png",
+    logo: "/logos/Israel - Ligat ha'Al/Maccabi Tel Aviv.png",
   },
 ];

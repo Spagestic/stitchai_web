@@ -7,7 +7,7 @@ export const portugallLigaPortugal: Team[] = [
     primaryColor: "#1E90FF",
     secondaryColor: "#FFFFFF",
     league: "Liga Portugal",
-    logo: "@/assets/logos/Portugal - Liga Portugal/Avs Futebol.png",
+    logo: "/logos/Portugal - Liga Portugal/Avs Futebol.png",
   },
   {
     id: "casa-pia",
@@ -15,7 +15,7 @@ export const portugallLigaPortugal: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Liga Portugal",
-    logo: "@/assets/logos/Portugal - Liga Portugal/Casa Pia AC.png",
+    logo: "/logos/Portugal - Liga Portugal/Casa Pia AC.png",
   },
   {
     id: "cd-nacional",
@@ -23,7 +23,7 @@ export const portugallLigaPortugal: Team[] = [
     primaryColor: "#FFD700",
     secondaryColor: "#000000",
     league: "Liga Portugal",
-    logo: "@/assets/logos/Portugal - Liga Portugal/CD Nacional.png",
+    logo: "/logos/Portugal - Liga Portugal/CD Nacional.png",
   },
   {
     id: "cd-santa-clara",
@@ -31,7 +31,7 @@ export const portugallLigaPortugal: Team[] = [
     primaryColor: "#FFD700",
     secondaryColor: "#000000",
     league: "Liga Portugal",
-    logo: "@/assets/logos/Portugal - Liga Portugal/CD Santa Clara.png",
+    logo: "/logos/Portugal - Liga Portugal/CD Santa Clara.png",
   },
   {
     id: "cd-tondela",
@@ -39,7 +39,7 @@ export const portugallLigaPortugal: Team[] = [
     primaryColor: "#FFFFFF",
     secondaryColor: "#0066CC",
     league: "Liga Portugal",
-    logo: "@/assets/logos/Portugal - Liga Portugal/CD Tondela.png",
+    logo: "/logos/Portugal - Liga Portugal/CD Tondela.png",
   },
   {
     id: "cf-estrela-amadora",
@@ -47,7 +47,7 @@ export const portugallLigaPortugal: Team[] = [
     primaryColor: "#FFD700",
     secondaryColor: "#000000",
     league: "Liga Portugal",
-    logo: "@/assets/logos/Portugal - Liga Portugal/CF Estrela Amadora.png",
+    logo: "/logos/Portugal - Liga Portugal/CF Estrela Amadora.png",
   },
   {
     id: "fc-alverca",
@@ -55,7 +55,7 @@ export const portugallLigaPortugal: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Liga Portugal",
-    logo: "@/assets/logos/Portugal - Liga Portugal/FC Alverca.png",
+    logo: "/logos/Portugal - Liga Portugal/FC Alverca.png",
   },
   {
     id: "fc-arouca",
@@ -63,7 +63,7 @@ export const portugallLigaPortugal: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Liga Portugal",
-    logo: "@/assets/logos/Portugal - Liga Portugal/FC Arouca.png",
+    logo: "/logos/Portugal - Liga Portugal/FC Arouca.png",
   },
   {
     id: "famalicao",
@@ -71,7 +71,7 @@ export const portugallLigaPortugal: Team[] = [
     primaryColor: "#EC1C24",
     secondaryColor: "#FFFFFF",
     league: "Liga Portugal",
-    logo: "@/assets/logos/Portugal - Liga Portugal/FC Famalicão.png",
+    logo: "/logos/Portugal - Liga Portugal/FC Famalicão.png",
   },
   {
     id: "porto",
@@ -79,7 +79,7 @@ export const portugallLigaPortugal: Team[] = [
     primaryColor: "#003893",
     secondaryColor: "#FFFFFF",
     league: "Liga Portugal",
-    logo: "@/assets/logos/Portugal - Liga Portugal/FC Porto.png",
+    logo: "/logos/Portugal - Liga Portugal/FC Porto.png",
   },
   {
     id: "estoril",
@@ -87,7 +87,7 @@ export const portugallLigaPortugal: Team[] = [
     primaryColor: "#FFFFFF",
     secondaryColor: "#0066CC",
     league: "Liga Portugal",
-    logo: "@/assets/logos/Portugal - Liga Portugal/GD Estoril Praia.png",
+    logo: "/logos/Portugal - Liga Portugal/GD Estoril Praia.png",
   },
   {
     id: "gil-vicente",
@@ -95,7 +95,7 @@ export const portugallLigaPortugal: Team[] = [
     primaryColor: "#FFCC00",
     secondaryColor: "#000000",
     league: "Liga Portugal",
-    logo: "@/assets/logos/Portugal - Liga Portugal/Gil Vicente FC.png",
+    logo: "/logos/Portugal - Liga Portugal/Gil Vicente FC.png",
   },
   {
     id: "moreirense",
@@ -103,7 +103,7 @@ export const portugallLigaPortugal: Team[] = [
     primaryColor: "#006600",
     secondaryColor: "#FFFFFF",
     league: "Liga Portugal",
-    logo: "@/assets/logos/Portugal - Liga Portugal/Moreirense FC.png",
+    logo: "/logos/Portugal - Liga Portugal/Moreirense FC.png",
   },
   {
     id: "rio-ave",
@@ -111,7 +111,7 @@ export const portugallLigaPortugal: Team[] = [
     primaryColor: "#008000",
     secondaryColor: "#FFFFFF",
     league: "Liga Portugal",
-    logo: "@/assets/logos/Portugal - Liga Portugal/Rio Ave FC.png",
+    logo: "/logos/Portugal - Liga Portugal/Rio Ave FC.png",
   },
   {
     id: "braga",
@@ -119,7 +119,7 @@ export const portugallLigaPortugal: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Liga Portugal",
-    logo: "@/assets/logos/Portugal - Liga Portugal/SC Braga.png",
+    logo: "/logos/Portugal - Liga Portugal/SC Braga.png",
   },
   {
     id: "benfica",
@@ -127,7 +127,7 @@ export const portugallLigaPortugal: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Liga Portugal",
-    logo: "@/assets/logos/Portugal - Liga Portugal/SL Benfica.png",
+    logo: "/logos/Portugal - Liga Portugal/SL Benfica.png",
   },
   {
     id: "sporting",
@@ -135,7 +135,7 @@ export const portugallLigaPortugal: Team[] = [
     primaryColor: "#006600",
     secondaryColor: "#FFFFFF",
     league: "Liga Portugal",
-    logo: "@/assets/logos/Portugal - Liga Portugal/Sporting CP.png",
+    logo: "/logos/Portugal - Liga Portugal/Sporting CP.png",
   },
   {
     id: "guimaraes",
@@ -143,6 +143,6 @@ export const portugallLigaPortugal: Team[] = [
     primaryColor: "#FFFFFF",
     secondaryColor: "#00A86B",
     league: "Liga Portugal",
-    logo: "@/assets/logos/Portugal - Liga Portugal/Vitória Guimarães SC.png",
+    logo: "/logos/Portugal - Liga Portugal/Vitória Guimarães SC.png",
   },
 ];

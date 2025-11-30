@@ -7,7 +7,7 @@ export const serbiaSuperLiga: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Serbia Super liga Srbije",
-    logo: "@/assets/logos/Serbia - Super liga Srbije/FK Cukaricki.png",
+    logo: "/logos/Serbia - Super liga Srbije/FK Cukaricki.png",
   },
   {
     id: "fk-imt-belgrad",
@@ -15,7 +15,7 @@ export const serbiaSuperLiga: Team[] = [
     primaryColor: "#0066CC",
     secondaryColor: "#FFFFFF",
     league: "Serbia Super liga Srbije",
-    logo: "@/assets/logos/Serbia - Super liga Srbije/FK IMT Belgrad.png",
+    logo: "/logos/Serbia - Super liga Srbije/FK IMT Belgrad.png",
   },
   {
     id: "fk-javor-matis",
@@ -23,7 +23,7 @@ export const serbiaSuperLiga: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Serbia Super liga Srbije",
-    logo: "@/assets/logos/Serbia - Super liga Srbije/FK Javor-Matis Ivanjica.png",
+    logo: "/logos/Serbia - Super liga Srbije/FK Javor-Matis Ivanjica.png",
   },
   {
     id: "fk-mladost-lucani",
@@ -31,7 +31,7 @@ export const serbiaSuperLiga: Team[] = [
     primaryColor: "#FFFFFF",
     secondaryColor: "#0066FF",
     league: "Serbia Super liga Srbije",
-    logo: "@/assets/logos/Serbia - Super liga Srbije/FK Mladost Lucani.png",
+    logo: "/logos/Serbia - Super liga Srbije/FK Mladost Lucani.png",
   },
   {
     id: "fk-napredak-krusevac",
@@ -39,7 +39,7 @@ export const serbiaSuperLiga: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Serbia Super liga Srbije",
-    logo: "@/assets/logos/Serbia - Super liga Srbije/FK Napredak Krusevac.png",
+    logo: "/logos/Serbia - Super liga Srbije/FK Napredak Krusevac.png",
   },
   {
     id: "fk-novi-pazar",
@@ -47,7 +47,7 @@ export const serbiaSuperLiga: Team[] = [
     primaryColor: "#FFFFFF",
     secondaryColor: "#FF0000",
     league: "Serbia Super liga Srbije",
-    logo: "@/assets/logos/Serbia - Super liga Srbije/FK Novi Pazar.png",
+    logo: "/logos/Serbia - Super liga Srbije/FK Novi Pazar.png",
   },
   {
     id: "partizan-belgrade",
@@ -55,7 +55,7 @@ export const serbiaSuperLiga: Team[] = [
     primaryColor: "#FFFFFF",
     secondaryColor: "#000000",
     league: "Serbia Super liga Srbije",
-    logo: "@/assets/logos/Serbia - Super liga Srbije/FK Partizan Belgrade.png",
+    logo: "/logos/Serbia - Super liga Srbije/FK Partizan Belgrade.png",
   },
   {
     id: "radnicki-1923",
@@ -63,7 +63,7 @@ export const serbiaSuperLiga: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Serbia Super liga Srbije",
-    logo: "@/assets/logos/Serbia - Super liga Srbije/FK Radnicki 1923 Kragujevac.png",
+    logo: "/logos/Serbia - Super liga Srbije/FK Radnicki 1923 Kragujevac.png",
   },
   {
     id: "radnicki-nis",
@@ -71,7 +71,7 @@ export const serbiaSuperLiga: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Serbia Super liga Srbije",
-    logo: "@/assets/logos/Serbia - Super liga Srbije/FK Radnicki Nis.png",
+    logo: "/logos/Serbia - Super liga Srbije/FK Radnicki Nis.png",
   },
   {
     id: "radnik-surdulica",
@@ -79,7 +79,7 @@ export const serbiaSuperLiga: Team[] = [
     primaryColor: "#0066FF",
     secondaryColor: "#FFFFFF",
     league: "Serbia Super liga Srbije",
-    logo: "@/assets/logos/Serbia - Super liga Srbije/FK Radnik Surdulica.png",
+    logo: "/logos/Serbia - Super liga Srbije/FK Radnik Surdulica.png",
   },
   {
     id: "spartak-subotica",
@@ -87,7 +87,7 @@ export const serbiaSuperLiga: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Serbia Super liga Srbije",
-    logo: "@/assets/logos/Serbia - Super liga Srbije/FK Spartak Subotica.png",
+    logo: "/logos/Serbia - Super liga Srbije/FK Spartak Subotica.png",
   },
   {
     id: "fk-tsc-backa-topola",
@@ -95,7 +95,7 @@ export const serbiaSuperLiga: Team[] = [
     primaryColor: "#FFFFFF",
     secondaryColor: "#0066FF",
     league: "Serbia Super liga Srbije",
-    logo: "@/assets/logos/Serbia - Super liga Srbije/FK TSC Backa Topola.png",
+    logo: "/logos/Serbia - Super liga Srbije/FK TSC Backa Topola.png",
   },
   {
     id: "fk-vojvodina",
@@ -103,7 +103,7 @@ export const serbiaSuperLiga: Team[] = [
     primaryColor: "#FFFFFF",
     secondaryColor: "#000000",
     league: "Serbia Super liga Srbije",
-    logo: "@/assets/logos/Serbia - Super liga Srbije/FK Vojvodina Novi Sad.png",
+    logo: "/logos/Serbia - Super liga Srbije/FK Vojvodina Novi Sad.png",
   },
   {
     id: "ofk-beograd",
@@ -111,7 +111,7 @@ export const serbiaSuperLiga: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Serbia Super liga Srbije",
-    logo: "@/assets/logos/Serbia - Super liga Srbije/OFK Beograd.png",
+    logo: "/logos/Serbia - Super liga Srbije/OFK Beograd.png",
   },
   {
     id: "red-star-belgrade",
@@ -119,7 +119,7 @@ export const serbiaSuperLiga: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Serbia Super liga Srbije",
-    logo: "@/assets/logos/Serbia - Super liga Srbije/Red Star Belgrade.png",
+    logo: "/logos/Serbia - Super liga Srbije/Red Star Belgrade.png",
   },
   {
     id: "zeleznicar-pancevo",
@@ -127,6 +127,6 @@ export const serbiaSuperLiga: Team[] = [
     primaryColor: "#0066CC",
     secondaryColor: "#FFFFFF",
     league: "Serbia Super liga Srbije",
-    logo: "@/assets/logos/Serbia - Super liga Srbije/Zeleznicar Pancevo.png",
+    logo: "/logos/Serbia - Super liga Srbije/Zeleznicar Pancevo.png",
   },
 ];

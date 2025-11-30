@@ -7,7 +7,7 @@ export const czechRepublicChanceLiga: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Czech Republic Chance Liga",
-    logo: "@/assets/logos/Czech Republic - Chance Liga/1.FC Slovacko.png",
+    logo: "/logos/Czech Republic - Chance Liga/1.FC Slovacko.png",
   },
   {
     id: "sparta-prague",
@@ -15,7 +15,7 @@ export const czechRepublicChanceLiga: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Czech Republic Chance Liga",
-    logo: "@/assets/logos/Czech Republic - Chance Liga/AC Sparta Prague.png",
+    logo: "/logos/Czech Republic - Chance Liga/AC Sparta Prague.png",
   },
   {
     id: "bohemians-prague",
@@ -23,7 +23,7 @@ export const czechRepublicChanceLiga: Team[] = [
     primaryColor: "#000000",
     secondaryColor: "#FFFFFF",
     league: "Czech Republic Chance Liga",
-    logo: "@/assets/logos/Czech Republic - Chance Liga/Bohemians Prague 1905.png",
+    logo: "/logos/Czech Republic - Chance Liga/Bohemians Prague 1905.png",
   },
   {
     id: "fc-banik-ostrava",
@@ -31,7 +31,7 @@ export const czechRepublicChanceLiga: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#000000",
     league: "Czech Republic Chance Liga",
-    logo: "@/assets/logos/Czech Republic - Chance Liga/FC Banik Ostrava.png",
+    logo: "/logos/Czech Republic - Chance Liga/FC Banik Ostrava.png",
   },
   {
     id: "fc-hradec-kralove",
@@ -39,7 +39,7 @@ export const czechRepublicChanceLiga: Team[] = [
     primaryColor: "#FFFFFF",
     secondaryColor: "#0066CC",
     league: "Czech Republic Chance Liga",
-    logo: "@/assets/logos/Czech Republic - Chance Liga/FC Hradec Kralove.png",
+    logo: "/logos/Czech Republic - Chance Liga/FC Hradec Kralove.png",
   },
   {
     id: "fc-slovan-liberec",
@@ -47,7 +47,7 @@ export const czechRepublicChanceLiga: Team[] = [
     primaryColor: "#FFFFFF",
     secondaryColor: "#FF6600",
     league: "Czech Republic Chance Liga",
-    logo: "@/assets/logos/Czech Republic - Chance Liga/FC Slovan Liberec.png",
+    logo: "/logos/Czech Republic - Chance Liga/FC Slovan Liberec.png",
   },
   {
     id: "fc-viktoria-plzen",
@@ -55,7 +55,7 @@ export const czechRepublicChanceLiga: Team[] = [
     primaryColor: "#0066CC",
     secondaryColor: "#FF0000",
     league: "Czech Republic Chance Liga",
-    logo: "@/assets/logos/Czech Republic - Chance Liga/FC Viktoria Plzen.png",
+    logo: "/logos/Czech Republic - Chance Liga/FC Viktoria Plzen.png",
   },
   {
     id: "fc-zlin",
@@ -63,7 +63,7 @@ export const czechRepublicChanceLiga: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Czech Republic Chance Liga",
-    logo: "@/assets/logos/Czech Republic - Chance Liga/FC Zlin.png",
+    logo: "/logos/Czech Republic - Chance Liga/FC Zlin.png",
   },
   {
     id: "fk-dukla-prague",
@@ -71,7 +71,7 @@ export const czechRepublicChanceLiga: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Czech Republic Chance Liga",
-    logo: "@/assets/logos/Czech Republic - Chance Liga/FK Dukla Prague.png",
+    logo: "/logos/Czech Republic - Chance Liga/FK Dukla Prague.png",
   },
   {
     id: "fk-jablonec",
@@ -79,7 +79,7 @@ export const czechRepublicChanceLiga: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Czech Republic Chance Liga",
-    logo: "@/assets/logos/Czech Republic - Chance Liga/FK Jablonec.png",
+    logo: "/logos/Czech Republic - Chance Liga/FK Jablonec.png",
   },
   {
     id: "fk-mlada-boleslav",
@@ -87,7 +87,7 @@ export const czechRepublicChanceLiga: Team[] = [
     primaryColor: "#FFFFFF",
     secondaryColor: "#0066CC",
     league: "Czech Republic Chance Liga",
-    logo: "@/assets/logos/Czech Republic - Chance Liga/FK Mlada Boleslav.png",
+    logo: "/logos/Czech Republic - Chance Liga/FK Mlada Boleslav.png",
   },
   {
     id: "fk-pardubice",
@@ -95,7 +95,7 @@ export const czechRepublicChanceLiga: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Czech Republic Chance Liga",
-    logo: "@/assets/logos/Czech Republic - Chance Liga/FK Pardubice.png",
+    logo: "/logos/Czech Republic - Chance Liga/FK Pardubice.png",
   },
   {
     id: "fk-teplice",
@@ -103,7 +103,7 @@ export const czechRepublicChanceLiga: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Czech Republic Chance Liga",
-    logo: "@/assets/logos/Czech Republic - Chance Liga/FK Teplice.png",
+    logo: "/logos/Czech Republic - Chance Liga/FK Teplice.png",
   },
   {
     id: "mfk-karvina",
@@ -111,7 +111,7 @@ export const czechRepublicChanceLiga: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Czech Republic Chance Liga",
-    logo: "@/assets/logos/Czech Republic - Chance Liga/MFK Karvina.png",
+    logo: "/logos/Czech Republic - Chance Liga/MFK Karvina.png",
   },
   {
     id: "sk-sigma-olomouc",
@@ -119,7 +119,7 @@ export const czechRepublicChanceLiga: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Czech Republic Chance Liga",
-    logo: "@/assets/logos/Czech Republic - Chance Liga/SK Sigma Olomouc.png",
+    logo: "/logos/Czech Republic - Chance Liga/SK Sigma Olomouc.png",
   },
   {
     id: "sk-slavia-prague",
@@ -127,6 +127,6 @@ export const czechRepublicChanceLiga: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Czech Republic Chance Liga",
-    logo: "@/assets/logos/Czech Republic - Chance Liga/SK Slavia Prague.png",
+    logo: "/logos/Czech Republic - Chance Liga/SK Slavia Prague.png",
   },
 ];

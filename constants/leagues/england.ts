@@ -7,7 +7,7 @@ export const englandPremierLeague: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#000000",
     league: "Premier League",
-    logo: "@/assets/logos/England - Premier League/AFC Bournemouth.png",
+    logo: "/logos/England - Premier League/AFC Bournemouth.png",
   },
   {
     id: "arsenal",
@@ -15,7 +15,7 @@ export const englandPremierLeague: Team[] = [
     primaryColor: "#EF0107",
     secondaryColor: "#FFFFFF",
     league: "Premier League",
-    logo: "@/assets/logos/England - Premier League/Arsenal FC.png",
+    logo: "/logos/England - Premier League/Arsenal FC.png",
   },
   {
     id: "aston-villa",
@@ -23,7 +23,7 @@ export const englandPremierLeague: Team[] = [
     primaryColor: "#0B3161",
     secondaryColor: "#FFFFFF",
     league: "Premier League",
-    logo: "@/assets/logos/England - Premier League/Aston Villa.png",
+    logo: "/logos/England - Premier League/Aston Villa.png",
   },
   {
     id: "brentford",
@@ -31,7 +31,7 @@ export const englandPremierLeague: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Premier League",
-    logo: "@/assets/logos/England - Premier League/Brentford FC.png",
+    logo: "/logos/England - Premier League/Brentford FC.png",
   },
   {
     id: "brighton",
@@ -39,7 +39,7 @@ export const englandPremierLeague: Team[] = [
     primaryColor: "#0054B4",
     secondaryColor: "#FFFFFF",
     league: "Premier League",
-    logo: "@/assets/logos/England - Premier League/Brighton & Hove Albion.png",
+    logo: "/logos/England - Premier League/Brighton & Hove Albion.png",
   },
   {
     id: "burnley",
@@ -47,7 +47,7 @@ export const englandPremierLeague: Team[] = [
     primaryColor: "#6B4A97",
     secondaryColor: "#FFFFFF",
     league: "Premier League",
-    logo: "@/assets/logos/England - Premier League/Burnley FC.png",
+    logo: "/logos/England - Premier League/Burnley FC.png",
   },
   {
     id: "chelsea",
@@ -55,7 +55,7 @@ export const englandPremierLeague: Team[] = [
     primaryColor: "#034694",
     secondaryColor: "#FFFFFF",
     league: "Premier League",
-    logo: "@/assets/logos/England - Premier League/Chelsea FC.png",
+    logo: "/logos/England - Premier League/Chelsea FC.png",
   },
   {
     id: "crystal-palace",
@@ -63,7 +63,7 @@ export const englandPremierLeague: Team[] = [
     primaryColor: "#1B50BE",
     secondaryColor: "#FF0000",
     league: "Premier League",
-    logo: "@/assets/logos/England - Premier League/Crystal Palace.png",
+    logo: "/logos/England - Premier League/Crystal Palace.png",
   },
   {
     id: "everton",
@@ -71,7 +71,7 @@ export const englandPremierLeague: Team[] = [
     primaryColor: "#003399",
     secondaryColor: "#FFFFFF",
     league: "Premier League",
-    logo: "@/assets/logos/England - Premier League/Everton FC.png",
+    logo: "/logos/England - Premier League/Everton FC.png",
   },
   {
     id: "fulham",
@@ -79,7 +79,7 @@ export const englandPremierLeague: Team[] = [
     primaryColor: "#000000",
     secondaryColor: "#FFFFFF",
     league: "Premier League",
-    logo: "@/assets/logos/England - Premier League/Fulham FC.png",
+    logo: "/logos/England - Premier League/Fulham FC.png",
   },
   {
     id: "leeds-united",
@@ -87,7 +87,7 @@ export const englandPremierLeague: Team[] = [
     primaryColor: "#FFFFFF",
     secondaryColor: "#1D428A",
     league: "Premier League",
-    logo: "@/assets/logos/England - Premier League/Leeds United.png",
+    logo: "/logos/England - Premier League/Leeds United.png",
   },
   {
     id: "liverpool",
@@ -95,7 +95,7 @@ export const englandPremierLeague: Team[] = [
     primaryColor: "#C8102E",
     secondaryColor: "#00B2A9",
     league: "Premier League",
-    logo: "@/assets/logos/England - Premier League/Liverpool FC.png",
+    logo: "/logos/England - Premier League/Liverpool FC.png",
   },
   {
     id: "man-city",
@@ -103,7 +103,7 @@ export const englandPremierLeague: Team[] = [
     primaryColor: "#6CABDD",
     secondaryColor: "#1C2C5B",
     league: "Premier League",
-    logo: "@/assets/logos/England - Premier League/Manchester City.png",
+    logo: "/logos/England - Premier League/Manchester City.png",
   },
   {
     id: "man-united",
@@ -111,7 +111,7 @@ export const englandPremierLeague: Team[] = [
     primaryColor: "#DA291C",
     secondaryColor: "#FBE122",
     league: "Premier League",
-    logo: "@/assets/logos/England - Premier League/Manchester United.png",
+    logo: "/logos/England - Premier League/Manchester United.png",
   },
   {
     id: "newcastle",
@@ -119,7 +119,7 @@ export const englandPremierLeague: Team[] = [
     primaryColor: "#000000",
     secondaryColor: "#FFFFFF",
     league: "Premier League",
-    logo: "@/assets/logos/England - Premier League/Newcastle United.png",
+    logo: "/logos/England - Premier League/Newcastle United.png",
   },
   {
     id: "nottingham-forest",
@@ -127,7 +127,7 @@ export const englandPremierLeague: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Premier League",
-    logo: "@/assets/logos/England - Premier League/Nottingham Forest.png",
+    logo: "/logos/England - Premier League/Nottingham Forest.png",
   },
   {
     id: "sunderland",
@@ -135,7 +135,7 @@ export const englandPremierLeague: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Premier League",
-    logo: "@/assets/logos/England - Premier League/Sunderland AFC.png",
+    logo: "/logos/England - Premier League/Sunderland AFC.png",
   },
   {
     id: "tottenham",
@@ -143,7 +143,7 @@ export const englandPremierLeague: Team[] = [
     primaryColor: "#FFFFFF",
     secondaryColor: "#132257",
     league: "Premier League",
-    logo: "@/assets/logos/England - Premier League/Tottenham Hotspur.png",
+    logo: "/logos/England - Premier League/Tottenham Hotspur.png",
   },
   {
     id: "west-ham",
@@ -151,7 +151,7 @@ export const englandPremierLeague: Team[] = [
     primaryColor: "#7A263A",
     secondaryColor: "#FFFFFF",
     league: "Premier League",
-    logo: "@/assets/logos/England - Premier League/West Ham United.png",
+    logo: "/logos/England - Premier League/West Ham United.png",
   },
   {
     id: "wolverhampton",
@@ -159,6 +159,6 @@ export const englandPremierLeague: Team[] = [
     primaryColor: "#FFD700",
     secondaryColor: "#000000",
     league: "Premier League",
-    logo: "@/assets/logos/England - Premier League/Wolverhampton Wanderers.png",
+    logo: "/logos/England - Premier League/Wolverhampton Wanderers.png",
   },
 ];

@@ -7,7 +7,7 @@ export const netherlandsEredivisie: Team[] = [
     primaryColor: "#FFFFFF",
     secondaryColor: "#FF0000",
     league: "Netherlands Eredivisie",
-    logo: "@/assets/logos/Netherlands - Eredivisie/Ajax Amsterdam.png",
+    logo: "/logos/Netherlands - Eredivisie/Ajax Amsterdam.png",
   },
   {
     id: "az-alkmaar",
@@ -15,7 +15,7 @@ export const netherlandsEredivisie: Team[] = [
     primaryColor: "#FFD700",
     secondaryColor: "#000000",
     league: "Netherlands Eredivisie",
-    logo: "@/assets/logos/Netherlands - Eredivisie/AZ Alkmaar.png",
+    logo: "/logos/Netherlands - Eredivisie/AZ Alkmaar.png",
   },
   {
     id: "excelsior-rotterdam",
@@ -23,7 +23,7 @@ export const netherlandsEredivisie: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Netherlands Eredivisie",
-    logo: "@/assets/logos/Netherlands - Eredivisie/Excelsior Rotterdam.png",
+    logo: "/logos/Netherlands - Eredivisie/Excelsior Rotterdam.png",
   },
   {
     id: "fc-groningen",
@@ -31,7 +31,7 @@ export const netherlandsEredivisie: Team[] = [
     primaryColor: "#006600",
     secondaryColor: "#FFFFFF",
     league: "Netherlands Eredivisie",
-    logo: "@/assets/logos/Netherlands - Eredivisie/FC Groningen.png",
+    logo: "/logos/Netherlands - Eredivisie/FC Groningen.png",
   },
   {
     id: "fc-utrecht",
@@ -39,7 +39,7 @@ export const netherlandsEredivisie: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Netherlands Eredivisie",
-    logo: "@/assets/logos/Netherlands - Eredivisie/FC Utrecht.png",
+    logo: "/logos/Netherlands - Eredivisie/FC Utrecht.png",
   },
   {
     id: "fc-volendam",
@@ -47,7 +47,7 @@ export const netherlandsEredivisie: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Netherlands Eredivisie",
-    logo: "@/assets/logos/Netherlands - Eredivisie/FC Volendam.png",
+    logo: "/logos/Netherlands - Eredivisie/FC Volendam.png",
   },
   {
     id: "feyenoord",
@@ -55,7 +55,7 @@ export const netherlandsEredivisie: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Netherlands Eredivisie",
-    logo: "@/assets/logos/Netherlands - Eredivisie/Feyenoord Rotterdam.png",
+    logo: "/logos/Netherlands - Eredivisie/Feyenoord Rotterdam.png",
   },
   {
     id: "fortuna-sittard",
@@ -63,7 +63,7 @@ export const netherlandsEredivisie: Team[] = [
     primaryColor: "#006600",
     secondaryColor: "#FFFFFF",
     league: "Netherlands Eredivisie",
-    logo: "@/assets/logos/Netherlands - Eredivisie/Fortuna Sittard.png",
+    logo: "/logos/Netherlands - Eredivisie/Fortuna Sittard.png",
   },
   {
     id: "go-ahead-eagles",
@@ -71,7 +71,7 @@ export const netherlandsEredivisie: Team[] = [
     primaryColor: "#FFD700",
     secondaryColor: "#000000",
     league: "Netherlands Eredivisie",
-    logo: "@/assets/logos/Netherlands - Eredivisie/Go Ahead Eagles.png",
+    logo: "/logos/Netherlands - Eredivisie/Go Ahead Eagles.png",
   },
   {
     id: "heracles-almelo",
@@ -79,7 +79,7 @@ export const netherlandsEredivisie: Team[] = [
     primaryColor: "#FFD700",
     secondaryColor: "#000000",
     league: "Netherlands Eredivisie",
-    logo: "@/assets/logos/Netherlands - Eredivisie/Heracles Almelo.png",
+    logo: "/logos/Netherlands - Eredivisie/Heracles Almelo.png",
   },
   {
     id: "nac-breda",
@@ -87,7 +87,7 @@ export const netherlandsEredivisie: Team[] = [
     primaryColor: "#FFD700",
     secondaryColor: "#000000",
     league: "Netherlands Eredivisie",
-    logo: "@/assets/logos/Netherlands - Eredivisie/NAC Breda.png",
+    logo: "/logos/Netherlands - Eredivisie/NAC Breda.png",
   },
   {
     id: "nec-nijmegen",
@@ -95,7 +95,7 @@ export const netherlandsEredivisie: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Netherlands Eredivisie",
-    logo: "@/assets/logos/Netherlands - Eredivisie/NEC Nijmegen.png",
+    logo: "/logos/Netherlands - Eredivisie/NEC Nijmegen.png",
   },
   {
     id: "pec-zwolle",
@@ -103,7 +103,7 @@ export const netherlandsEredivisie: Team[] = [
     primaryColor: "#FFFFFF",
     secondaryColor: "#FF0000",
     league: "Netherlands Eredivisie",
-    logo: "@/assets/logos/Netherlands - Eredivisie/PEC Zwolle.png",
+    logo: "/logos/Netherlands - Eredivisie/PEC Zwolle.png",
   },
   {
     id: "psv-eindhoven",
@@ -111,7 +111,7 @@ export const netherlandsEredivisie: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Netherlands Eredivisie",
-    logo: "@/assets/logos/Netherlands - Eredivisie/PSV Eindhoven.png",
+    logo: "/logos/Netherlands - Eredivisie/PSV Eindhoven.png",
   },
   {
     id: "sc-heerenveen",
@@ -119,7 +119,7 @@ export const netherlandsEredivisie: Team[] = [
     primaryColor: "#FFFFFF",
     secondaryColor: "#0066CC",
     league: "Netherlands Eredivisie",
-    logo: "@/assets/logos/Netherlands - Eredivisie/SC Heerenveen.png",
+    logo: "/logos/Netherlands - Eredivisie/SC Heerenveen.png",
   },
   {
     id: "sc-telstar",
@@ -127,7 +127,7 @@ export const netherlandsEredivisie: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Netherlands Eredivisie",
-    logo: "@/assets/logos/Netherlands - Eredivisie/SC Telstar.png",
+    logo: "/logos/Netherlands - Eredivisie/SC Telstar.png",
   },
   {
     id: "sparta-rotterdam",
@@ -135,7 +135,7 @@ export const netherlandsEredivisie: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Netherlands Eredivisie",
-    logo: "@/assets/logos/Netherlands - Eredivisie/Sparta Rotterdam.png",
+    logo: "/logos/Netherlands - Eredivisie/Sparta Rotterdam.png",
   },
   {
     id: "twente",
@@ -143,6 +143,6 @@ export const netherlandsEredivisie: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Netherlands Eredivisie",
-    logo: "@/assets/logos/Netherlands - Eredivisie/Twente Enschede FC.png",
+    logo: "/logos/Netherlands - Eredivisie/Twente Enschede FC.png",
   },
 ];

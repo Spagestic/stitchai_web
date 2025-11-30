@@ -7,7 +7,7 @@ export const spainLaLiga: Team[] = [
     primaryColor: "#DC0000",
     secondaryColor: "#FFFFFF",
     league: "La Liga",
-    logo: "@/assets/logos/Spain - LaLiga/Athletic Bilbao.png",
+    logo: "/logos/Spain - LaLiga/Athletic Bilbao.png",
   },
   {
     id: "atletico-madrid",
@@ -15,7 +15,7 @@ export const spainLaLiga: Team[] = [
     primaryColor: "#CE3524",
     secondaryColor: "#FFFFFF",
     league: "La Liga",
-    logo: "@/assets/logos/Spain - LaLiga/Atlético de Madrid.png",
+    logo: "/logos/Spain - LaLiga/Atlético de Madrid.png",
   },
   {
     id: "ca-osasuna",
@@ -23,7 +23,7 @@ export const spainLaLiga: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "La Liga",
-    logo: "@/assets/logos/Spain - LaLiga/CA Osasuna.png",
+    logo: "/logos/Spain - LaLiga/CA Osasuna.png",
   },
   {
     id: "celta-vigo",
@@ -31,7 +31,7 @@ export const spainLaLiga: Team[] = [
     primaryColor: "#0066FF",
     secondaryColor: "#FFFFFF",
     league: "La Liga",
-    logo: "@/assets/logos/Spain - LaLiga/Celta de Vigo.png",
+    logo: "/logos/Spain - LaLiga/Celta de Vigo.png",
   },
   {
     id: "deportivo-alaves",
@@ -39,7 +39,7 @@ export const spainLaLiga: Team[] = [
     primaryColor: "#0066CC",
     secondaryColor: "#FFFFFF",
     league: "La Liga",
-    logo: "@/assets/logos/Spain - LaLiga/Deportivo Alavés.png",
+    logo: "/logos/Spain - LaLiga/Deportivo Alavés.png",
   },
   {
     id: "elche-cf",
@@ -47,7 +47,7 @@ export const spainLaLiga: Team[] = [
     primaryColor: "#0066CC",
     secondaryColor: "#FFFFFF",
     league: "La Liga",
-    logo: "@/assets/logos/Spain - LaLiga/Elche CF.png",
+    logo: "/logos/Spain - LaLiga/Elche CF.png",
   },
   {
     id: "barcelona",
@@ -55,7 +55,7 @@ export const spainLaLiga: Team[] = [
     primaryColor: "#A50044",
     secondaryColor: "#004D98",
     league: "La Liga",
-    logo: "@/assets/logos/Spain - LaLiga/FC Barcelona.png",
+    logo: "/logos/Spain - LaLiga/FC Barcelona.png",
   },
   {
     id: "getafe-cf",
@@ -63,7 +63,7 @@ export const spainLaLiga: Team[] = [
     primaryColor: "#0066CC",
     secondaryColor: "#FFFFFF",
     league: "La Liga",
-    logo: "@/assets/logos/Spain - LaLiga/Getafe CF.png",
+    logo: "/logos/Spain - LaLiga/Getafe CF.png",
   },
   {
     id: "girona-fc",
@@ -71,7 +71,7 @@ export const spainLaLiga: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "La Liga",
-    logo: "@/assets/logos/Spain - LaLiga/Girona FC.png",
+    logo: "/logos/Spain - LaLiga/Girona FC.png",
   },
   {
     id: "levante-ud",
@@ -79,7 +79,7 @@ export const spainLaLiga: Team[] = [
     primaryColor: "#0066CC",
     secondaryColor: "#FFFFFF",
     league: "La Liga",
-    logo: "@/assets/logos/Spain - LaLiga/Levante UD.png",
+    logo: "/logos/Spain - LaLiga/Levante UD.png",
   },
   {
     id: "rayo-vallecano",
@@ -87,7 +87,7 @@ export const spainLaLiga: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "La Liga",
-    logo: "@/assets/logos/Spain - LaLiga/Rayo Vallecano.png",
+    logo: "/logos/Spain - LaLiga/Rayo Vallecano.png",
   },
   {
     id: "rcd-espanyol",
@@ -95,7 +95,7 @@ export const spainLaLiga: Team[] = [
     primaryColor: "#0066CC",
     secondaryColor: "#FFFFFF",
     league: "La Liga",
-    logo: "@/assets/logos/Spain - LaLiga/RCD Espanyol Barcelona.png",
+    logo: "/logos/Spain - LaLiga/RCD Espanyol Barcelona.png",
   },
   {
     id: "rcd-mallorca",
@@ -103,7 +103,7 @@ export const spainLaLiga: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "La Liga",
-    logo: "@/assets/logos/Spain - LaLiga/RCD Mallorca.png",
+    logo: "/logos/Spain - LaLiga/RCD Mallorca.png",
   },
   {
     id: "real-betis",
@@ -111,7 +111,7 @@ export const spainLaLiga: Team[] = [
     primaryColor: "#FFFFFF",
     secondaryColor: "#00A651",
     league: "La Liga",
-    logo: "@/assets/logos/Spain - LaLiga/Real Betis Balompié.png",
+    logo: "/logos/Spain - LaLiga/Real Betis Balompié.png",
   },
   {
     id: "real-madrid",
@@ -119,7 +119,7 @@ export const spainLaLiga: Team[] = [
     primaryColor: "#FFFFFF",
     secondaryColor: "#00529F",
     league: "La Liga",
-    logo: "@/assets/logos/Spain - LaLiga/Real Madrid.png",
+    logo: "/logos/Spain - LaLiga/Real Madrid.png",
   },
   {
     id: "real-oviedo",
@@ -127,7 +127,7 @@ export const spainLaLiga: Team[] = [
     primaryColor: "#0066CC",
     secondaryColor: "#FFFFFF",
     league: "La Liga",
-    logo: "@/assets/logos/Spain - LaLiga/Real Oviedo.png",
+    logo: "/logos/Spain - LaLiga/Real Oviedo.png",
   },
   {
     id: "real-sociedad",
@@ -135,7 +135,7 @@ export const spainLaLiga: Team[] = [
     primaryColor: "#0066CC",
     secondaryColor: "#FFFFFF",
     league: "La Liga",
-    logo: "@/assets/logos/Spain - LaLiga/Real Sociedad.png",
+    logo: "/logos/Spain - LaLiga/Real Sociedad.png",
   },
   {
     id: "sevilla",
@@ -143,7 +143,7 @@ export const spainLaLiga: Team[] = [
     primaryColor: "#FFFFFF",
     secondaryColor: "#D4021D",
     league: "La Liga",
-    logo: "@/assets/logos/Spain - LaLiga/Sevilla FC.png",
+    logo: "/logos/Spain - LaLiga/Sevilla FC.png",
   },
   {
     id: "valencia",
@@ -151,7 +151,7 @@ export const spainLaLiga: Team[] = [
     primaryColor: "#FFFFFF",
     secondaryColor: "#FF8C00",
     league: "La Liga",
-    logo: "@/assets/logos/Spain - LaLiga/Valencia CF.png",
+    logo: "/logos/Spain - LaLiga/Valencia CF.png",
   },
   {
     id: "villarreal",
@@ -159,6 +159,6 @@ export const spainLaLiga: Team[] = [
     primaryColor: "#FFD000",
     secondaryColor: "#000000",
     league: "La Liga",
-    logo: "@/assets/logos/Spain - LaLiga/Villarreal CF.png",
+    logo: "/logos/Spain - LaLiga/Villarreal CF.png",
   },
 ];

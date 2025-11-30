@@ -7,7 +7,7 @@ export const croatiaSuperSportHnl: Team[] = [
     primaryColor: "#0066CC",
     secondaryColor: "#FFFFFF",
     league: "Croatia SuperSport HNL",
-    logo: "@/assets/logos/Croatia - SuperSport HNL/GNK Dinamo Zagreb.png",
+    logo: "/logos/Croatia - SuperSport HNL/GNK Dinamo Zagreb.png",
   },
   {
     id: "hnk-gorica",
@@ -15,7 +15,7 @@ export const croatiaSuperSportHnl: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Croatia SuperSport HNL",
-    logo: "@/assets/logos/Croatia - SuperSport HNL/HNK Gorica.png",
+    logo: "/logos/Croatia - SuperSport HNL/HNK Gorica.png",
   },
   {
     id: "hajduk-split",
@@ -23,7 +23,7 @@ export const croatiaSuperSportHnl: Team[] = [
     primaryColor: "#FFFFFF",
     secondaryColor: "#000000",
     league: "Croatia SuperSport HNL",
-    logo: "@/assets/logos/Croatia - SuperSport HNL/HNK Hajduk Split.png",
+    logo: "/logos/Croatia - SuperSport HNL/HNK Hajduk Split.png",
   },
   {
     id: "hnk-rijeka",
@@ -31,7 +31,7 @@ export const croatiaSuperSportHnl: Team[] = [
     primaryColor: "#FFFFFF",
     secondaryColor: "#0066FF",
     league: "Croatia SuperSport HNL",
-    logo: "@/assets/logos/Croatia - SuperSport HNL/HNK Rijeka.png",
+    logo: "/logos/Croatia - SuperSport HNL/HNK Rijeka.png",
   },
   {
     id: "hnk-vukovar",
@@ -39,7 +39,7 @@ export const croatiaSuperSportHnl: Team[] = [
     primaryColor: "#FFFFFF",
     secondaryColor: "#000000",
     league: "Croatia SuperSport HNL",
-    logo: "@/assets/logos/Croatia - SuperSport HNL/HNK Vukovar 1991.png",
+    logo: "/logos/Croatia - SuperSport HNL/HNK Vukovar 1991.png",
   },
   {
     id: "nk-istra-1961",
@@ -47,7 +47,7 @@ export const croatiaSuperSportHnl: Team[] = [
     primaryColor: "#0066FF",
     secondaryColor: "#FFFFFF",
     league: "Croatia SuperSport HNL",
-    logo: "@/assets/logos/Croatia - SuperSport HNL/NK Istra 1961.png",
+    logo: "/logos/Croatia - SuperSport HNL/NK Istra 1961.png",
   },
   {
     id: "nk-lokomotiva-zagreb",
@@ -55,7 +55,7 @@ export const croatiaSuperSportHnl: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Croatia SuperSport HNL",
-    logo: "@/assets/logos/Croatia - SuperSport HNL/NK Lokomotiva Zagreb.png",
+    logo: "/logos/Croatia - SuperSport HNL/NK Lokomotiva Zagreb.png",
   },
   {
     id: "nk-osijek",
@@ -63,7 +63,7 @@ export const croatiaSuperSportHnl: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Croatia SuperSport HNL",
-    logo: "@/assets/logos/Croatia - SuperSport HNL/NK Osijek.png",
+    logo: "/logos/Croatia - SuperSport HNL/NK Osijek.png",
   },
   {
     id: "nk-varazdin",
@@ -71,7 +71,7 @@ export const croatiaSuperSportHnl: Team[] = [
     primaryColor: "#FFFF00",
     secondaryColor: "#000000",
     league: "Croatia SuperSport HNL",
-    logo: "@/assets/logos/Croatia - SuperSport HNL/NK Varazdin.png",
+    logo: "/logos/Croatia - SuperSport HNL/NK Varazdin.png",
   },
   {
     id: "slaven-belupo",
@@ -79,6 +79,6 @@ export const croatiaSuperSportHnl: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Croatia SuperSport HNL",
-    logo: "@/assets/logos/Croatia - SuperSport HNL/Slaven Belupo Koprivnica.png",
+    logo: "/logos/Croatia - SuperSport HNL/Slaven Belupo Koprivnica.png",
   },
 ];

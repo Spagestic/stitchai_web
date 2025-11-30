@@ -7,7 +7,7 @@ export const belgiumJupilerProLeague: Team[] = [
     primaryColor: "#00AA00",
     secondaryColor: "#000000",
     league: "Belgium Jupiler Pro League",
-    logo: "@/assets/logos/Belgium - Jupiler Pro League/Cercle Brugge.png",
+    logo: "/logos/Belgium - Jupiler Pro League/Cercle Brugge.png",
   },
   {
     id: "club-brugge",
@@ -15,7 +15,7 @@ export const belgiumJupilerProLeague: Team[] = [
     primaryColor: "#0066CC",
     secondaryColor: "#FFFFFF",
     league: "Belgium Jupiler Pro League",
-    logo: "@/assets/logos/Belgium - Jupiler Pro League/Club Brugge KV.png",
+    logo: "/logos/Belgium - Jupiler Pro League/Club Brugge KV.png",
   },
   {
     id: "fcv-dender",
@@ -23,7 +23,7 @@ export const belgiumJupilerProLeague: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Belgium Jupiler Pro League",
-    logo: "@/assets/logos/Belgium - Jupiler Pro League/FCV Dender EH.png",
+    logo: "/logos/Belgium - Jupiler Pro League/FCV Dender EH.png",
   },
   {
     id: "kaa-gent",
@@ -31,7 +31,7 @@ export const belgiumJupilerProLeague: Team[] = [
     primaryColor: "#0066FF",
     secondaryColor: "#FFFFFF",
     league: "Belgium Jupiler Pro League",
-    logo: "@/assets/logos/Belgium - Jupiler Pro League/KAA Gent.png",
+    logo: "/logos/Belgium - Jupiler Pro League/KAA Gent.png",
   },
   {
     id: "krc-genk",
@@ -39,7 +39,7 @@ export const belgiumJupilerProLeague: Team[] = [
     primaryColor: "#0066CC",
     secondaryColor: "#FFFFFF",
     league: "Belgium Jupiler Pro League",
-    logo: "@/assets/logos/Belgium - Jupiler Pro League/KRC Genk.png",
+    logo: "/logos/Belgium - Jupiler Pro League/KRC Genk.png",
   },
   {
     id: "kv-mechelen",
@@ -47,7 +47,7 @@ export const belgiumJupilerProLeague: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Belgium Jupiler Pro League",
-    logo: "@/assets/logos/Belgium - Jupiler Pro League/KV Mechelen.png",
+    logo: "/logos/Belgium - Jupiler Pro League/KV Mechelen.png",
   },
   {
     id: "kvc-westerlo",
@@ -55,7 +55,7 @@ export const belgiumJupilerProLeague: Team[] = [
     primaryColor: "#CC0000",
     secondaryColor: "#FFFFFF",
     league: "Belgium Jupiler Pro League",
-    logo: "@/assets/logos/Belgium - Jupiler Pro League/KVC Westerlo.png",
+    logo: "/logos/Belgium - Jupiler Pro League/KVC Westerlo.png",
   },
   {
     id: "ohl-leuven",
@@ -63,7 +63,7 @@ export const belgiumJupilerProLeague: Team[] = [
     primaryColor: "#0066CC",
     secondaryColor: "#FFFFFF",
     league: "Belgium Jupiler Pro League",
-    logo: "@/assets/logos/Belgium - Jupiler Pro League/Oud-Heverlee Leuven.png",
+    logo: "/logos/Belgium - Jupiler Pro League/Oud-Heverlee Leuven.png",
   },
   {
     id: "raal-la-louviere",
@@ -71,7 +71,7 @@ export const belgiumJupilerProLeague: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Belgium Jupiler Pro League",
-    logo: "@/assets/logos/Belgium - Jupiler Pro League/RAAL La Louvière.png",
+    logo: "/logos/Belgium - Jupiler Pro League/RAAL La Louvière.png",
   },
   {
     id: "antwerp",
@@ -79,7 +79,7 @@ export const belgiumJupilerProLeague: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Belgium Jupiler Pro League",
-    logo: "@/assets/logos/Belgium - Jupiler Pro League/Royal Antwerp FC.png",
+    logo: "/logos/Belgium - Jupiler Pro League/Royal Antwerp FC.png",
   },
   {
     id: "charleroi",
@@ -87,7 +87,7 @@ export const belgiumJupilerProLeague: Team[] = [
     primaryColor: "#0066CC",
     secondaryColor: "#FFFFFF",
     league: "Belgium Jupiler Pro League",
-    logo: "@/assets/logos/Belgium - Jupiler Pro League/Royal Charleroi SC.png",
+    logo: "/logos/Belgium - Jupiler Pro League/Royal Charleroi SC.png",
   },
   {
     id: "rsc-anderlecht",
@@ -95,7 +95,7 @@ export const belgiumJupilerProLeague: Team[] = [
     primaryColor: "#9900FF",
     secondaryColor: "#FFFFFF",
     league: "Belgium Jupiler Pro League",
-    logo: "@/assets/logos/Belgium - Jupiler Pro League/RSC Anderlecht.png",
+    logo: "/logos/Belgium - Jupiler Pro League/RSC Anderlecht.png",
   },
   {
     id: "st-truidense",
@@ -103,7 +103,7 @@ export const belgiumJupilerProLeague: Team[] = [
     primaryColor: "#FFFF00",
     secondaryColor: "#000000",
     league: "Belgium Jupiler Pro League",
-    logo: "@/assets/logos/Belgium - Jupiler Pro League/Sint-Truidense VV.png",
+    logo: "/logos/Belgium - Jupiler Pro League/Sint-Truidense VV.png",
   },
   {
     id: "standard-liege",
@@ -111,7 +111,7 @@ export const belgiumJupilerProLeague: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Belgium Jupiler Pro League",
-    logo: "@/assets/logos/Belgium - Jupiler Pro League/Standard Liège.png",
+    logo: "/logos/Belgium - Jupiler Pro League/Standard Liège.png",
   },
   {
     id: "union-sg",
@@ -119,7 +119,7 @@ export const belgiumJupilerProLeague: Team[] = [
     primaryColor: "#FFFF00",
     secondaryColor: "#000000",
     league: "Belgium Jupiler Pro League",
-    logo: "@/assets/logos/Belgium - Jupiler Pro League/Union Saint-Gilloise.png",
+    logo: "/logos/Belgium - Jupiler Pro League/Union Saint-Gilloise.png",
   },
   {
     id: "zulte-waregem",
@@ -127,6 +127,6 @@ export const belgiumJupilerProLeague: Team[] = [
     primaryColor: "#0066CC",
     secondaryColor: "#FFFFFF",
     league: "Belgium Jupiler Pro League",
-    logo: "@/assets/logos/Belgium - Jupiler Pro League/Zulte Waregem.png",
+    logo: "/logos/Belgium - Jupiler Pro League/Zulte Waregem.png",
   },
 ];

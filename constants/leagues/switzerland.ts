@@ -7,7 +7,7 @@ export const switzerlandSuperLeague: Team[] = [
     primaryColor: "#FFD700",
     secondaryColor: "#000000",
     league: "Switzerland Super League",
-    logo: "@/assets/logos/Switzerland - Super League/BSC Young Boys.png",
+    logo: "/logos/Switzerland - Super League/BSC Young Boys.png",
   },
   {
     id: "fc-basel",
@@ -15,7 +15,7 @@ export const switzerlandSuperLeague: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Switzerland Super League",
-    logo: "@/assets/logos/Switzerland - Super League/FC Basel 1893.png",
+    logo: "/logos/Switzerland - Super League/FC Basel 1893.png",
   },
   {
     id: "fc-lausanne-sport",
@@ -23,7 +23,7 @@ export const switzerlandSuperLeague: Team[] = [
     primaryColor: "#0066CC",
     secondaryColor: "#FFFFFF",
     league: "Switzerland Super League",
-    logo: "@/assets/logos/Switzerland - Super League/FC Lausanne-Sport.png",
+    logo: "/logos/Switzerland - Super League/FC Lausanne-Sport.png",
   },
   {
     id: "fc-lugano",
@@ -31,7 +31,7 @@ export const switzerlandSuperLeague: Team[] = [
     primaryColor: "#0066CC",
     secondaryColor: "#FFFFFF",
     league: "Switzerland Super League",
-    logo: "@/assets/logos/Switzerland - Super League/FC Lugano.png",
+    logo: "/logos/Switzerland - Super League/FC Lugano.png",
   },
   {
     id: "fc-luzern",
@@ -39,7 +39,7 @@ export const switzerlandSuperLeague: Team[] = [
     primaryColor: "#0066CC",
     secondaryColor: "#FFFFFF",
     league: "Switzerland Super League",
-    logo: "@/assets/logos/Switzerland - Super League/FC Luzern.png",
+    logo: "/logos/Switzerland - Super League/FC Luzern.png",
   },
   {
     id: "fc-sion",
@@ -47,7 +47,7 @@ export const switzerlandSuperLeague: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Switzerland Super League",
-    logo: "@/assets/logos/Switzerland - Super League/FC Sion.png",
+    logo: "/logos/Switzerland - Super League/FC Sion.png",
   },
   {
     id: "fc-st-gallen",
@@ -55,7 +55,7 @@ export const switzerlandSuperLeague: Team[] = [
     primaryColor: "#008000",
     secondaryColor: "#FFFFFF",
     league: "Switzerland Super League",
-    logo: "@/assets/logos/Switzerland - Super League/FC St. Gallen 1879.png",
+    logo: "/logos/Switzerland - Super League/FC St. Gallen 1879.png",
   },
   {
     id: "fc-thun",
@@ -63,7 +63,7 @@ export const switzerlandSuperLeague: Team[] = [
     primaryColor: "#0066CC",
     secondaryColor: "#FFFFFF",
     league: "Switzerland Super League",
-    logo: "@/assets/logos/Switzerland - Super League/FC Thun.png",
+    logo: "/logos/Switzerland - Super League/FC Thun.png",
   },
   {
     id: "fc-winterthur",
@@ -71,7 +71,7 @@ export const switzerlandSuperLeague: Team[] = [
     primaryColor: "#0066CC",
     secondaryColor: "#FFFFFF",
     league: "Switzerland Super League",
-    logo: "@/assets/logos/Switzerland - Super League/FC Winterthur.png",
+    logo: "/logos/Switzerland - Super League/FC Winterthur.png",
   },
   {
     id: "fc-zurich",
@@ -79,7 +79,7 @@ export const switzerlandSuperLeague: Team[] = [
     primaryColor: "#0066CC",
     secondaryColor: "#FFFFFF",
     league: "Switzerland Super League",
-    logo: "@/assets/logos/Switzerland - Super League/FC Zürich.png",
+    logo: "/logos/Switzerland - Super League/FC Zürich.png",
   },
   {
     id: "grasshopper-club",
@@ -87,7 +87,7 @@ export const switzerlandSuperLeague: Team[] = [
     primaryColor: "#0066CC",
     secondaryColor: "#FFFFFF",
     league: "Switzerland Super League",
-    logo: "@/assets/logos/Switzerland - Super League/Grasshopper Club Zurich.png",
+    logo: "/logos/Switzerland - Super League/Grasshopper Club Zurich.png",
   },
   {
     id: "servette-fc",
@@ -95,6 +95,6 @@ export const switzerlandSuperLeague: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Switzerland Super League",
-    logo: "@/assets/logos/Switzerland - Super League/Servette FC.png",
+    logo: "/logos/Switzerland - Super League/Servette FC.png",
   },
 ];

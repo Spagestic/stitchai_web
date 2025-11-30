@@ -7,7 +7,7 @@ export const franceLigue1: Team[] = [
     primaryColor: "#FFFFFF",
     secondaryColor: "#006600",
     league: "France Ligue 1",
-    logo: "@/assets/logos/France - Ligue 1/AJ Auxerre.png",
+    logo: "/logos/France - Ligue 1/AJ Auxerre.png",
   },
   {
     id: "angers-sco",
@@ -15,7 +15,7 @@ export const franceLigue1: Team[] = [
     primaryColor: "#000000",
     secondaryColor: "#FFFFFF",
     league: "France Ligue 1",
-    logo: "@/assets/logos/France - Ligue 1/Angers SCO.png",
+    logo: "/logos/France - Ligue 1/Angers SCO.png",
   },
   {
     id: "monaco",
@@ -23,7 +23,7 @@ export const franceLigue1: Team[] = [
     primaryColor: "#ED1C24",
     secondaryColor: "#FFFFFF",
     league: "France Ligue 1",
-    logo: "@/assets/logos/France - Ligue 1/AS Monaco.png",
+    logo: "/logos/France - Ligue 1/AS Monaco.png",
   },
   {
     id: "fc-lorient",
@@ -31,7 +31,7 @@ export const franceLigue1: Team[] = [
     primaryColor: "#FF6600",
     secondaryColor: "#000000",
     league: "France Ligue 1",
-    logo: "@/assets/logos/France - Ligue 1/FC Lorient.png",
+    logo: "/logos/France - Ligue 1/FC Lorient.png",
   },
   {
     id: "fc-metz",
@@ -39,7 +39,7 @@ export const franceLigue1: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "France Ligue 1",
-    logo: "@/assets/logos/France - Ligue 1/FC Metz.png",
+    logo: "/logos/France - Ligue 1/FC Metz.png",
   },
   {
     id: "fc-nantes",
@@ -47,7 +47,7 @@ export const franceLigue1: Team[] = [
     primaryColor: "#FFDC00",
     secondaryColor: "#019B3E",
     league: "France Ligue 1",
-    logo: "@/assets/logos/France - Ligue 1/FC Nantes.png",
+    logo: "/logos/France - Ligue 1/FC Nantes.png",
   },
   {
     id: "fc-toulouse",
@@ -55,7 +55,7 @@ export const franceLigue1: Team[] = [
     primaryColor: "#FFFFFF",
     secondaryColor: "#8B3030",
     league: "France Ligue 1",
-    logo: "@/assets/logos/France - Ligue 1/FC Toulouse.png",
+    logo: "/logos/France - Ligue 1/FC Toulouse.png",
   },
   {
     id: "le-havre-ac",
@@ -63,7 +63,7 @@ export const franceLigue1: Team[] = [
     primaryColor: "#0066CC",
     secondaryColor: "#FFFFFF",
     league: "France Ligue 1",
-    logo: "@/assets/logos/France - Ligue 1/Le Havre AC.png",
+    logo: "/logos/France - Ligue 1/Le Havre AC.png",
   },
   {
     id: "lille",
@@ -71,7 +71,7 @@ export const franceLigue1: Team[] = [
     primaryColor: "#0066CC",
     secondaryColor: "#FFFFFF",
     league: "France Ligue 1",
-    logo: "@/assets/logos/France - Ligue 1/LOSC Lille.png",
+    logo: "/logos/France - Ligue 1/LOSC Lille.png",
   },
   {
     id: "nice",
@@ -79,7 +79,7 @@ export const franceLigue1: Team[] = [
     primaryColor: "#C91B2E",
     secondaryColor: "#000000",
     league: "France Ligue 1",
-    logo: "@/assets/logos/France - Ligue 1/OGC Nice.png",
+    logo: "/logos/France - Ligue 1/OGC Nice.png",
   },
   {
     id: "lyon",
@@ -87,7 +87,7 @@ export const franceLigue1: Team[] = [
     primaryColor: "#FFFFFF",
     secondaryColor: "#1B3F8F",
     league: "France Ligue 1",
-    logo: "@/assets/logos/France - Ligue 1/Olympique Lyon.png",
+    logo: "/logos/France - Ligue 1/Olympique Lyon.png",
   },
   {
     id: "marseille",
@@ -95,7 +95,7 @@ export const franceLigue1: Team[] = [
     primaryColor: "#2FAEE0",
     secondaryColor: "#FFFFFF",
     league: "France Ligue 1",
-    logo: "@/assets/logos/France - Ligue 1/Olympique Marseille.png",
+    logo: "/logos/France - Ligue 1/Olympique Marseille.png",
   },
   {
     id: "paris-fc",
@@ -103,7 +103,7 @@ export const franceLigue1: Team[] = [
     primaryColor: "#0066CC",
     secondaryColor: "#FFFFFF",
     league: "France Ligue 1",
-    logo: "@/assets/logos/France - Ligue 1/Paris FC.png",
+    logo: "/logos/France - Ligue 1/Paris FC.png",
   },
   {
     id: "psg",
@@ -111,7 +111,7 @@ export const franceLigue1: Team[] = [
     primaryColor: "#004170",
     secondaryColor: "#DA291C",
     league: "France Ligue 1",
-    logo: "@/assets/logos/France - Ligue 1/Paris Saint-Germain.png",
+    logo: "/logos/France - Ligue 1/Paris Saint-Germain.png",
   },
   {
     id: "rc-lens",
@@ -119,7 +119,7 @@ export const franceLigue1: Team[] = [
     primaryColor: "#FDB913",
     secondaryColor: "#000000",
     league: "France Ligue 1",
-    logo: "@/assets/logos/France - Ligue 1/RC Lens.png",
+    logo: "/logos/France - Ligue 1/RC Lens.png",
   },
   {
     id: "rc-strasbourg",
@@ -127,7 +127,7 @@ export const franceLigue1: Team[] = [
     primaryColor: "#0066CC",
     secondaryColor: "#FFFFFF",
     league: "France Ligue 1",
-    logo: "@/assets/logos/France - Ligue 1/RC Strasbourg Alsace.png",
+    logo: "/logos/France - Ligue 1/RC Strasbourg Alsace.png",
   },
   {
     id: "stade-brestois",
@@ -135,7 +135,7 @@ export const franceLigue1: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "France Ligue 1",
-    logo: "@/assets/logos/France - Ligue 1/Stade Brestois 29.png",
+    logo: "/logos/France - Ligue 1/Stade Brestois 29.png",
   },
   {
     id: "rennes",
@@ -143,6 +143,6 @@ export const franceLigue1: Team[] = [
     primaryColor: "#C81828",
     secondaryColor: "#000000",
     league: "France Ligue 1",
-    logo: "@/assets/logos/France - Ligue 1/Stade Rennais FC.png",
+    logo: "/logos/France - Ligue 1/Stade Rennais FC.png",
   },
 ];

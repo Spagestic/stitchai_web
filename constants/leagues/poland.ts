@@ -7,7 +7,7 @@ export const polandEkstraklasa: Team[] = [
     primaryColor: "#0066CC",
     secondaryColor: "#FFFFFF",
     league: "Poland PKO BP Ekstraklasa",
-    logo: "@/assets/logos/Poland - PKO BP Ekstraklasa/Arka Gdynia.png",
+    logo: "/logos/Poland - PKO BP Ekstraklasa/Arka Gdynia.png",
   },
   {
     id: "bruk-bet-termalica",
@@ -15,7 +15,7 @@ export const polandEkstraklasa: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Poland PKO BP Ekstraklasa",
-    logo: "@/assets/logos/Poland - PKO BP Ekstraklasa/Bruk-Bet Termalica Nieciecza.png",
+    logo: "/logos/Poland - PKO BP Ekstraklasa/Bruk-Bet Termalica Nieciecza.png",
   },
   {
     id: "cracovia",
@@ -23,7 +23,7 @@ export const polandEkstraklasa: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Poland PKO BP Ekstraklasa",
-    logo: "@/assets/logos/Poland - PKO BP Ekstraklasa/Cracovia.png",
+    logo: "/logos/Poland - PKO BP Ekstraklasa/Cracovia.png",
   },
   {
     id: "gks-katowice",
@@ -31,7 +31,7 @@ export const polandEkstraklasa: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Poland PKO BP Ekstraklasa",
-    logo: "@/assets/logos/Poland - PKO BP Ekstraklasa/GKS Katowice.png",
+    logo: "/logos/Poland - PKO BP Ekstraklasa/GKS Katowice.png",
   },
   {
     id: "gornik-zabrze",
@@ -39,7 +39,7 @@ export const polandEkstraklasa: Team[] = [
     primaryColor: "#0066CC",
     secondaryColor: "#FFFFFF",
     league: "Poland PKO BP Ekstraklasa",
-    logo: "@/assets/logos/Poland - PKO BP Ekstraklasa/Górnik Zabrze.png",
+    logo: "/logos/Poland - PKO BP Ekstraklasa/Górnik Zabrze.png",
   },
   {
     id: "jagiellonia-bialystok",
@@ -47,7 +47,7 @@ export const polandEkstraklasa: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Poland PKO BP Ekstraklasa",
-    logo: "@/assets/logos/Poland - PKO BP Ekstraklasa/Jagiellonia Bialystok.png",
+    logo: "/logos/Poland - PKO BP Ekstraklasa/Jagiellonia Bialystok.png",
   },
   {
     id: "korona-kielce",
@@ -55,7 +55,7 @@ export const polandEkstraklasa: Team[] = [
     primaryColor: "#0066CC",
     secondaryColor: "#FFFFFF",
     league: "Poland PKO BP Ekstraklasa",
-    logo: "@/assets/logos/Poland - PKO BP Ekstraklasa/Korona Kielce.png",
+    logo: "/logos/Poland - PKO BP Ekstraklasa/Korona Kielce.png",
   },
   {
     id: "lech-poznan",
@@ -63,7 +63,7 @@ export const polandEkstraklasa: Team[] = [
     primaryColor: "#000000",
     secondaryColor: "#FFFFFF",
     league: "Poland PKO BP Ekstraklasa",
-    logo: "@/assets/logos/Poland - PKO BP Ekstraklasa/Lech Poznan.png",
+    logo: "/logos/Poland - PKO BP Ekstraklasa/Lech Poznan.png",
   },
   {
     id: "lechia-gdansk",
@@ -71,7 +71,7 @@ export const polandEkstraklasa: Team[] = [
     primaryColor: "#FFFFFF",
     secondaryColor: "#0066CC",
     league: "Poland PKO BP Ekstraklasa",
-    logo: "@/assets/logos/Poland - PKO BP Ekstraklasa/Lechia Gdansk.png",
+    logo: "/logos/Poland - PKO BP Ekstraklasa/Lechia Gdansk.png",
   },
   {
     id: "legia-warszawa",
@@ -79,7 +79,7 @@ export const polandEkstraklasa: Team[] = [
     primaryColor: "#FFFFFF",
     secondaryColor: "#FF0000",
     league: "Poland PKO BP Ekstraklasa",
-    logo: "@/assets/logos/Poland - PKO BP Ekstraklasa/Legia Warszawa.png",
+    logo: "/logos/Poland - PKO BP Ekstraklasa/Legia Warszawa.png",
   },
   {
     id: "motor-lublin",
@@ -87,7 +87,7 @@ export const polandEkstraklasa: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Poland PKO BP Ekstraklasa",
-    logo: "@/assets/logos/Poland - PKO BP Ekstraklasa/Motor Lublin.png",
+    logo: "/logos/Poland - PKO BP Ekstraklasa/Motor Lublin.png",
   },
   {
     id: "piast-gliwice",
@@ -95,7 +95,7 @@ export const polandEkstraklasa: Team[] = [
     primaryColor: "#0066CC",
     secondaryColor: "#FFFFFF",
     league: "Poland PKO BP Ekstraklasa",
-    logo: "@/assets/logos/Poland - PKO BP Ekstraklasa/Piast Gliwice.png",
+    logo: "/logos/Poland - PKO BP Ekstraklasa/Piast Gliwice.png",
   },
   {
     id: "pogon-szczecin",
@@ -103,7 +103,7 @@ export const polandEkstraklasa: Team[] = [
     primaryColor: "#FFFFFF",
     secondaryColor: "#0066CC",
     league: "Poland PKO BP Ekstraklasa",
-    logo: "@/assets/logos/Poland - PKO BP Ekstraklasa/Pogon Szczecin.png",
+    logo: "/logos/Poland - PKO BP Ekstraklasa/Pogon Szczecin.png",
   },
   {
     id: "radomiak-radom",
@@ -111,7 +111,7 @@ export const polandEkstraklasa: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Poland PKO BP Ekstraklasa",
-    logo: "@/assets/logos/Poland - PKO BP Ekstraklasa/Radomiak Radom.png",
+    logo: "/logos/Poland - PKO BP Ekstraklasa/Radomiak Radom.png",
   },
   {
     id: "rakow-czestochowa",
@@ -119,7 +119,7 @@ export const polandEkstraklasa: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Poland PKO BP Ekstraklasa",
-    logo: "@/assets/logos/Poland - PKO BP Ekstraklasa/Raków Częstochowa.png",
+    logo: "/logos/Poland - PKO BP Ekstraklasa/Raków Częstochowa.png",
   },
   {
     id: "widzew-lodz",
@@ -127,7 +127,7 @@ export const polandEkstraklasa: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Poland PKO BP Ekstraklasa",
-    logo: "@/assets/logos/Poland - PKO BP Ekstraklasa/Widzew Lodz.png",
+    logo: "/logos/Poland - PKO BP Ekstraklasa/Widzew Lodz.png",
   },
   {
     id: "wisla-plock",
@@ -135,7 +135,7 @@ export const polandEkstraklasa: Team[] = [
     primaryColor: "#FFFFFF",
     secondaryColor: "#0066FF",
     league: "Poland PKO BP Ekstraklasa",
-    logo: "@/assets/logos/Poland - PKO BP Ekstraklasa/Wisla Plock.png",
+    logo: "/logos/Poland - PKO BP Ekstraklasa/Wisla Plock.png",
   },
   {
     id: "zaglebie-lubin",
@@ -143,6 +143,6 @@ export const polandEkstraklasa: Team[] = [
     primaryColor: "#0066CC",
     secondaryColor: "#FFFFFF",
     league: "Poland PKO BP Ekstraklasa",
-    logo: "@/assets/logos/Poland - PKO BP Ekstraklasa/Zaglebie Lubin.png",
+    logo: "/logos/Poland - PKO BP Ekstraklasa/Zaglebie Lubin.png",
   },
 ];

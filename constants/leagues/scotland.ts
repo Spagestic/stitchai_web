@@ -7,7 +7,7 @@ export const scotlandScottishPremiership: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Scotland Scottish Premiership",
-    logo: "@/assets/logos/Scotland - Scottish Premiership/Aberdeen FC.png",
+    logo: "/logos/Scotland - Scottish Premiership/Aberdeen FC.png",
   },
   {
     id: "celtic-fc",
@@ -15,7 +15,7 @@ export const scotlandScottishPremiership: Team[] = [
     primaryColor: "#009900",
     secondaryColor: "#FFFFFF",
     league: "Scotland Scottish Premiership",
-    logo: "@/assets/logos/Scotland - Scottish Premiership/Celtic FC.png",
+    logo: "/logos/Scotland - Scottish Premiership/Celtic FC.png",
   },
   {
     id: "dundee-fc",
@@ -23,7 +23,7 @@ export const scotlandScottishPremiership: Team[] = [
     primaryColor: "#000000",
     secondaryColor: "#FFFFFF",
     league: "Scotland Scottish Premiership",
-    logo: "@/assets/logos/Scotland - Scottish Premiership/Dundee FC.png",
+    logo: "/logos/Scotland - Scottish Premiership/Dundee FC.png",
   },
   {
     id: "dundee-united",
@@ -31,7 +31,7 @@ export const scotlandScottishPremiership: Team[] = [
     primaryColor: "#FF6600",
     secondaryColor: "#000000",
     league: "Scotland Scottish Premiership",
-    logo: "@/assets/logos/Scotland - Scottish Premiership/Dundee United FC.png",
+    logo: "/logos/Scotland - Scottish Premiership/Dundee United FC.png",
   },
   {
     id: "falkirk-fc",
@@ -39,7 +39,7 @@ export const scotlandScottishPremiership: Team[] = [
     primaryColor: "#8B0000",
     secondaryColor: "#FFFFFF",
     league: "Scotland Scottish Premiership",
-    logo: "@/assets/logos/Scotland - Scottish Premiership/Falkirk FC.png",
+    logo: "/logos/Scotland - Scottish Premiership/Falkirk FC.png",
   },
   {
     id: "heart-of-midlothian",
@@ -47,7 +47,7 @@ export const scotlandScottishPremiership: Team[] = [
     primaryColor: "#8B0000",
     secondaryColor: "#FFFFFF",
     league: "Scotland Scottish Premiership",
-    logo: "@/assets/logos/Scotland - Scottish Premiership/Heart of Midlothian FC.png",
+    logo: "/logos/Scotland - Scottish Premiership/Heart of Midlothian FC.png",
   },
   {
     id: "hibernian-fc",
@@ -55,7 +55,7 @@ export const scotlandScottishPremiership: Team[] = [
     primaryColor: "#008000",
     secondaryColor: "#FFFFFF",
     league: "Scotland Scottish Premiership",
-    logo: "@/assets/logos/Scotland - Scottish Premiership/Hibernian FC.png",
+    logo: "/logos/Scotland - Scottish Premiership/Hibernian FC.png",
   },
   {
     id: "kilmarnock-fc",
@@ -63,7 +63,7 @@ export const scotlandScottishPremiership: Team[] = [
     primaryColor: "#0066CC",
     secondaryColor: "#FFFFFF",
     league: "Scotland Scottish Premiership",
-    logo: "@/assets/logos/Scotland - Scottish Premiership/Kilmarnock FC.png",
+    logo: "/logos/Scotland - Scottish Premiership/Kilmarnock FC.png",
   },
   {
     id: "livingston-fc",
@@ -71,7 +71,7 @@ export const scotlandScottishPremiership: Team[] = [
     primaryColor: "#FFD700",
     secondaryColor: "#000000",
     league: "Scotland Scottish Premiership",
-    logo: "@/assets/logos/Scotland - Scottish Premiership/Livingston FC.png",
+    logo: "/logos/Scotland - Scottish Premiership/Livingston FC.png",
   },
   {
     id: "motherwell-fc",
@@ -79,7 +79,7 @@ export const scotlandScottishPremiership: Team[] = [
     primaryColor: "#8B0000",
     secondaryColor: "#FFFFFF",
     league: "Scotland Scottish Premiership",
-    logo: "@/assets/logos/Scotland - Scottish Premiership/Motherwell FC.png",
+    logo: "/logos/Scotland - Scottish Premiership/Motherwell FC.png",
   },
   {
     id: "rangers-fc",
@@ -87,7 +87,7 @@ export const scotlandScottishPremiership: Team[] = [
     primaryColor: "#0066CC",
     secondaryColor: "#FFFFFF",
     league: "Scotland Scottish Premiership",
-    logo: "@/assets/logos/Scotland - Scottish Premiership/Rangers FC.png",
+    logo: "/logos/Scotland - Scottish Premiership/Rangers FC.png",
   },
   {
     id: "st-mirren-fc",
@@ -95,6 +95,6 @@ export const scotlandScottishPremiership: Team[] = [
     primaryColor: "#000000",
     secondaryColor: "#FFFFFF",
     league: "Scotland Scottish Premiership",
-    logo: "@/assets/logos/Scotland - Scottish Premiership/St. Mirren FC.png",
+    logo: "/logos/Scotland - Scottish Premiership/St. Mirren FC.png",
   },
 ];

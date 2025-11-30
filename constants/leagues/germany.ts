@@ -7,7 +7,7 @@ export const germanyBundesliga: Team[] = [
     primaryColor: "#CC0000",
     secondaryColor: "#FFFFFF",
     league: "Bundesliga",
-    logo: "@/assets/logos/Germany - Bundesliga/1.FC Heidenheim 1846.png",
+    logo: "/logos/Germany - Bundesliga/1.FC Heidenheim 1846.png",
   },
   {
     id: "fc-koln",
@@ -15,7 +15,7 @@ export const germanyBundesliga: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Bundesliga",
-    logo: "@/assets/logos/Germany - Bundesliga/1.FC Köln.png",
+    logo: "/logos/Germany - Bundesliga/1.FC Köln.png",
   },
   {
     id: "union-berlin",
@@ -23,7 +23,7 @@ export const germanyBundesliga: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Bundesliga",
-    logo: "@/assets/logos/Germany - Bundesliga/1.FC Union Berlin.png",
+    logo: "/logos/Germany - Bundesliga/1.FC Union Berlin.png",
   },
   {
     id: "mainz-05",
@@ -31,7 +31,7 @@ export const germanyBundesliga: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Bundesliga",
-    logo: "@/assets/logos/Germany - Bundesliga/1.FSV Mainz 05.png",
+    logo: "/logos/Germany - Bundesliga/1.FSV Mainz 05.png",
   },
   {
     id: "leverkusen",
@@ -39,7 +39,7 @@ export const germanyBundesliga: Team[] = [
     primaryColor: "#E32221",
     secondaryColor: "#000000",
     league: "Bundesliga",
-    logo: "@/assets/logos/Germany - Bundesliga/Bayer 04 Leverkusen.png",
+    logo: "/logos/Germany - Bundesliga/Bayer 04 Leverkusen.png",
   },
   {
     id: "bayern",
@@ -47,7 +47,7 @@ export const germanyBundesliga: Team[] = [
     primaryColor: "#DC052D",
     secondaryColor: "#0066B2",
     league: "Bundesliga",
-    logo: "@/assets/logos/Germany - Bundesliga/Bayern Munich.png",
+    logo: "/logos/Germany - Bundesliga/Bayern Munich.png",
   },
   {
     id: "dortmund",
@@ -55,7 +55,7 @@ export const germanyBundesliga: Team[] = [
     primaryColor: "#FDE100",
     secondaryColor: "#000000",
     league: "Bundesliga",
-    logo: "@/assets/logos/Germany - Bundesliga/Borussia Dortmund.png",
+    logo: "/logos/Germany - Bundesliga/Borussia Dortmund.png",
   },
   {
     id: "borussia-monchengladbach",
@@ -63,7 +63,7 @@ export const germanyBundesliga: Team[] = [
     primaryColor: "#000000",
     secondaryColor: "#FFFFFF",
     league: "Bundesliga",
-    logo: "@/assets/logos/Germany - Bundesliga/Borussia Mönchengladbach.png",
+    logo: "/logos/Germany - Bundesliga/Borussia Mönchengladbach.png",
   },
   {
     id: "frankfurt",
@@ -71,7 +71,7 @@ export const germanyBundesliga: Team[] = [
     primaryColor: "#000000",
     secondaryColor: "#FFFFFF",
     league: "Bundesliga",
-    logo: "@/assets/logos/Germany - Bundesliga/Eintracht Frankfurt.png",
+    logo: "/logos/Germany - Bundesliga/Eintracht Frankfurt.png",
   },
   {
     id: "augsburg",
@@ -79,7 +79,7 @@ export const germanyBundesliga: Team[] = [
     primaryColor: "#BA0021",
     secondaryColor: "#FFFFFF",
     league: "Bundesliga",
-    logo: "@/assets/logos/Germany - Bundesliga/FC Augsburg.png",
+    logo: "/logos/Germany - Bundesliga/FC Augsburg.png",
   },
   {
     id: "fc-st-pauli",
@@ -87,7 +87,7 @@ export const germanyBundesliga: Team[] = [
     primaryColor: "#8B0000",
     secondaryColor: "#FFFFFF",
     league: "Bundesliga",
-    logo: "@/assets/logos/Germany - Bundesliga/FC St. Pauli.png",
+    logo: "/logos/Germany - Bundesliga/FC St. Pauli.png",
   },
   {
     id: "hamburg-sv",
@@ -95,7 +95,7 @@ export const germanyBundesliga: Team[] = [
     primaryColor: "#0066FF",
     secondaryColor: "#FFFFFF",
     league: "Bundesliga",
-    logo: "@/assets/logos/Germany - Bundesliga/Hamburger SV.png",
+    logo: "/logos/Germany - Bundesliga/Hamburger SV.png",
   },
   {
     id: "rb-leipzig",
@@ -103,7 +103,7 @@ export const germanyBundesliga: Team[] = [
     primaryColor: "#DD0741",
     secondaryColor: "#FFFFFF",
     league: "Bundesliga",
-    logo: "@/assets/logos/Germany - Bundesliga/RB Leipzig.png",
+    logo: "/logos/Germany - Bundesliga/RB Leipzig.png",
   },
   {
     id: "freiburg",
@@ -111,7 +111,7 @@ export const germanyBundesliga: Team[] = [
     primaryColor: "#000000",
     secondaryColor: "#FFFFFF",
     league: "Bundesliga",
-    logo: "@/assets/logos/Germany - Bundesliga/SC Freiburg.png",
+    logo: "/logos/Germany - Bundesliga/SC Freiburg.png",
   },
   {
     id: "werder-bremen",
@@ -119,7 +119,7 @@ export const germanyBundesliga: Team[] = [
     primaryColor: "#006600",
     secondaryColor: "#FFFFFF",
     league: "Bundesliga",
-    logo: "@/assets/logos/Germany - Bundesliga/SV Werder Bremen.png",
+    logo: "/logos/Germany - Bundesliga/SV Werder Bremen.png",
   },
   {
     id: "hoffenheim",
@@ -127,7 +127,7 @@ export const germanyBundesliga: Team[] = [
     primaryColor: "#1C4DB7",
     secondaryColor: "#FFFFFF",
     league: "Bundesliga",
-    logo: "@/assets/logos/Germany - Bundesliga/TSG 1899 Hoffenheim.png",
+    logo: "/logos/Germany - Bundesliga/TSG 1899 Hoffenheim.png",
   },
   {
     id: "vfb-stuttgart",
@@ -135,7 +135,7 @@ export const germanyBundesliga: Team[] = [
     primaryColor: "#FFFFFF",
     secondaryColor: "#C40C2E",
     league: "Bundesliga",
-    logo: "@/assets/logos/Germany - Bundesliga/VfB Stuttgart.png",
+    logo: "/logos/Germany - Bundesliga/VfB Stuttgart.png",
   },
   {
     id: "wolfsburg",
@@ -143,6 +143,6 @@ export const germanyBundesliga: Team[] = [
     primaryColor: "#37B959",
     secondaryColor: "#FFFFFF",
     league: "Bundesliga",
-    logo: "@/assets/logos/Germany - Bundesliga/VfL Wolfsburg.png",
+    logo: "/logos/Germany - Bundesliga/VfL Wolfsburg.png",
   },
 ];

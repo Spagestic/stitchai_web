@@ -7,7 +7,7 @@ export const ukrainePremierLiga: Team[] = [
     primaryColor: "#0066CC",
     secondaryColor: "#FFFFFF",
     league: "Ukraine Premier Liga",
-    logo: "@/assets/logos/Ukraine - Premier Liga/Dynamo Kyiv.png",
+    logo: "/logos/Ukraine - Premier Liga/Dynamo Kyiv.png",
   },
   {
     id: "epicentr-kamyanets",
@@ -15,7 +15,7 @@ export const ukrainePremierLiga: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Ukraine Premier Liga",
-    logo: "@/assets/logos/Ukraine - Premier Liga/Epicentr Kamyanets-Podilskyi.png",
+    logo: "/logos/Ukraine - Premier Liga/Epicentr Kamyanets-Podilskyi.png",
   },
   {
     id: "fc-kudrivka",
@@ -23,7 +23,7 @@ export const ukrainePremierLiga: Team[] = [
     primaryColor: "#0066CC",
     secondaryColor: "#FFFFFF",
     league: "Ukraine Premier Liga",
-    logo: "@/assets/logos/Ukraine - Premier Liga/FC Kudrivka.png",
+    logo: "/logos/Ukraine - Premier Liga/FC Kudrivka.png",
   },
   {
     id: "fc-oleksandriya",
@@ -31,7 +31,7 @@ export const ukrainePremierLiga: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Ukraine Premier Liga",
-    logo: "@/assets/logos/Ukraine - Premier Liga/FC Oleksandriya.png",
+    logo: "/logos/Ukraine - Premier Liga/FC Oleksandriya.png",
   },
   {
     id: "karpaty-lviv",
@@ -39,7 +39,7 @@ export const ukrainePremierLiga: Team[] = [
     primaryColor: "#0066CC",
     secondaryColor: "#FFFFFF",
     league: "Ukraine Premier Liga",
-    logo: "@/assets/logos/Ukraine - Premier Liga/Karpaty Lviv.png",
+    logo: "/logos/Ukraine - Premier Liga/Karpaty Lviv.png",
   },
   {
     id: "kolos-kovalivka",
@@ -47,7 +47,7 @@ export const ukrainePremierLiga: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Ukraine Premier Liga",
-    logo: "@/assets/logos/Ukraine - Premier Liga/Kolos Kovalivka.png",
+    logo: "/logos/Ukraine - Premier Liga/Kolos Kovalivka.png",
   },
   {
     id: "kryvbas-kryvyi-rig",
@@ -55,7 +55,7 @@ export const ukrainePremierLiga: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Ukraine Premier Liga",
-    logo: "@/assets/logos/Ukraine - Premier Liga/Kryvbas Kryvyi Rig.png",
+    logo: "/logos/Ukraine - Premier Liga/Kryvbas Kryvyi Rig.png",
   },
   {
     id: "lnz-cherkasy",
@@ -63,7 +63,7 @@ export const ukrainePremierLiga: Team[] = [
     primaryColor: "#0066CC",
     secondaryColor: "#FFFFFF",
     league: "Ukraine Premier Liga",
-    logo: "@/assets/logos/Ukraine - Premier Liga/LNZ Cherkasy.png",
+    logo: "/logos/Ukraine - Premier Liga/LNZ Cherkasy.png",
   },
   {
     id: "metalist-kharkiv",
@@ -71,7 +71,7 @@ export const ukrainePremierLiga: Team[] = [
     primaryColor: "#FFD700",
     secondaryColor: "#000000",
     league: "Ukraine Premier Liga",
-    logo: "@/assets/logos/Ukraine - Premier Liga/Metalist 1925 Kharkiv.png",
+    logo: "/logos/Ukraine - Premier Liga/Metalist 1925 Kharkiv.png",
   },
   {
     id: "nk-veres-rivne",
@@ -79,7 +79,7 @@ export const ukrainePremierLiga: Team[] = [
     primaryColor: "#0066FF",
     secondaryColor: "#FFFFFF",
     league: "Ukraine Premier Liga",
-    logo: "@/assets/logos/Ukraine - Premier Liga/NK Veres Rivne.png",
+    logo: "/logos/Ukraine - Premier Liga/NK Veres Rivne.png",
   },
   {
     id: "obolon-kyiv",
@@ -87,7 +87,7 @@ export const ukrainePremierLiga: Team[] = [
     primaryColor: "#0066CC",
     secondaryColor: "#FFFFFF",
     league: "Ukraine Premier Liga",
-    logo: "@/assets/logos/Ukraine - Premier Liga/Obolon Kyiv.png",
+    logo: "/logos/Ukraine - Premier Liga/Obolon Kyiv.png",
   },
   {
     id: "polissya-zhytomyr",
@@ -95,7 +95,7 @@ export const ukrainePremierLiga: Team[] = [
     primaryColor: "#006600",
     secondaryColor: "#FFFFFF",
     league: "Ukraine Premier Liga",
-    logo: "@/assets/logos/Ukraine - Premier Liga/Polissya Zhytomyr.png",
+    logo: "/logos/Ukraine - Premier Liga/Polissya Zhytomyr.png",
   },
   {
     id: "rukh-lviv",
@@ -103,7 +103,7 @@ export const ukrainePremierLiga: Team[] = [
     primaryColor: "#FFD700",
     secondaryColor: "#000000",
     league: "Ukraine Premier Liga",
-    logo: "@/assets/logos/Ukraine - Premier Liga/Rukh Lviv.png",
+    logo: "/logos/Ukraine - Premier Liga/Rukh Lviv.png",
   },
   {
     id: "sc-poltava",
@@ -111,7 +111,7 @@ export const ukrainePremierLiga: Team[] = [
     primaryColor: "#0066FF",
     secondaryColor: "#FFFFFF",
     league: "Ukraine Premier Liga",
-    logo: "@/assets/logos/Ukraine - Premier Liga/SC Poltava.png",
+    logo: "/logos/Ukraine - Premier Liga/SC Poltava.png",
   },
   {
     id: "shakhtar-donetsk",
@@ -119,7 +119,7 @@ export const ukrainePremierLiga: Team[] = [
     primaryColor: "#FFD700",
     secondaryColor: "#000000",
     league: "Ukraine Premier Liga",
-    logo: "@/assets/logos/Ukraine - Premier Liga/Shakhtar Donetsk.png",
+    logo: "/logos/Ukraine - Premier Liga/Shakhtar Donetsk.png",
   },
   {
     id: "zorya-lugansk",
@@ -127,6 +127,6 @@ export const ukrainePremierLiga: Team[] = [
     primaryColor: "#0066FF",
     secondaryColor: "#FFFFFF",
     league: "Ukraine Premier Liga",
-    logo: "@/assets/logos/Ukraine - Premier Liga/Zorya Lugansk.png",
+    logo: "/logos/Ukraine - Premier Liga/Zorya Lugansk.png",
   },
 ];

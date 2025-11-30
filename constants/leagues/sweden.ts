@@ -7,7 +7,7 @@ export const swedenAllsvenskan: Team[] = [
     primaryColor: "#000000",
     secondaryColor: "#FFD700",
     league: "Sweden Allsvenskan",
-    logo: "@/assets/logos/Sweden - Allsvenskan/AIK.png",
+    logo: "/logos/Sweden - Allsvenskan/AIK.png",
   },
   {
     id: "bk-hacken",
@@ -15,7 +15,7 @@ export const swedenAllsvenskan: Team[] = [
     primaryColor: "#0066FF",
     secondaryColor: "#FFFFFF",
     league: "Sweden Allsvenskan",
-    logo: "@/assets/logos/Sweden - Allsvenskan/BK Häcken.png",
+    logo: "/logos/Sweden - Allsvenskan/BK Häcken.png",
   },
   {
     id: "degerfors-if",
@@ -23,7 +23,7 @@ export const swedenAllsvenskan: Team[] = [
     primaryColor: "#0066FF",
     secondaryColor: "#FFFFFF",
     league: "Sweden Allsvenskan",
-    logo: "@/assets/logos/Sweden - Allsvenskan/Degerfors IF.png",
+    logo: "/logos/Sweden - Allsvenskan/Degerfors IF.png",
   },
   {
     id: "djurgardens-if",
@@ -31,7 +31,7 @@ export const swedenAllsvenskan: Team[] = [
     primaryColor: "#0066CC",
     secondaryColor: "#FFFFFF",
     league: "Sweden Allsvenskan",
-    logo: "@/assets/logos/Sweden - Allsvenskan/Djurgårdens IF.png",
+    logo: "/logos/Sweden - Allsvenskan/Djurgårdens IF.png",
   },
   {
     id: "gais",
@@ -39,7 +39,7 @@ export const swedenAllsvenskan: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Sweden Allsvenskan",
-    logo: "@/assets/logos/Sweden - Allsvenskan/GAIS.png",
+    logo: "/logos/Sweden - Allsvenskan/GAIS.png",
   },
   {
     id: "halmstads-bk",
@@ -47,7 +47,7 @@ export const swedenAllsvenskan: Team[] = [
     primaryColor: "#0066CC",
     secondaryColor: "#FFFFFF",
     league: "Sweden Allsvenskan",
-    logo: "@/assets/logos/Sweden - Allsvenskan/Halmstads BK.png",
+    logo: "/logos/Sweden - Allsvenskan/Halmstads BK.png",
   },
   {
     id: "hammarby-if",
@@ -55,7 +55,7 @@ export const swedenAllsvenskan: Team[] = [
     primaryColor: "#0066CC",
     secondaryColor: "#FF0000",
     league: "Sweden Allsvenskan",
-    logo: "@/assets/logos/Sweden - Allsvenskan/Hammarby IF.png",
+    logo: "/logos/Sweden - Allsvenskan/Hammarby IF.png",
   },
   {
     id: "if-brommapojkarna",
@@ -63,7 +63,7 @@ export const swedenAllsvenskan: Team[] = [
     primaryColor: "#0066FF",
     secondaryColor: "#FFFFFF",
     league: "Sweden Allsvenskan",
-    logo: "@/assets/logos/Sweden - Allsvenskan/IF Brommapojkarna.png",
+    logo: "/logos/Sweden - Allsvenskan/IF Brommapojkarna.png",
   },
   {
     id: "if-elfsborg",
@@ -71,7 +71,7 @@ export const swedenAllsvenskan: Team[] = [
     primaryColor: "#0066FF",
     secondaryColor: "#FFFFFF",
     league: "Sweden Allsvenskan",
-    logo: "@/assets/logos/Sweden - Allsvenskan/IF Elfsborg.png",
+    logo: "/logos/Sweden - Allsvenskan/IF Elfsborg.png",
   },
   {
     id: "ifk-goteborg",
@@ -79,7 +79,7 @@ export const swedenAllsvenskan: Team[] = [
     primaryColor: "#0066CC",
     secondaryColor: "#FFFFFF",
     league: "Sweden Allsvenskan",
-    logo: "@/assets/logos/Sweden - Allsvenskan/IFK Göteborg.png",
+    logo: "/logos/Sweden - Allsvenskan/IFK Göteborg.png",
   },
   {
     id: "ifk-norrkoping",
@@ -87,7 +87,7 @@ export const swedenAllsvenskan: Team[] = [
     primaryColor: "#0066CC",
     secondaryColor: "#FFFFFF",
     league: "Sweden Allsvenskan",
-    logo: "@/assets/logos/Sweden - Allsvenskan/IFK Norrköping.png",
+    logo: "/logos/Sweden - Allsvenskan/IFK Norrköping.png",
   },
   {
     id: "ifk-varnamo",
@@ -95,7 +95,7 @@ export const swedenAllsvenskan: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Sweden Allsvenskan",
-    logo: "@/assets/logos/Sweden - Allsvenskan/IFK Värnamo.png",
+    logo: "/logos/Sweden - Allsvenskan/IFK Värnamo.png",
   },
   {
     id: "ik-sirius",
@@ -103,7 +103,7 @@ export const swedenAllsvenskan: Team[] = [
     primaryColor: "#000000",
     secondaryColor: "#FFFFFF",
     league: "Sweden Allsvenskan",
-    logo: "@/assets/logos/Sweden - Allsvenskan/IK Sirius.png",
+    logo: "/logos/Sweden - Allsvenskan/IK Sirius.png",
   },
   {
     id: "malmo-ff",
@@ -111,7 +111,7 @@ export const swedenAllsvenskan: Team[] = [
     primaryColor: "#0066CC",
     secondaryColor: "#FFFFFF",
     league: "Sweden Allsvenskan",
-    logo: "@/assets/logos/Sweden - Allsvenskan/Malmö FF.png",
+    logo: "/logos/Sweden - Allsvenskan/Malmö FF.png",
   },
   {
     id: "mjalby-aif",
@@ -119,7 +119,7 @@ export const swedenAllsvenskan: Team[] = [
     primaryColor: "#0066FF",
     secondaryColor: "#FFFFFF",
     league: "Sweden Allsvenskan",
-    logo: "@/assets/logos/Sweden - Allsvenskan/Mjällby AIF.png",
+    logo: "/logos/Sweden - Allsvenskan/Mjällby AIF.png",
   },
   {
     id: "osters-if",
@@ -127,6 +127,6 @@ export const swedenAllsvenskan: Team[] = [
     primaryColor: "#0066CC",
     secondaryColor: "#FFFFFF",
     league: "Sweden Allsvenskan",
-    logo: "@/assets/logos/Sweden - Allsvenskan/Östers IF.png",
+    logo: "/logos/Sweden - Allsvenskan/Östers IF.png",
   },
 ];

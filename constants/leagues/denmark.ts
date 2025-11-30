@@ -7,7 +7,7 @@ export const denmarkSuperliga: Team[] = [
     primaryColor: "#FFFFFF",
     secondaryColor: "#000000",
     league: "Denmark Superliga",
-    logo: "@/assets/logos/Denmark - Superliga/Aarhus GF.png",
+    logo: "/logos/Denmark - Superliga/Aarhus GF.png",
   },
   {
     id: "brondby-if",
@@ -15,7 +15,7 @@ export const denmarkSuperliga: Team[] = [
     primaryColor: "#FFD700",
     secondaryColor: "#000000",
     league: "Denmark Superliga",
-    logo: "@/assets/logos/Denmark - Superliga/Bröndby IF.png",
+    logo: "/logos/Denmark - Superliga/Bröndby IF.png",
   },
   {
     id: "fc-copenhagen",
@@ -23,7 +23,7 @@ export const denmarkSuperliga: Team[] = [
     primaryColor: "#FFFFFF",
     secondaryColor: "#000000",
     league: "Denmark Superliga",
-    logo: "@/assets/logos/Denmark - Superliga/FC Copenhagen.png",
+    logo: "/logos/Denmark - Superliga/FC Copenhagen.png",
   },
   {
     id: "fc-fredericia",
@@ -31,7 +31,7 @@ export const denmarkSuperliga: Team[] = [
     primaryColor: "#0066CC",
     secondaryColor: "#FFFFFF",
     league: "Denmark Superliga",
-    logo: "@/assets/logos/Denmark - Superliga/FC Fredericia.png",
+    logo: "/logos/Denmark - Superliga/FC Fredericia.png",
   },
   {
     id: "fc-midtjylland",
@@ -39,7 +39,7 @@ export const denmarkSuperliga: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Denmark Superliga",
-    logo: "@/assets/logos/Denmark - Superliga/FC Midtjylland.png",
+    logo: "/logos/Denmark - Superliga/FC Midtjylland.png",
   },
   {
     id: "fc-nordsjaelland",
@@ -47,7 +47,7 @@ export const denmarkSuperliga: Team[] = [
     primaryColor: "#FFFFFF",
     secondaryColor: "#000000",
     league: "Denmark Superliga",
-    logo: "@/assets/logos/Denmark - Superliga/FC Nordsjaelland.png",
+    logo: "/logos/Denmark - Superliga/FC Nordsjaelland.png",
   },
   {
     id: "odense-boldklub",
@@ -55,7 +55,7 @@ export const denmarkSuperliga: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Denmark Superliga",
-    logo: "@/assets/logos/Denmark - Superliga/Odense Boldklub.png",
+    logo: "/logos/Denmark - Superliga/Odense Boldklub.png",
   },
   {
     id: "randers-fc",
@@ -63,7 +63,7 @@ export const denmarkSuperliga: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Denmark Superliga",
-    logo: "@/assets/logos/Denmark - Superliga/Randers FC.png",
+    logo: "/logos/Denmark - Superliga/Randers FC.png",
   },
   {
     id: "silkeborg-if",
@@ -71,7 +71,7 @@ export const denmarkSuperliga: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Denmark Superliga",
-    logo: "@/assets/logos/Denmark - Superliga/Silkeborg IF.png",
+    logo: "/logos/Denmark - Superliga/Silkeborg IF.png",
   },
   {
     id: "sonderjyske",
@@ -79,7 +79,7 @@ export const denmarkSuperliga: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Denmark Superliga",
-    logo: "@/assets/logos/Denmark - Superliga/Sönderjyske.png",
+    logo: "/logos/Denmark - Superliga/Sönderjyske.png",
   },
   {
     id: "vejle-boldklub",
@@ -87,7 +87,7 @@ export const denmarkSuperliga: Team[] = [
     primaryColor: "#FFFFFF",
     secondaryColor: "#0066CC",
     league: "Denmark Superliga",
-    logo: "@/assets/logos/Denmark - Superliga/Vejle Boldklub.png",
+    logo: "/logos/Denmark - Superliga/Vejle Boldklub.png",
   },
   {
     id: "viborg-ff",
@@ -95,6 +95,6 @@ export const denmarkSuperliga: Team[] = [
     primaryColor: "#FFFFFF",
     secondaryColor: "#000000",
     league: "Denmark Superliga",
-    logo: "@/assets/logos/Denmark - Superliga/Viborg FF.png",
+    logo: "/logos/Denmark - Superliga/Viborg FF.png",
   },
 ];

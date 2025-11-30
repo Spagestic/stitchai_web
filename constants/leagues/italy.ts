@@ -7,7 +7,7 @@ export const italySerieA: Team[] = [
     primaryColor: "#FB090B",
     secondaryColor: "#000000",
     league: "Serie A",
-    logo: "@/assets/logos/Italy - Serie A/AC Milan.png",
+    logo: "/logos/Italy - Serie A/AC Milan.png",
   },
   {
     id: "fiorentina",
@@ -15,7 +15,7 @@ export const italySerieA: Team[] = [
     primaryColor: "#800080",
     secondaryColor: "#FFFFFF",
     league: "Serie A",
-    logo: "@/assets/logos/Italy - Serie A/ACF Fiorentina.png",
+    logo: "/logos/Italy - Serie A/ACF Fiorentina.png",
   },
   {
     id: "roma",
@@ -23,7 +23,7 @@ export const italySerieA: Team[] = [
     primaryColor: "#8E1F2F",
     secondaryColor: "#F0BC42",
     league: "Serie A",
-    logo: "@/assets/logos/Italy - Serie A/AS Roma.png",
+    logo: "/logos/Italy - Serie A/AS Roma.png",
   },
   {
     id: "atalanta",
@@ -31,7 +31,7 @@ export const italySerieA: Team[] = [
     primaryColor: "#000000",
     secondaryColor: "#0066FF",
     league: "Serie A",
-    logo: "@/assets/logos/Italy - Serie A/Atalanta BC.png",
+    logo: "/logos/Italy - Serie A/Atalanta BC.png",
   },
   {
     id: "bologna",
@@ -39,7 +39,7 @@ export const italySerieA: Team[] = [
     primaryColor: "#0066CC",
     secondaryColor: "#FFFFFF",
     league: "Serie A",
-    logo: "@/assets/logos/Italy - Serie A/Bologna FC 1909.png",
+    logo: "/logos/Italy - Serie A/Bologna FC 1909.png",
   },
   {
     id: "cagliari",
@@ -47,7 +47,7 @@ export const italySerieA: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#0066CC",
     league: "Serie A",
-    logo: "@/assets/logos/Italy - Serie A/Cagliari Calcio.png",
+    logo: "/logos/Italy - Serie A/Cagliari Calcio.png",
   },
   {
     id: "como",
@@ -55,7 +55,7 @@ export const italySerieA: Team[] = [
     primaryColor: "#0066CC",
     secondaryColor: "#FFFFFF",
     league: "Serie A",
-    logo: "@/assets/logos/Italy - Serie A/Como 1907.png",
+    logo: "/logos/Italy - Serie A/Como 1907.png",
   },
   {
     id: "genoa",
@@ -63,7 +63,7 @@ export const italySerieA: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#0066CC",
     league: "Serie A",
-    logo: "@/assets/logos/Italy - Serie A/Genoa CFC.png",
+    logo: "/logos/Italy - Serie A/Genoa CFC.png",
   },
   {
     id: "hellas-verona",
@@ -71,7 +71,7 @@ export const italySerieA: Team[] = [
     primaryColor: "#FFD700",
     secondaryColor: "#0066FF",
     league: "Serie A",
-    logo: "@/assets/logos/Italy - Serie A/Hellas Verona.png",
+    logo: "/logos/Italy - Serie A/Hellas Verona.png",
   },
   {
     id: "inter",
@@ -79,7 +79,7 @@ export const italySerieA: Team[] = [
     primaryColor: "#010E80",
     secondaryColor: "#000000",
     league: "Serie A",
-    logo: "@/assets/logos/Italy - Serie A/Inter Milan.png",
+    logo: "/logos/Italy - Serie A/Inter Milan.png",
   },
   {
     id: "juventus",
@@ -87,7 +87,7 @@ export const italySerieA: Team[] = [
     primaryColor: "#000000",
     secondaryColor: "#FFFFFF",
     league: "Serie A",
-    logo: "@/assets/logos/Italy - Serie A/Juventus FC.png",
+    logo: "/logos/Italy - Serie A/Juventus FC.png",
   },
   {
     id: "parma",
@@ -95,7 +95,7 @@ export const italySerieA: Team[] = [
     primaryColor: "#FFD700",
     secondaryColor: "#0066CC",
     league: "Serie A",
-    logo: "@/assets/logos/Italy - Serie A/Parma Calcio 1913.png",
+    logo: "/logos/Italy - Serie A/Parma Calcio 1913.png",
   },
   {
     id: "pisa",
@@ -103,7 +103,7 @@ export const italySerieA: Team[] = [
     primaryColor: "#000000",
     secondaryColor: "#FFFFFF",
     league: "Serie A",
-    logo: "@/assets/logos/Italy - Serie A/Pisa Sporting Club.png",
+    logo: "/logos/Italy - Serie A/Pisa Sporting Club.png",
   },
   {
     id: "lazio",
@@ -111,7 +111,7 @@ export const italySerieA: Team[] = [
     primaryColor: "#002299",
     secondaryColor: "#FFFFFF",
     league: "Serie A",
-    logo: "@/assets/logos/Italy - Serie A/SS Lazio.png",
+    logo: "/logos/Italy - Serie A/SS Lazio.png",
   },
   {
     id: "napoli",
@@ -119,7 +119,7 @@ export const italySerieA: Team[] = [
     primaryColor: "#12A0D7",
     secondaryColor: "#FFFFFF",
     league: "Serie A",
-    logo: "@/assets/logos/Italy - Serie A/SSC Napoli.png",
+    logo: "/logos/Italy - Serie A/SSC Napoli.png",
   },
   {
     id: "torino",
@@ -127,7 +127,7 @@ export const italySerieA: Team[] = [
     primaryColor: "#8B0000",
     secondaryColor: "#FFFFFF",
     league: "Serie A",
-    logo: "@/assets/logos/Italy - Serie A/Torino FC.png",
+    logo: "/logos/Italy - Serie A/Torino FC.png",
   },
   {
     id: "udinese",
@@ -135,7 +135,7 @@ export const italySerieA: Team[] = [
     primaryColor: "#000000",
     secondaryColor: "#FFFFFF",
     league: "Serie A",
-    logo: "@/assets/logos/Italy - Serie A/Udinese Calcio.png",
+    logo: "/logos/Italy - Serie A/Udinese Calcio.png",
   },
   {
     id: "cremonese",
@@ -143,7 +143,7 @@ export const italySerieA: Team[] = [
     primaryColor: "#FF0000",
     secondaryColor: "#FFFFFF",
     league: "Serie A",
-    logo: "@/assets/logos/Italy - Serie A/US Cremonese.png",
+    logo: "/logos/Italy - Serie A/US Cremonese.png",
   },
   {
     id: "lecce",
@@ -151,7 +151,7 @@ export const italySerieA: Team[] = [
     primaryColor: "#FFD700",
     secondaryColor: "#FF0000",
     league: "Serie A",
-    logo: "@/assets/logos/Italy - Serie A/US Lecce.png",
+    logo: "/logos/Italy - Serie A/US Lecce.png",
   },
   {
     id: "sassuolo",
@@ -159,6 +159,6 @@ export const italySerieA: Team[] = [
     primaryColor: "#000000",
     secondaryColor: "#FFFFFF",
     league: "Serie A",
-    logo: "@/assets/logos/Italy - Serie A/US Sassuolo.png",
+    logo: "/logos/Italy - Serie A/US Sassuolo.png",
   },
 ];

@@ -1,5 +1,3 @@
-"use client";
-
 import { Menu, Bookmark, Plus } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { JerseyCard } from "@/components/JerseyCard";
@@ -135,11 +133,7 @@ export default function Home() {
           <ScrollArea className="w-full whitespace-nowrap">
             <div className="flex gap-3 pb-4">
               {popularTeams.map((team) => (
-                <TeamCard
-                  key={team.id}
-                  team={team}
-                  onPress={(id) => console.log("Team pressed:", id)}
-                />
+                <TeamCard key={team.id} team={team} />
               ))}
             </div>
             <ScrollBar orientation="horizontal" />
@@ -153,11 +147,7 @@ export default function Home() {
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
             {communityCreations.map((jersey) => (
-              <JerseyCard
-                key={jersey.id}
-                jersey={jersey}
-                onPress={(id: number) => console.log("Jersey pressed:", id)}
-              />
+              <JerseyCard key={jersey.id} jersey={jersey} />
             ))}
           </div>
         </section>

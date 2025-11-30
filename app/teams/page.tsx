@@ -60,10 +60,10 @@ export default function TeamsPage() {
         ) : (
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
             {filteredTeams.map((team) => (
-              <button
+              <Link
                 key={team.id}
+                href={`/teams/${team.id}`}
                 className="flex flex-col items-center p-4 rounded-2xl border border-border bg-card hover:bg-accent transition-colors group"
-                onClick={() => console.log("Team pressed:", team.id)}
               >
                 <div className="flex items-center justify-center w-20 h-20 mb-3">
                   <Image
@@ -80,7 +80,7 @@ export default function TeamsPage() {
                 <span className="text-xs text-muted-foreground text-center mt-1">
                   {team.league}
                 </span>
-              </button>
+              </Link>
             ))}
           </div>
         )}

@@ -1,18 +1,16 @@
-"use client";
-
 import Image from "next/image";
+import Link from "next/link";
 import { Team } from "@/constants/teams";
 
 type TeamCardProps = {
   team: Team;
-  onPress?: (teamId: string) => void;
 };
 
-export const TeamCard = ({ team, onPress }: TeamCardProps) => {
+export const TeamCard = ({ team }: TeamCardProps) => {
   return (
-    <button
+    <Link
+      href={`/teams/${team.id}`}
       className="flex flex-col items-center gap-2 min-w-[100px] group"
-      onClick={() => onPress?.(team.id)}
     >
       <div className="flex items-center justify-center w-24 h-24 rounded-2xl border border-border bg-card hover:bg-accent transition-colors p-3">
         <Image
@@ -26,6 +24,6 @@ export const TeamCard = ({ team, onPress }: TeamCardProps) => {
       <span className="text-xs text-muted-foreground font-medium truncate max-w-[100px]">
         {team.league.split(" - ")[1] || team.league}
       </span>
-    </button>
+    </Link>
   );
 };

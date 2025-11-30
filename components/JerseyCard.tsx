@@ -1,9 +1,8 @@
-"use client";
-
 import Image from "next/image";
-import { Bookmark } from "lucide-react";
+import Link from "next/link";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { getInitials } from "@/lib/utils";
+import { BookmarkButton } from "./BookmarkButton";
 
 type Jersey = {
   id: number;
@@ -16,24 +15,15 @@ type Jersey = {
 
 type JerseyCardProps = {
   jersey: Jersey;
-  onPress?: (jerseyId: number) => void;
 };
 
-export const JerseyCard = ({ jersey, onPress }: JerseyCardProps) => {
+export const JerseyCard = ({ jersey }: JerseyCardProps) => {
   const hasTags = jersey.tags && jersey.tags.length > 0;
 
   return (
-    <div
-      className="relative aspect-3/4 w-full overflow-hidden rounded-3xl group cursor-pointer"
-      onClick={() => onPress?.(jersey.id)}
-      role="button"
-      tabIndex={0}
-      onKeyDown={(e) => {
-        if (e.key === "Enter" || e.key === " ") {
-          e.preventDefault();
-          onPress?.(jersey.id);
-        }
-      }}
+    <Link
+      href={`/jerseys/${jersey.id}`}
+      className="relative aspect-3/4 w-full overflow-hidden rounded-3xl group cursor-pointer block"
     >
       {/* Background Image */}
       <Image
@@ -67,15 +57,7 @@ export const JerseyCard = ({ jersey, onPress }: JerseyCardProps) => {
           </span>
         </div>
         {/* Right */}
-        <button
-          className="rounded-full bg-white/20 backdrop-blur-sm p-2 hover:bg-white/30 transition-colors"
-          onClick={(e) => {
-            e.stopPropagation();
-            // Handle bookmark action here
-          }}
-        >
-          <Bookmark className="size-4 text-white" strokeWidth={2} />
-        </button>
+        <BookmarkButton jerseyId={jersey.id} />
       </div>
 
       {/* Bottom - Jersey Info */}
@@ -91,6 +73,6 @@ export const JerseyCard = ({ jersey, onPress }: JerseyCardProps) => {
           )}
         </div>
       </div>
-    </div>
+    </Link>
   );
 };

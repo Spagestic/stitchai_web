@@ -23,9 +23,17 @@ export const JerseyCard = ({ jersey, onPress }: JerseyCardProps) => {
   const hasTags = jersey.tags && jersey.tags.length > 0;
 
   return (
-    <button
+    <div
       className="relative aspect-3/4 w-full overflow-hidden rounded-3xl group cursor-pointer"
       onClick={() => onPress?.(jersey.id)}
+      role="button"
+      tabIndex={0}
+      onKeyDown={(e) => {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          onPress?.(jersey.id);
+        }
+      }}
     >
       {/* Background Image */}
       <Image
@@ -59,7 +67,13 @@ export const JerseyCard = ({ jersey, onPress }: JerseyCardProps) => {
           </span>
         </div>
         {/* Right */}
-        <button className="rounded-full bg-white/20 backdrop-blur-sm p-2 hover:bg-white/30 transition-colors">
+        <button
+          className="rounded-full bg-white/20 backdrop-blur-sm p-2 hover:bg-white/30 transition-colors"
+          onClick={(e) => {
+            e.stopPropagation();
+            // Handle bookmark action here
+          }}
+        >
           <Bookmark className="size-4 text-white" strokeWidth={2} />
         </button>
       </div>
@@ -77,6 +91,6 @@ export const JerseyCard = ({ jersey, onPress }: JerseyCardProps) => {
           )}
         </div>
       </div>
-    </button>
+    </div>
   );
 };

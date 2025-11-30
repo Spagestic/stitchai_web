@@ -155,13 +155,15 @@ export default function Home() {
 
       {/* Floating Create Button */}
       <div className="fixed bottom-6 right-6 z-50">
-        <Button
-          size="lg"
-          className="rounded-full shadow-lg px-6 gap-2 bg-foreground text-background hover:bg-foreground/90"
-        >
-          <Plus className="size-5" />
-          Create
-        </Button>
+        <Link href="/create">
+          <Button
+            size="lg"
+            className="rounded-full shadow-lg px-6 gap-2 bg-foreground text-background hover:bg-foreground/90"
+          >
+            <Plus className="size-5" />
+            Create
+          </Button>
+        </Link>
       </div>
     </div>
   );

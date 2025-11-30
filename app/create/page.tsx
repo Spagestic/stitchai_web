@@ -388,7 +388,7 @@ export default function CreateJerseyPage() {
       </main>
 
       {/* Generate Button */}
-      <div className="fixed bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-background via-background to-transparent">
+      <div className="fixed bottom-0 left-0 right-0 p-4 bg-linear-to-t from-background via-background to-transparent">
         <div className="container mx-auto">
           <Button
             onClick={handleGenerate}

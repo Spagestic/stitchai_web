@@ -22,7 +22,7 @@ export const JerseyCard = ({ jersey }: JerseyCardProps) => {
 
   return (
     <Link
-      href={`/jerseys/${jersey.id}`}
+      href={`/jersey/${jersey.id}`}
       className="relative aspect-3/4 w-full overflow-hidden rounded-3xl group cursor-pointer block"
     >
       {/* Background Image */}

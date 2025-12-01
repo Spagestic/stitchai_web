@@ -1,4 +1,3 @@
-import Navbar from "@/components/landing/Navbar";
 import HeroSection from "@/components/landing/HeroSection";
 import TrustedBySection from "@/components/landing/TrustedBySection";
 import HowItWorksSection from "@/components/landing/HowItWorksSection";

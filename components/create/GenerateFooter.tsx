@@ -11,8 +11,8 @@ export default function GenerateFooter({
   isGenerating,
 }: GenerateFooterProps) {
   return (
-    <div className="fixed bottom-0 left-0 right-0 p-4 bg-linear-to-t from-background via-background to-transparent z-50">
-      <div className="container mx-auto">
+    <div className="sticky bottom-0 left-0 right-0 p-4 bg-linear-to-t from-background via-background to-transparent z-50">
+      <div className="w-full max-w-3xl mx-auto">
         <Button
           onClick={onGenerate}
           disabled={isGenerating}

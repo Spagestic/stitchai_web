@@ -7,7 +7,6 @@ import {
   IconFolder,
   IconListDetails,
   IconUsers,
-  type Icon,
 } from "@tabler/icons-react";
 
 import {

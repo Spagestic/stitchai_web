@@ -66,7 +66,7 @@ export default function HeroSection() {
             </Link>
             <Link href="/auth/sign-up">
               <button className="px-5 py-2 text-xs font-medium bg-secondary text-secondary-foreground border border-secondary rounded hover:bg-secondary/90 transition-all">
-                Create Kit
+                Get Started
               </button>
             </Link>
           </div>

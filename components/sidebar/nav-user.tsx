@@ -1,8 +1,12 @@
 // @/components/sidebar/nav-user.tsx
+"use client";
+
+import { useEffect, useState } from "react";
 import { SidebarMenu, SidebarMenuItem } from "@/components/ui/sidebar";
-import { createSessionClient } from "@/lib/server";
+import { account } from "@/lib/appwrite";
 import { Skeleton } from "../ui/skeleton";
 import { NavUserClient } from "./nav-user-client";
+import type { Models } from "appwrite";
 
 export function LoadingUser() {
   return (
@@ -16,9 +20,36 @@ export function LoadingUser() {
   );
 }
 
-export async function NavUser() {
-  const { account } = await createSessionClient();
-  const user = await account.get();
+export function NavUser() {
+  const [user, setUser] = useState<Models.User<Models.Preferences> | null>(
+    null
+  );
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchUser = async () => {
+      try {
+        const userData = await account.get();
+        setUser(userData);
+      } catch (error) {
+        console.error("Failed to fetch user:", error);
+        setUser(null);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchUser();
+  }, []);
+
+  if (loading) {
+    return <LoadingUser />;
+  }
+
+  if (!user) {
+    // Handle unauthenticated state - redirect to login or show guest UI
+    return null;
+  }
 
   const userData = {
     name: user.name,

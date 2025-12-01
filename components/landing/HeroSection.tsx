@@ -37,16 +37,13 @@ export default function HeroSection() {
 
         {/* Nav Links */}
         <div className="hidden md:flex items-center gap-8 text-xs font-medium tracking-wide text-muted-foreground">
-          <a href="#" className="hover:text-muted transition-colors">
-            HOW IT WORKS
-          </a>
-          <a href="#" className="hover:text-muted transition-colors">
+          <a href="#gallery" className="hover:text-muted transition-colors">
             GALLERY
           </a>
           <a href="#" className="hover:text-muted transition-colors">
             TEAMS
           </a>
-          <a href="#" className="hover:text-muted transition-colors">
+          <a href="#pricing" className="hover:text-muted transition-colors">
             PRICING
           </a>
         </div>

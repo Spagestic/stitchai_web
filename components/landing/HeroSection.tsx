@@ -19,7 +19,8 @@ export default function HeroSection() {
       </div>
 
       {/* --- Navigation --- */}
-      <nav className="relative z-20 flex items-center justify-between px-6 py-6 md:px-12 max-w-[1600px] mx-auto">
+      <header className="absolute top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-6 md:px-12">
+        {/* Logo */}
         <div className="flex items-center">
           <Link href="/" className="flex items-center gap-2 cursor-pointer">
             <Image
@@ -35,20 +36,27 @@ export default function HeroSection() {
           </Link>
         </div>
 
-        {/* Nav Links */}
-        <div className="hidden md:flex items-center gap-8 text-xs font-medium tracking-wide text-muted-foreground">
-          <a href="#gallery" className="hover:text-muted transition-colors">
+        {/* Navigation */}
+        <nav className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 hidden md:flex items-center space-x-2 gap-8 ">
+          <Link
+            className="hidden md:flex items-center gap-8 text-xs font-medium tracking-wide text-muted-foreground hover:text-muted transition-colors"
+            href="#features"
+          >
             GALLERY
-          </a>
-          <a href="#" className="hover:text-muted transition-colors">
-            TEAMS
-          </a>
-          <a href="#pricing" className="hover:text-muted transition-colors">
+          </Link>
+          <Link
+            className="hidden md:flex items-center gap-8 text-xs font-medium tracking-wide text-muted-foreground hover:text-muted transition-colors"
+            href="#pricing"
+          >
             PRICING
-          </a>
-        </div>
-
-        {/* Right Actions */}
+          </Link>
+          <Link
+            className="hidden md:flex items-center gap-8 text-xs font-medium tracking-wide text-muted-foreground hover:text-muted transition-colors"
+            href="#faqs"
+          >
+            FAQS
+          </Link>
+        </nav>
         <div className="flex items-center gap-6">
           <div className="flex items-center gap-3">
             <Link href="/auth/login">
@@ -63,10 +71,10 @@ export default function HeroSection() {
             </Link>
           </div>
         </div>
-      </nav>
+      </header>
 
       {/* --- Main Content Grid --- */}
-      <main className="relative z-10 flex flex-col lg:flex-row items-end justify-between px-6 md:px-12 pb-20 pt-32 max-w-[1600px] mx-auto h-full min-h-[80vh]">
+      <main className="relative z-10 flex flex-col lg:flex-row items-end justify-between px-6 md:px-12 pb-20 pt-48 max-w-[1600px] mx-auto h-full min-h-[80vh]">
         {/* Left Column: Text Content */}
         <div className="flex flex-col max-w-2xl mb-12 lg:mb-0">
           <span className="text-sm md:text-xs font-bold tracking-widest text-muted-foreground uppercase mb-4">

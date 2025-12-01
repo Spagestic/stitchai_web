@@ -73,9 +73,12 @@ export const popularTeams: Team[] = [
   allTeams.find((t) => t.id === "real-madrid") ?? allTeams[0],
   allTeams.find((t) => t.id === "barcelona") ?? allTeams[1],
   allTeams.find((t) => t.id === "man-united") ?? allTeams[10],
+  allTeams.find((t) => t.id === "chelsea") ?? allTeams[5],
   allTeams.find((t) => t.id === "liverpool") ?? allTeams[11],
   allTeams.find((t) => t.id === "bayern") ?? allTeams[20],
   allTeams.find((t) => t.id === "psg") ?? allTeams[30],
   allTeams.find((t) => t.id === "juventus") ?? allTeams[40],
   allTeams.find((t) => t.id === "sporting") ?? allTeams[48],
+  allTeams.find((t) => t.id === "ajax") ?? allTeams[50],
+  allTeams.find((t) => t.id === "celtic") ?? allTeams[60],
 ];

@@ -1,14 +1,7 @@
 "use client";
 
-import {
-  IconDots,
-  IconFolder,
-  IconShare3,
-  IconTrash,
-  IconDatabase,
-  IconReport,
-  IconFileWord,
-} from "@tabler/icons-react";
+import Image from "next/image";
+import { IconDots, IconShare3, IconTrash } from "@tabler/icons-react";
 
 import {
   DropdownMenu,
@@ -29,19 +22,29 @@ import {
 
 const navDocumentsItems = [
   {
-    name: "Data Library",
+    name: "Classic Red & White",
     url: "#",
-    icon: IconDatabase,
+    image: "/jerseys/Classic_red_and_whit.png",
   },
   {
-    name: "Reports",
+    name: "Modern Blue Gradient",
     url: "#",
-    icon: IconReport,
+    image: "/jerseys/Modern_blue_gradient.png",
   },
   {
-    name: "Word Assistant",
+    name: "Retro 90s Style",
     url: "#",
-    icon: IconFileWord,
+    image: "/jerseys/Retro_90s_style_jers.png",
+  },
+  {
+    name: "Noel Diwali",
+    url: "#",
+    image: "/jerseys/noel_diwali.png",
+  },
+  {
+    name: "Velocity",
+    url: "#",
+    image: "/jerseys/velocity.png",
   },
 ];
 
@@ -50,13 +53,19 @@ export function NavDocuments() {
 
   return (
     <SidebarGroup className="group-data-[collapsible=icon]:hidden">
-      <SidebarGroupLabel>Recent Designs</SidebarGroupLabel>
+      <SidebarGroupLabel>Design History</SidebarGroupLabel>
       <SidebarMenu>
         {navDocumentsItems.map((item) => (
           <SidebarMenuItem key={item.name}>
             <SidebarMenuButton asChild>
-              <a href={item.url}>
-                <item.icon />
+              <a href={item.url} className="flex gap-2">
+                <Image
+                  src={item.image}
+                  alt={item.name}
+                  width={24}
+                  height={24}
+                  className="rounded object-cover"
+                />
                 <span>{item.name}</span>
               </a>
             </SidebarMenuButton>
@@ -75,10 +84,6 @@ export function NavDocuments() {
                 side={isMobile ? "bottom" : "right"}
                 align={isMobile ? "end" : "start"}
               >
-                <DropdownMenuItem>
-                  <IconFolder />
-                  <span>Open</span>
-                </DropdownMenuItem>
                 <DropdownMenuItem>
                   <IconShare3 />
                   <span>Share</span>

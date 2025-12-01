@@ -57,15 +57,9 @@ const galleryJerseys = [
 
 export default function GallerySection() {
   return (
-    <section
-      id="gallery"
-      className="relative z-10 py-24 lg:py-32 bg-gradient-to-b from-transparent via-white/[0.02] to-transparent"
-    >
+    <section id="gallery" className="relative z-10 py-24 lg:py-32 bg-black">
       <div className="mx-auto max-w-7xl px-6">
         <div className="text-center mb-16">
-          <p className="text-sm font-medium uppercase tracking-widest text-amber-400 mb-4">
-            Gallery
-          </p>
           <h2 className="text-4xl font-bold text-white sm:text-5xl mb-4">
             Community Creations
           </h2>

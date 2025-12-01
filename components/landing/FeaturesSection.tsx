@@ -4,7 +4,7 @@ import { Zap, Sparkles, Palette } from "lucide-react";
 
 export default function FeaturesSection() {
   return (
-    <section className="relative z-10 py-24 lg:py-32">
+    <section className="relative z-10 py-24 lg:py-32 bg-black">
       <div className="mx-auto max-w-7xl px-6">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>

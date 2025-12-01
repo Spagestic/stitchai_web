@@ -32,7 +32,7 @@ export default function TestimonialsSection() {
   return (
     <section
       id="testimonials"
-      className="relative z-10 py-24 lg:py-32 bg-gradient-to-b from-transparent via-white/[0.02] to-transparent"
+      className="relative z-10 py-24 lg:py-32 bg-black"
     >
       <div className="mx-auto max-w-7xl px-6">
         <div className="text-center mb-16">

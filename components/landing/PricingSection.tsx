@@ -85,10 +85,10 @@ export default function PricingSection() {
   return (
     <section
       id="pricing"
-      className="sm:pt-12 sm:pb-12 z-10 mr-8 ml-8 pt-24 pb-24 relative selection:bg-muted-foreground/30"
+      className="sm:pt-12 sm:pb-12 z-10 pt-24 pb-24 relative selection:bg-muted-foreground/30 bg-black"
     >
-      <div className="lg:pt-8 lg:pl-8 lg:pr-8 lg:pb-8 bg-linear-to-br from-primary/0 via-primary/5 to-primary/0 max-w-7xl rounded-3xl mr-auto ml-auto pt-8 pr-8 pb-8 pl-8">
-        <div className="flex flex-col md:flex-row md:items-center md:justify-between max-w-7xl mr-auto mb-16 ml-auto pr-6 pl-6">
+      <div className="lg:pt-8 lg:pb-8 bg-linear-to-br from-primary/0 via-primary/5 to-primary/0 max-w-7xl rounded-3xl mr-auto ml-auto pt-8 pb-8 ">
+        <div className="flex flex-col md:flex-row md:items-center md:justify-between max-w-7xl mr-auto ml-auto pr-6 pl-6">
           {/* Left: Headings */}
           <div className="text-left max-w-none">
             <h2 className="leading-7 text-base font-semibold text-secondary">
@@ -157,9 +157,6 @@ export default function PricingSection() {
                     {plan.subtitle}
                   </p>
                 </div>
-                <button className="px-6 py-2 bg-secondary text-secondary-foreground text-xs font-medium rounded hover:bg-secondary/90 transition-colors">
-                  {plan.cta}
-                </button>
               </div>
 
               {/* Price */}

@@ -9,7 +9,7 @@ export default function HeroSection() {
       <div className="absolute inset-0 z-0">
         <Image
           fill
-          src="/bg-1.png"
+          src="/bg-3.png"
           alt="Background Image"
           className="w-full h-full object-cover opacity-80"
         />

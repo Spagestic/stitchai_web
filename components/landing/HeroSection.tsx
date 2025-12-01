@@ -30,7 +30,7 @@ export default function HeroSection() {
               src={"/logo_dark.png"}
               width={40}
             />
-            <span className="text-lg font-bold tracking-widest uppercase">
+            <span className="text-sm md:text-lg font-bold tracking-widest uppercase">
               Stitch AI
             </span>
           </Link>
@@ -64,7 +64,7 @@ export default function HeroSection() {
                 Login
               </button>
             </Link>
-            <Link href="/auth/sign-up">
+            <Link href="/auth/sign-up" className="hidden md:block">
               <button className="px-5 py-2 text-xs font-medium bg-secondary text-secondary-foreground border border-secondary rounded hover:bg-secondary/90 transition-all">
                 Get Started
               </button>

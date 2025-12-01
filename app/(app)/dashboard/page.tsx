@@ -96,7 +96,6 @@ export default function Home() {
           <Button variant="ghost" size="icon">
             <Menu className="size-5" />
           </Button>
-          <h1 className="text-xl font-bold">StitchAI</h1>
           <Button variant="ghost" size="icon">
             <Bookmark className="size-5" />
           </Button>

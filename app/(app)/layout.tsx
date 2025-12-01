@@ -5,7 +5,7 @@ import { SidebarInset, SidebarProvider } from "@/components/ui/sidebar";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { account } from "@/lib/appwrite";
-
+import { Spinner } from "@/components/ui/spinner";
 export default function Layout({ children }: { children: React.ReactNode }) {
   const router = useRouter();
   const [isLoading, setIsLoading] = useState(true);
@@ -24,7 +24,11 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   }, [router]);
 
   if (isLoading) {
-    return <div>Loading...</div>;
+    return (
+      <div className="flex items-center justify-center min-h-svh">
+        <Spinner />
+      </div>
+    );
   }
 
   return (

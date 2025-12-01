@@ -32,6 +32,23 @@ import { allTeams, Team } from "@/constants/teams";
 import Image from "next/image";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
+import { Skeleton } from "@/components/ui/skeleton";
+
+// Dummy list of jersey images (should match files in public/jerseys/)
+const jerseyImageList = [
+  "Classic_red_and_whit.png",
+  "hunyuan.png",
+  "Modern_blue_gradient.png",
+  "Retro_90s_style_jers.png",
+  "velocity.png",
+  "black_jersey.png",
+  "base.png",
+];
+
+function getRandomJerseyImage() {
+  const index = Math.floor(Math.random() * jerseyImageList.length);
+  return `/jerseys/${jerseyImageList[index]}`;
+}
 
 const styleIcons = {
   classic: Shirt,
@@ -58,6 +75,7 @@ export default function CreateJerseyPage() {
   const [playerNumber, setPlayerNumber] = useState("");
   const [description, setDescription] = useState("");
   const [isGenerating, setIsGenerating] = useState(false);
+  const [generatedImage, setGeneratedImage] = useState<string | null>(null); // New
 
   // Dialog state
   const [isTeamDialogOpen, setIsTeamDialogOpen] = useState(false);
@@ -114,9 +132,11 @@ export default function CreateJerseyPage() {
 
   const handleGenerate = async () => {
     setIsGenerating(true);
-    // TODO: Implement actual generation logic
+    setGeneratedImage(null);
+    window.scrollTo({ top: 0, behavior: "smooth" });
     await new Promise((resolve) => setTimeout(resolve, 2000));
     setIsGenerating(false);
+    setGeneratedImage(getRandomJerseyImage());
   };
 
   const handleCustomColorChange = (index: number, color: string) => {
@@ -151,7 +171,29 @@ export default function CreateJerseyPage() {
         </div>
       </header>
 
+      {/* Jersey Skeleton/Animation */}
+      <div className="container px-4 pt-6">
+        {isGenerating ? (
+          <div className="w-full flex justify-center items-center">
+            {/* Skeleton Loader */}
+            <Skeleton className="w-full aspect-square rounded-2xl max-w-[380px] h-[380px]" />
+          </div>
+        ) : generatedImage ? (
+          <div className="w-full flex justify-center">
+            {/* Display generated jersey */}
+            <Image
+              src={generatedImage}
+              alt="Generated Jersey"
+              width={380}
+              height={380}
+              className="rounded-2xl aspect-square shadow-md object-contain"
+            />
+          </div>
+        ) : null}
+      </div>
+
       <main className="container mx-auto px-4 py-6 pb-32 space-y-8">
+        {/* ...existing main sections... */}
         {/* Style Selection */}
         <section>
           <div className="flex items-center gap-2 mb-4">
@@ -387,8 +429,8 @@ export default function CreateJerseyPage() {
         </section>
       </main>
 
-      {/* Generate Button */}
-      <div className="fixed bottom-0 left-0 right-0 p-4 bg-linear-to-t from-background via-background to-transparent">
+      {/* Fixed Footer Generate Button */}
+      <div className="fixed bottom-0 left-0 right-0 p-4 bg-linear-to-t from-background via-background to-transparent z-50">
         <div className="container mx-auto">
           <Button
             onClick={handleGenerate}

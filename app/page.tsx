@@ -7,7 +7,7 @@ import FAQ from "@/components/landing/faq-section";
 
 export default function HomePage() {
   return (
-    <div className="relative min-h-screen bg-black">
+    <div className="relative min-h-screen bg-black selection:bg-muted-foreground/30 ">
       <HeroSection />
       <GallerySection />
       <TestimonialsSection />

@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function HeroSection() {
   return (
-    <div className="relative w-full min-h-screen bg-primary text-primary-foreground overflow-hidden font-sans selection:bg-muted-foreground/30">
+    <div className="relative w-full min-h-screen bg-primary text-primary-foreground overflow-hidden font-sans">
       {/* --- Background Image & Overlay --- */}
       {/* Ideally, use a background image of a stadium tunnel, jersey fabric texture, or abstract fluid team colors */}
       <div className="absolute inset-0 z-0">

@@ -85,7 +85,7 @@ export default function PricingSection() {
   return (
     <section
       id="pricing"
-      className="sm:pt-12 sm:pb-12 z-10 pt-24 pb-24 relative selection:bg-muted-foreground/30 bg-black"
+      className="sm:pt-12 sm:pb-12 z-10 pt-24 pb-24 relative bg-black"
     >
       <div className="lg:pt-8 lg:pb-8 bg-linear-to-br from-primary/0 via-primary/5 to-primary/0 max-w-7xl rounded-3xl mr-auto ml-auto pt-8 pb-8 ">
         <div className="flex flex-col md:flex-row md:items-center md:justify-between max-w-7xl mr-auto ml-auto pr-6 pl-6">

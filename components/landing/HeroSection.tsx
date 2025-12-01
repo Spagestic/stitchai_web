@@ -119,8 +119,8 @@ export default function HeroSection() {
           <div className="absolute top-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-muted-foreground/40 to-transparent" />
 
           <div className="mb-8">
-            <p className="text-[10px] font-bold tracking-widest text-muted-foreground uppercase mb-1">
-              Performance Data:
+            <p className="text-[10px] font-bold tracking-widest text-secondary/50 uppercase mb-1">
+              Performance Data
             </p>
             <h3 className="text-lg font-medium text-secondary">
               Fan Experience Metrics

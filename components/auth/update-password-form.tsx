@@ -14,8 +14,9 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useState } from "react";
+import { Suspense } from "react";
 
-export function UpdatePasswordForm({
+function UpdatePasswordFormContent({
   className,
   ...props
 }: React.ComponentPropsWithoutRef<"div">) {
@@ -80,5 +81,15 @@ export function UpdatePasswordForm({
         </CardContent>
       </Card>
     </div>
+  );
+}
+
+export function UpdatePasswordForm(
+  props: React.ComponentPropsWithoutRef<"div">
+) {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <UpdatePasswordFormContent {...props} />
+    </Suspense>
   );
 }

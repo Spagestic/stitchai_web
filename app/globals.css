@@ -11,6 +11,10 @@
   display: none; /* Chrome, Safari, Opera */
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {

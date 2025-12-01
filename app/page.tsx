@@ -1,5 +1,4 @@
 import HeroSection from "@/components/landing/HeroSection";
-import TrustedBySection from "@/components/landing/TrustedBySection";
 import HowItWorksSection from "@/components/landing/HowItWorksSection";
 import GallerySection from "@/components/landing/GallerySection";
 import FeaturesSection from "@/components/landing/FeaturesSection";
@@ -12,7 +11,6 @@ export default function HomePage() {
   return (
     <div className="relative min-h-screen bg-primary">
       <HeroSection />
-      <TrustedBySection />
       <HowItWorksSection />
       <GallerySection />
       <FeaturesSection />

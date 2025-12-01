@@ -1,125 +1,170 @@
-import React from "react";
+import Image from "next/image";
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
-import { Sparkles, Check, ArrowRight } from "lucide-react";
 
 export default function HeroSection() {
   return (
-    <section className="relative z-10 min-h-[90vh] flex items-center">
-      <div
-        className="absolute inset-0 z-0"
-        style={{
-          backgroundImage: `url('/bg-1.png')`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-        }}
-      >
-        <div className="absolute inset-0 bg-gradient-to-r from-[#0a0a0f]/95 via-[#0a0a0f]/70 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0f] via-transparent to-[#0a0a0f]/40" />
+    <div className="relative w-full min-h-screen bg-[#050505] text-white overflow-hidden font-sans selection:bg-blue-500/30">
+      {/* --- Background Image & Overlay --- */}
+      <div className="absolute inset-0 z-0">
+        <Image
+          fill
+          src="/bg-1.png"
+          alt="Aether Nebula Background"
+          className="w-full h-full object-cover opacity-80"
+        />
+        {/* Gradient overlays to ensure text readability and blend the bottom */}
+        <div className="absolute inset-0 bg-linear-to-b from-black/30 via-transparent to-[#050505]" />
+        <div className="absolute inset-0 bg-linear-to-r from-black/50 via-transparent to-transparent" />
       </div>
-      <div className="relative z-10 mx-auto w-full max-w-7xl px-6 py-20">
-        <div className="grid gap-12 lg:grid-cols-2 lg:gap-8 items-center">
-          {/* Left Content */}
-          <div className="max-w-2xl">
-            <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 backdrop-blur-sm">
-              <Sparkles className="h-4 w-4 text-amber-400" />
-              <span className="text-sm text-white/70">
-                AI-Powered Design Generation
-              </span>
-            </div>
-            <h1 className="mb-6 text-5xl font-bold leading-[1.1] tracking-tight text-white sm:text-6xl lg:text-7xl">
-              Design your
-              <br />
-              <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-amber-400 bg-clip-text text-transparent">
-                Dream Jersey
-              </span>
-            </h1>
-            <p className="mb-8 max-w-lg text-lg leading-relaxed text-white/60">
-              Skip the stadium lines. Create stunning, personalized sports
-              jerseys with AI-powered design generation. From concept to custom
-              — in seconds.
-            </p>
-            <div className="flex flex-wrap items-center gap-4">
-              <Button
-                size="lg"
-                className="bg-gradient-to-r from-blue-500 to-purple-500 text-white hover:opacity-90 font-semibold px-8 py-6 text-base rounded-full shadow-lg shadow-purple-500/25 transition-all hover:shadow-purple-500/40 hover:scale-105"
-                asChild
-              >
-                <Link href="/auth/sign-up">
-                  Start Designing Free
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Link>
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-white/20 bg-white/5 text-white hover:bg-white/10 hover:border-white/30 font-semibold px-8 py-6 text-base rounded-full backdrop-blur-sm"
-                asChild
-              >
-                <Link href="#gallery">View Gallery</Link>
-              </Button>
-            </div>
-            <div className="mt-8 flex items-center gap-6 text-sm text-white/50">
-              <div className="flex items-center gap-2">
-                <Check className="h-4 w-4 text-green-400" />
-                <span>No credit card required</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Check className="h-4 w-4 text-green-400" />
-                <span>Runs in your browser</span>
-              </div>
-            </div>
-          </div>
-          {/* Right Content - Stats Card */}
-          <div className="hidden lg:flex justify-end">
-            <div className="relative">
-              <div className="absolute -inset-4 bg-gradient-to-r from-blue-500/20 via-purple-500/20 to-amber-500/20 rounded-3xl blur-2xl opacity-60" />
-              <div className="relative rounded-2xl border border-white/10 bg-white/5 p-8 backdrop-blur-xl shadow-2xl">
-                <div className="flex items-center gap-2 mb-6">
-                  <div className="h-2 w-2 animate-pulse rounded-full bg-green-400" />
-                  <p className="text-xs font-medium uppercase tracking-widest text-white/40">
-                    LIVE STATS
-                  </p>
-                </div>
-                <div className="space-y-6">
-                  <div>
-                    <p className="text-5xl font-bold text-white">10K+</p>
-                    <p className="text-sm text-white/50">
-                      jerseys designed this month
-                    </p>
-                  </div>
-                  <div className="h-px bg-gradient-to-r from-transparent via-white/20 to-transparent" />
-                  <div>
-                    <p className="text-5xl font-bold text-white">50+</p>
-                    <p className="text-sm text-white/50">
-                      supported teams & leagues
-                    </p>
-                  </div>
-                  <div className="h-px bg-gradient-to-r from-transparent via-white/20 to-transparent" />
-                  <div>
-                    <p className="text-5xl font-bold text-white">&lt;30s</p>
-                    <p className="text-sm text-white/50">
-                      average generation time
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
+
+      {/* --- Navigation --- */}
+
+      <nav className="relative z-20 flex items-center justify-between px-6 py-6 md:px-12 max-w-[1600px] mx-auto">
+        <div className="flex items-center">
+          <Link href="/" className="flex items-center gap-2 cursor-pointer">
+            <Image
+              alt="Logo"
+              className="h-8 w-8"
+              height={40}
+              src={"/logo_dark.png"}
+              width={40}
+            />
+            <span className="text-lg font-bold tracking-widest uppercase">
+              Stitch AI
+            </span>
+          </Link>
+        </div>
+
+        {/* Nav Links (Hidden on mobile) */}
+        <div className="hidden md:flex items-center gap-8 text-xs font-medium tracking-wide text-gray-300">
+          <a href="#" className="hover:text-white transition-colors">
+            HOW IT WORKS
+          </a>
+          <a href="#" className="hover:text-white transition-colors">
+            USE CASES
+          </a>
+          <a href="#" className="hover:text-white transition-colors">
+            INSIGHTS
+          </a>
+          <a href="#" className="hover:text-white transition-colors">
+            PRICING
+          </a>
+        </div>
+
+        {/* Right Actions */}
+        <div className="flex items-center gap-6">
+          <div className="flex items-center gap-3">
+            <button className="px-5 py-2 text-xs font-medium border border-white/20 rounded hover:bg-white/10 transition-all">
+              Sign In
+            </button>
+            <button className="px-5 py-2 text-xs font-medium border border-white/20 rounded hover:bg-white hover:text-black transition-all">
+              Get Started
+            </button>
           </div>
         </div>
-      </div>
-      {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20">
-        <div className="flex flex-col items-center gap-2 text-white/30">
-          <span className="text-xs tracking-widest uppercase">
-            Scroll to explore
+      </nav>
+
+      {/* --- Main Content Grid --- */}
+      <main className="relative z-10 flex flex-col lg:flex-row items-end justify-between px-6 md:px-12 pb-20 pt-32 max-w-[1600px] mx-auto h-full min-h-[80vh]">
+        {/* Left Column: Text Content */}
+        <div className="flex flex-col max-w-2xl mb-12 lg:mb-0">
+          <span className="text-[10px] md:text-xs font-bold tracking-[0.2em] text-gray-400 uppercase mb-4">
+            A New Orbit For Your Mind
           </span>
-          <div className="h-12 w-6 rounded-full border border-white/20 flex items-start justify-center p-1.5">
-            <div className="h-2 w-1 rounded-full bg-white/40 animate-bounce" />
+
+          <h1 className="text-5xl md:text-7xl font-medium leading-[1.1] tracking-tight mb-6">
+            Think deeper <br />
+            Decide sooner
+          </h1>
+
+          {/* Divider Line */}
+          <div className="w-full h-px bg-linear-to-r from-white/30 to-transparent my-6" />
+
+          <div className="flex flex-col gap-6">
+            <div className="space-y-4 max-w-lg">
+              <p className="text-[10px] font-bold tracking-widest text-gray-400 uppercase">
+                Written with Aether · The Clarity Series
+              </p>
+              <p className="text-lg md:text-xl text-gray-200 font-light leading-relaxed">
+                Aether challenges your thinking, maps your logic, and reveals
+                the hidden patterns shaping every decision.
+              </p>
+            </div>
+
+            {/* CTA Buttons */}
+            <div className="flex flex-wrap items-center gap-4 mt-2">
+              <button className="px-8 py-3 bg-white text-black text-sm font-medium rounded hover:bg-gray-200 transition-colors">
+                Start a free session
+              </button>
+              <button className="px-8 py-3 border border-white/20 text-white text-sm font-medium rounded hover:bg-white/5 transition-colors backdrop-blur-sm">
+                View Prices
+              </button>
+            </div>
+          </div>
+
+          <div className="mt-4 text-[10px] text-gray-500 tracking-wide">
+            No sign-in · Runs in your browser
           </div>
         </div>
+
+        {/* Right Column: Glassmorphism Stats Card */}
+        <div className="w-full lg:w-[380px] bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-8 relative overflow-hidden">
+          {/* Subtle shine effect on top border */}
+          <div className="absolute top-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-white/40 to-transparent" />
+
+          <div className="mb-8">
+            <p className="text-[10px] font-bold tracking-widest text-gray-400 uppercase mb-1">
+              Field Data:
+            </p>
+            <h3 className="text-lg font-medium text-white">
+              Cognitive Metrics
+            </h3>
+          </div>
+
+          <div className="space-y-8">
+            {/* Metric 1 */}
+            <div>
+              <div className="text-3xl font-light text-white mb-1">47%</div>
+              <div className="text-xs text-gray-400 font-light">
+                faster time-to-clarity¹
+              </div>
+              <div className="w-full bg-white/10 h-px mt-4" />
+            </div>
+
+            {/* Metric 2 */}
+            <div>
+              <div className="text-3xl font-light text-white mb-1">12,000+</div>
+              <div className="text-xs text-gray-400 font-light">
+                thought maps generated
+              </div>
+              <div className="w-full bg-white/10 h-px mt-4" />
+            </div>
+
+            {/* Metric 3 */}
+            <div>
+              <div className="text-3xl font-light text-white mb-1">2M+</div>
+              <div className="text-xs text-gray-400 font-light">
+                lines of thought analyzed
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-8 pt-4 border-t border-white/5">
+            <p className="text-[10px] leading-relaxed text-gray-500">
+              ¹ Median across 1,200 sessions comparing self-guided vs
+              Aether-guided decisions.
+            </p>
+          </div>
+        </div>
+      </main>
+
+      {/* --- Footer/Bottom Label --- */}
+      <div className="absolute bottom-6 left-0 w-full text-center z-20">
+        <p className="text-[10px] tracking-widest text-white/30 uppercase">
+          Issue 01: The Clarity Series · Fig. 01: The mind at periapsis · Scroll
+          to see how Aether thinks
+        </p>
       </div>
-    </section>
+    </div>
   );
 }

@@ -1,9 +1,14 @@
 // lib/appwrite.ts
 import { Client, Account, Databases, Storage } from "appwrite";
 
-const client = new Client()
-  .setEndpoint(process.env.NEXT_PUBLIC_APPWRITE_ENDPOINT as string)
-  .setProject(process.env.NEXT_PUBLIC_APPWRITE_PROJECT_ID as string);
+const endpoint = process.env.NEXT_PUBLIC_APPWRITE_ENDPOINT;
+const projectId = process.env.NEXT_PUBLIC_APPWRITE_PROJECT_ID;
+
+const client = new Client();
+
+if (endpoint && projectId) {
+  client.setEndpoint(endpoint).setProject(projectId);
+}
 
 const account = new Account(client);
 const databases = new Databases(client);

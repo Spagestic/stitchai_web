@@ -1,6 +1,3 @@
-"use client";
-
-import React from "react";
 import { Star, StarHalf, Quote } from "lucide-react";
 
 const testimonials = [
@@ -86,10 +83,7 @@ const testimonialPairs = [
 
 export default function TestimonialsSection() {
   return (
-    <section
-      id="testimonials"
-      className="relative z-10 py-24 lg:py-32 bg-black"
-    >
+    <section id="testimonials" className="relative z-10 py-8 lg:py-16 bg-black">
       <style>{`
         @keyframes scrollUp {
           0% {

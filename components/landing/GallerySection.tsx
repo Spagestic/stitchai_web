@@ -58,7 +58,7 @@ const galleryJerseys = [
 export default function GallerySection() {
   return (
     <section id="gallery" className="relative z-10 py-24 lg:py-32 bg-black">
-      <div className="mx-auto max-w-7xl px-6">
+      <div className="mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-white sm:text-5xl mb-4">
             Community Creations
@@ -87,19 +87,6 @@ export default function GallerySection() {
               </div>
             </div>
           ))}
-        </div>
-        <div className="mt-12 text-center">
-          <Button
-            variant="outline"
-            size="lg"
-            className="border-white/20 bg-white/5 text-white hover:bg-white/10 rounded-full px-8"
-            asChild
-          >
-            <Link href="/dashboard">
-              View All Designs
-              <ChevronRight className="ml-2 h-4 w-4" />
-            </Link>
-          </Button>
         </div>
       </div>
     </section>

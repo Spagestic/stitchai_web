@@ -3,6 +3,7 @@ import GallerySection from "@/components/landing/GallerySection";
 import TestimonialsSection from "@/components/landing/TestimonialsSection";
 import PricingSection from "@/components/landing/PricingSection";
 import FooterSection from "@/components/landing/FooterSection";
+import FAQ from "@/components/landing/faq-section";
 
 export default function HomePage() {
   return (
@@ -11,6 +12,7 @@ export default function HomePage() {
       <GallerySection />
       <TestimonialsSection />
       <PricingSection />
+      <FAQ />
       <FooterSection />
     </div>
   );

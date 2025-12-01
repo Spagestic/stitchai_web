@@ -40,7 +40,7 @@ export default function HeroSection() {
         <nav className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 hidden md:flex items-center space-x-2 gap-8 ">
           <Link
             className="hidden md:flex items-center gap-8 text-xs font-medium tracking-wide text-muted-foreground hover:text-muted transition-colors"
-            href="#features"
+            href="#gallery"
           >
             GALLERY
           </Link>

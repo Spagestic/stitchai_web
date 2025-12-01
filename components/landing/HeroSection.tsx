@@ -30,7 +30,7 @@ export default function HeroSection() {
               src={"/logo_dark.png"}
               width={40}
             />
-            <span className="text-sm md:text-lg font-bold tracking-widest uppercase">
+            <span className="text-md md:text-lg font-bold tracking-widest uppercase">
               Stitch AI
             </span>
           </Link>

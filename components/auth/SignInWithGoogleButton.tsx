@@ -1,7 +1,6 @@
 "use client";
 import { Button } from "@/components/ui/button";
-import { account } from "@/lib/appwrite";
-import { OAuthProvider } from "appwrite";
+import { createClient } from "@/lib/supabase/client";
 import React, { useState } from "react";
 
 interface SignInWithGoogleButtonProps {
@@ -19,11 +18,16 @@ const SignInWithGoogleButton: React.FC<SignInWithGoogleButtonProps> = ({
       setIsLoading(true);
       setError(null);
 
-      account.createOAuth2Session(
-        OAuthProvider.Google,
-        `${window.location.origin}/dashboard`, // Success URL
-        `${window.location.origin}/auth/error` // Failure URL
-      );
+      const supabase = createClient();
+      const redirectUrl = new URL(`${window.location.origin}/auth/oauth`);
+      redirectUrl.searchParams.set("next", "/dashboard");
+
+      await supabase.auth.signInWithOAuth({
+        provider: "google",
+        options: {
+          redirectTo: redirectUrl.toString(),
+        },
+      });
     } catch {
       setError("Failed to connect with Google. Please try again.");
     } finally {

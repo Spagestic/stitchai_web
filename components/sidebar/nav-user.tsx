@@ -1,12 +1,8 @@
-// @/components/sidebar/nav-user.tsx
-"use client";
-
-import { useEffect, useState } from "react";
 import { SidebarMenu, SidebarMenuItem } from "@/components/ui/sidebar";
-import { account } from "@/lib/appwrite";
+import { createClient } from "@/lib/supabase/server";
 import { Skeleton } from "../ui/skeleton";
+import { redirect } from "next/navigation";
 import { NavUserClient } from "./nav-user-client";
-import type { Models } from "appwrite";
 
 export function LoadingUser() {
   return (
@@ -20,47 +16,30 @@ export function LoadingUser() {
   );
 }
 
-export function NavUser() {
-  const [user, setUser] = useState<Models.User<Models.Preferences> | null>(
-    null
-  );
-  const [loading, setLoading] = useState(true);
+export async function NavUser() {
+  const supabase = await createClient();
+  const {
+    data: { user },
+    error: userError,
+  } = await supabase.auth.getUser();
 
-  useEffect(() => {
-    const fetchUser = async () => {
-      try {
-        const userData = await account.get();
-        setUser(userData);
-      } catch (error) {
-        console.error("Failed to fetch user:", error);
-        setUser(null);
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    fetchUser();
-  }, []);
-
-  if (loading) {
-    return <LoadingUser />;
+  if (userError) {
+    console.error("Error fetching user:", userError);
+    redirect("/auth/login");
   }
 
   if (!user) {
-    // Handle unauthenticated state - redirect to login or show guest UI
-    return null;
+    redirect("/auth/login");
   }
-
-  const userData = {
-    name: user.name,
-    email: user.email,
-    imageUrl: "",
-  };
 
   return (
     <SidebarMenu>
       <SidebarMenuItem>
-        <NavUserClient user={userData} />
+        <NavUserClient
+          name={user.user_metadata?.full_name || ""}
+          email={user.email || ""}
+          imageUrl={user.user_metadata?.avatar_url || ""}
+        />
       </SidebarMenuItem>
     </SidebarMenu>
   );

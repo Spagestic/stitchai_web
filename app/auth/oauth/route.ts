@@ -1,14 +1,37 @@
 import { NextResponse } from "next/server";
+// The client you created from the Server-Side Auth instructions
+import { createClient } from "@/lib/supabase/server";
 
-// This route is no longer needed with Appwrite as OAuth callback
-// is handled directly by Appwrite. The success/failure URLs are
-// specified when calling createOAuth2Session.
 export async function GET(request: Request) {
   const { searchParams, origin } = new URL(request.url);
+  const code = searchParams.get("code");
   // if "next" is in param, use it as the redirect URL
   const next = searchParams.get("next") ?? "/dashboard";
 
-  // With Appwrite, OAuth is handled automatically via the SDK
-  // This route can be used as a fallback redirect
-  return NextResponse.redirect(`${origin}${next}`);
+  // console.log("OAuth callback - code:", !!code, "next:", next);
+
+  if (code) {
+    const supabase = await createClient();
+    const { error } = await supabase.auth.exchangeCodeForSession(code);
+    if (!error) {
+      const forwardedHost = request.headers.get("x-forwarded-host"); // original origin before load balancer
+      const isLocalEnv = process.env.NODE_ENV === "development";
+
+      // console.log("Auth successful, redirecting to:", next);
+
+      if (isLocalEnv) {
+        // we can be sure that there is no load balancer in between, so no need to watch for X-Forwarded-Host
+        return NextResponse.redirect(`${origin}${next}`);
+      } else if (forwardedHost) {
+        return NextResponse.redirect(`https://${forwardedHost}${next}`);
+      } else {
+        return NextResponse.redirect(`${origin}${next}`);
+      }
+    } else {
+      console.error("Auth error:", error);
+    }
+  }
+
+  // return the user to an error page with instructions
+  return NextResponse.redirect(`${origin}/auth/error`);
 }

@@ -1,34 +1,20 @@
-"use client";
-
 import { AppSidebar } from "@/components/sidebar/app-sidebar";
 import { SidebarInset, SidebarProvider } from "@/components/ui/sidebar";
-import { useEffect, useState } from "react";
-import { useRouter } from "next/navigation";
-import { account } from "@/lib/appwrite";
-import { Spinner } from "@/components/ui/spinner";
-export default function Layout({ children }: { children: React.ReactNode }) {
-  const router = useRouter();
-  const [isLoading, setIsLoading] = useState(true);
+import { createClient } from "@/lib/supabase/server";
+import { redirect } from "next/navigation";
 
-  useEffect(() => {
-    const checkAuth = async () => {
-      try {
-        await account.get();
-        setIsLoading(false);
-      } catch {
-        router.push("/auth/login");
-      }
-    };
+export default async function Layout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  const supabase = await createClient();
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
 
-    checkAuth();
-  }, [router]);
-
-  if (isLoading) {
-    return (
-      <div className="flex items-center justify-center min-h-svh">
-        <Spinner />
-      </div>
-    );
+  if (!user) {
+    redirect("/auth/login");
   }
 
   return (

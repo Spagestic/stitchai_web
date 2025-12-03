@@ -1,6 +1,5 @@
 "use client";
-
-import { account } from "@/lib/appwrite";
+import { createClient } from "@/lib/supabase/client";
 import Link from "next/link";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import {
@@ -18,6 +17,7 @@ import {
 } from "@tabler/icons-react";
 import { useSidebar } from "@/components/ui/sidebar";
 import { useRouter } from "next/navigation";
+
 export function UserDropdown({
   user,
 }: {
@@ -27,7 +27,8 @@ export function UserDropdown({
   const { isMobile } = useSidebar();
 
   const logout = async () => {
-    await account.deleteSession("current");
+    const supabase = createClient();
+    await supabase.auth.signOut();
     router.push("/");
     router.refresh();
   };

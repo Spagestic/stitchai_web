@@ -1,7 +1,6 @@
 "use client";
 import { cn } from "@/lib/utils";
-import { account } from "@/lib/appwrite";
-import { ID } from "appwrite";
+import { createClient } from "@/lib/supabase/client";
 import { Button } from "@/components/ui/button";
 import {
   Field,
@@ -30,6 +29,7 @@ export function SignUpForm({
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    const supabase = createClient();
     setIsLoading(true);
     setError(null);
 
@@ -40,11 +40,24 @@ export function SignUpForm({
     }
 
     try {
-      // Create the user account
-      await account.create(ID.unique(), email, password, name);
+      // Sign up the user
+      const { error: signUpError } = await supabase.auth.signUp({
+        email,
+        password,
+        options: {
+          data: {
+            full_name: name,
+          },
+        },
+      });
+      if (signUpError) throw signUpError;
 
       // Directly sign in the user after successful sign up
-      await account.createEmailPasswordSession(email, password);
+      const { error: signInError } = await supabase.auth.signInWithPassword({
+        email,
+        password,
+      });
+      if (signInError) throw signInError;
 
       router.push("/dashboard");
     } catch (error: unknown) {

@@ -13,7 +13,7 @@ import { Input } from "@/components/ui/input";
 import SignInWithGoogleButton from "./SignInWithGoogleButton";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { account } from "@/lib/appwrite";
+import { createClient } from "@/lib/supabase/client";
 import Link from "next/link";
 
 export function LoginForm({
@@ -28,11 +28,16 @@ export function LoginForm({
 
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
+    const supabase = createClient();
     setIsLoading(true);
     setError(null);
 
     try {
-      await account.createEmailPasswordSession(email, password);
+      const { error } = await supabase.auth.signInWithPassword({
+        email,
+        password,
+      });
+      if (error) throw error;
       router.push("/dashboard");
     } catch (error: unknown) {
       setError(error instanceof Error ? error.message : "An error occurred");

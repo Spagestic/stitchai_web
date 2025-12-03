@@ -1,9 +1,10 @@
 import * as React from "react";
+import { Suspense } from "react";
 import Image from "next/image";
 import { NavDocuments } from "@/components/sidebar/nav-documents";
 import { NavMain } from "@/components/sidebar/nav-main";
 import { NavSecondary } from "@/components/sidebar/nav-secondary";
-import { NavUser } from "@/components/sidebar/nav-user";
+import { NavUser, LoadingUser } from "@/components/sidebar/nav-user";
 import {
   Sidebar,
   SidebarContent,
@@ -49,7 +50,9 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
         <NavSecondary className="mt-auto" />
       </SidebarContent>
       <SidebarFooter>
-        <NavUser />
+        <Suspense fallback={<LoadingUser />}>
+          <NavUser />
+        </Suspense>
       </SidebarFooter>
     </Sidebar>
   );

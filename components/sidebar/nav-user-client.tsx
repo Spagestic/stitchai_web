@@ -7,17 +7,15 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { SidebarMenuButton } from "@/components/ui/sidebar";
-import { UserDropdown } from "@/components/sidebar/user-dropdown";
+import { UserDropdown } from "./user-dropdown";
 
 type NavUserClientProps = {
-  user: {
-    name?: string;
-    email?: string;
-    imageUrl?: string;
-  };
+  name: string;
+  email: string;
+  imageUrl: string;
 };
 
-export function NavUserClient({ user }: NavUserClientProps) {
+export function NavUserClient({ name, email, imageUrl }: NavUserClientProps) {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
@@ -26,21 +24,21 @@ export function NavUserClient({ user }: NavUserClientProps) {
           className="data-[state=open]:bg-sidebar-accent data-[state=open]:text-sidebar-accent-foreground"
         >
           <Avatar className="h-8 w-8 rounded-lg grayscale">
-            <AvatarImage src={user.imageUrl || ""} alt={user.name || ""} />
+            <AvatarImage src={imageUrl} alt={name} />
             <AvatarFallback className="rounded-lg">
-              {user.name?.charAt(0) || user.email?.charAt(0) || "?"}
+              {name.charAt(0) || email.charAt(0) || "?"}
             </AvatarFallback>
           </Avatar>
           <div className="grid flex-1 text-left text-sm leading-tight">
-            <span className="truncate font-medium">{user.name}</span>
+            <span className="truncate font-medium">{name}</span>
             <span className="text-muted-foreground truncate text-xs">
-              {user.email}
+              {email}
             </span>
           </div>
           <IconDotsVertical className="ml-auto size-4" />
         </SidebarMenuButton>
       </DropdownMenuTrigger>
-      <UserDropdown user={user} />
+      <UserDropdown user={{ name, email, imageUrl }} />
     </DropdownMenu>
   );
 }

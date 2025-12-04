@@ -49,6 +49,13 @@ export const communityCreations = [
     tags: ["Festive", "Classic"],
   },
   {
+    id: 16,
+    source: "/jerseys/ronaldo.png",
+    name: "Ronaldo Legacy",
+    creator: "Cristiano",
+    tags: ["Legend", "Classic"],
+  },
+  {
     id: 5,
     source: "/jerseys/hunyuan.png",
     name: "Nature's Touch",
@@ -75,5 +82,48 @@ export const communityCreations = [
     name: "Diwali Delight",
     creator: "Olivia",
     tags: ["Festive", "Elegant"],
+  },
+  // New images added below
+  {
+    id: 12,
+    source: "/jerseys/base.png",
+    name: "Foundation",
+    creator: "Ava",
+    tags: ["Minimal", "Classic"],
+  },
+  {
+    id: 13,
+    source: "/jerseys/ginni_red.jpg",
+    name: "Ginni Red",
+    creator: "Ginni",
+    tags: ["Bold", "Classic"],
+  },
+  {
+    id: 14,
+    source: "/jerseys/imane_pink.jpg",
+    name: "Imane Pink",
+    creator: "Imane",
+    tags: ["Modern", "Chic"],
+  },
+  {
+    id: 15,
+    source: "/jerseys/qatar.jpg",
+    name: "Qatar Pride",
+    creator: "Yousef",
+    tags: ["National", "Elegant"],
+  },
+  {
+    id: 17,
+    source: "/jerseys/tm_ast-1997.jpeg",
+    name: "AST 1997",
+    creator: "Team AST",
+    tags: ["Retro", "Team"],
+  },
+  {
+    id: 18,
+    source: "/jerseys/wendy_red.jpg",
+    name: "Wendy Red",
+    creator: "Wendy",
+    tags: ["Bold", "Chic"],
   },
 ];

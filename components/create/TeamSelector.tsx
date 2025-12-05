@@ -1,9 +1,8 @@
 "use client";
 
 import { ChevronDownIcon, Check } from "lucide-react";
-import { useId, useState } from "react";
+import { useId } from "react";
 import Image from "next/image";
-import { cn } from "@/lib/utils";
 import { Team } from "@/constants/teams";
 import { Button } from "@/components/ui/button";
 import {
@@ -38,7 +37,6 @@ export default function TeamSelector({
   selectedTeam,
   setSelectedTeam,
   teamsByLeague,
-  filteredTeams,
   teamSearchQuery,
   setTeamSearchQuery,
 }: TeamSelectorProps) {
@@ -85,7 +83,7 @@ export default function TeamSelector({
       </PopoverTrigger>
       <PopoverContent
         align="start"
-        className="w-full min-w-[var(--radix-popper-anchor-width)] border-input p-0"
+        className="w-full min-w-(--radix-popper-anchor-width) border-input p-0"
       >
         <Command>
           <CommandInput

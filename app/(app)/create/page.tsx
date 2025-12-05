@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useMemo } from "react";
-import Image from "next/image";
 import { colorPalettes, jerseyStyles, ColorPalette } from "@/constants/jersey";
 import { allTeams, Team } from "@/constants/teams";
 import StyleSelector from "@/components/create/StyleSelector";

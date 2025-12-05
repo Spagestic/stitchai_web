@@ -2,7 +2,6 @@
 
 import { ChevronDownIcon, Palette, Plus } from "lucide-react";
 import { useId, useState } from "react";
-import { cn } from "@/lib/utils";
 import { colorPalettes, ColorPalette } from "@/constants/jersey";
 import { Button } from "@/components/ui/button";
 import {
@@ -13,7 +12,6 @@ import {
   CommandItem,
   CommandList,
 } from "@/components/ui/command";
-import { Label } from "@/components/ui/label";
 import {
   Popover,
   PopoverContent,
@@ -96,7 +94,7 @@ export default function PaletteSelector({
         </PopoverTrigger>
         <PopoverContent
           align="start"
-          className="w-full min-w-[var(--radix-popper-anchor-width)] border-input p-0"
+          className="w-full min-w-(--radix-popper-anchor-width) border-input p-0"
         >
           <Command>
             <CommandInput

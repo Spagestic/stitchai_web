@@ -1,18 +1,17 @@
 import { Shirt } from "lucide-react";
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
-import { cn } from "@/lib/utils";
 import { jerseyStyles } from "@/constants/jersey";
+import { Button } from "../ui/button";
 
 interface StyleSelectorProps {
   selectedStyle: string;
   setSelectedStyle: (style: string) => void;
-  styleIcons: Record<string, React.ComponentType<{ className?: string }>>;
+  styleIcons?: Record<string, React.ComponentType<{ className?: string }>>;
 }
 
 export default function StyleSelector({
   selectedStyle,
   setSelectedStyle,
-  styleIcons,
 }: StyleSelectorProps) {
   return (
     <section>
@@ -23,22 +22,14 @@ export default function StyleSelector({
       <ScrollArea className="w-full whitespace-nowrap">
         <div className="flex gap-3 pb-2">
           {jerseyStyles.map((style) => {
-            const Icon =
-              styleIcons[style.id as keyof typeof styleIcons] || Shirt;
             return (
-              <button
+              <Button
                 key={style.id}
                 onClick={() => setSelectedStyle(style.id)}
-                className={cn(
-                  "flex items-center gap-2 px-5 py-3 rounded-xl border transition-all min-w-fit",
-                  selectedStyle === style.id
-                    ? "border-foreground bg-foreground text-background"
-                    : "border-border bg-card hover:bg-accent"
-                )}
+                variant={selectedStyle === style.id ? "default" : "outline"}
               >
-                <Icon className="size-4" />
                 <span className="font-medium">{style.name}</span>
-              </button>
+              </Button>
             );
           })}
         </div>

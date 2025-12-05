@@ -32,7 +32,7 @@ export const communityCreations = [
     source: "/jerseys/Modern_blue_gradient.png",
     name: "Ocean Wave",
     creator: "João",
-    tags: ["Modern"],
+    tags: ["Modern", "Gradient"],
   },
   {
     id: 4,
@@ -60,7 +60,7 @@ export const communityCreations = [
     source: "/jerseys/hunyuan.png",
     name: "Nature's Touch",
     creator: "Sofia",
-    tags: ["Modern", "Futuristic"],
+    tags: ["Nature-inspired", "Modern", "Futuristic"],
   },
   {
     id: 7,

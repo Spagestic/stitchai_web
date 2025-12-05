@@ -12,7 +12,7 @@ export default function GenerateFooter({
 }: GenerateFooterProps) {
   return (
     <div className="sticky bottom-0 left-0 right-0 p-4 z-2">
-      <div className="w-full max-w-3xl mx-auto">
+      <div className="w-full mx-auto">
         <Button
           onClick={onGenerate}
           disabled={isGenerating}

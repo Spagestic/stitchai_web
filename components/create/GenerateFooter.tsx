@@ -11,7 +11,7 @@ export default function GenerateFooter({
   isGenerating,
 }: GenerateFooterProps) {
   return (
-    <div className="sticky bottom-0 left-0 right-0 p-4 bg-linear-to-t from-background via-background to-transparent z-50">
+    <div className="sticky bottom-0 left-0 right-0 p-4 z-2">
       <div className="w-full max-w-3xl mx-auto">
         <Button
           onClick={onGenerate}

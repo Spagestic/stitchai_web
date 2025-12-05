@@ -1,6 +1,12 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useMemo, useTransition } from "react";
+import {
+  useQueryState,
+  useQueryStates,
+  parseAsString,
+  parseAsArrayOf,
+} from "nuqs";
 import { colorPalettes, jerseyStyles, ColorPalette } from "@/constants/jersey";
 import { allTeams, Team } from "@/constants/teams";
 import StyleSelector from "@/components/create/StyleSelector";
@@ -40,30 +46,84 @@ const styleIcons = {
 };
 
 export default function CreateJerseyPage() {
-  // Form state
-  const [selectedStyle, setSelectedStyle] = useState("classic");
-  const [selectedTeam, setSelectedTeam] = useState<Team | null>(null);
-  const [selectedPalette, setSelectedPalette] = useState<ColorPalette | null>(
-    colorPalettes[0]
-  );
-  const [customColors, setCustomColors] = useState<string[]>([
-    "#FFFFFF",
-    "#000000",
-    "#FF0000",
-  ]);
-  const [playerName, setPlayerName] = useState("");
-  const [playerNumber, setPlayerNumber] = useState("");
-  const [description, setDescription] = useState("");
-  const [isGenerating, setIsGenerating] = useState(false);
-  const [generatedImage, setGeneratedImage] = useState<string | null>(null); // New
+  const [isPending, startTransition] = useTransition();
 
-  // Dialog state
-  const [isTeamDialogOpen, setIsTeamDialogOpen] = useState(false);
-  const [teamSearchQuery, setTeamSearchQuery] = useState("");
+  // Form state synced with URL using nuqs
+  const [selectedStyle, setSelectedStyle] = useQueryState(
+    "style",
+    parseAsString.withDefault("classic").withOptions({ startTransition })
+  );
+
+  const [teamId, setTeamId] = useQueryState(
+    "team",
+    parseAsString.withOptions({ startTransition })
+  );
+
+  const [paletteId, setPaletteId] = useQueryState(
+    "palette",
+    parseAsString.withDefault(colorPalettes[0].id).withOptions({
+      startTransition,
+    })
+  );
+
+  const [customColors, setCustomColors] = useQueryState(
+    "colors",
+    parseAsArrayOf(parseAsString)
+      .withDefault(["#FFFFFF", "#000000", "#FF0000"])
+      .withOptions({ startTransition })
+  );
+
+  const [{ playerName, playerNumber, description }, setPersonalization] =
+    useQueryStates(
+      {
+        playerName: parseAsString.withDefault(""),
+        playerNumber: parseAsString.withDefault(""),
+        description: parseAsString.withDefault(""),
+      },
+      { startTransition }
+    );
+
+  const [generatedImage, setGeneratedImage] = useQueryState(
+    "generated",
+    parseAsString.withOptions({ history: "replace" })
+  );
+
+  const [isGenerating, setIsGenerating] = useQueryState(
+    "generating",
+    parseAsString.withOptions({ history: "replace" })
+  );
+
+  // Dialog state (local only, not in URL)
+  const [isTeamDialogOpen, setIsTeamDialogOpen] = useQueryState(
+    "teamDialog",
+    parseAsString.withOptions({ history: "replace" })
+  );
+  const [teamSearchQuery, setTeamSearchQuery] = useQueryState(
+    "teamSearch",
+    parseAsString.withDefault("").withOptions({ history: "replace" })
+  );
+
+  // Derive selected team from teamId
+  const selectedTeam = useMemo(() => {
+    return teamId ? allTeams.find((t) => t.id === teamId) || null : null;
+  }, [teamId]);
+
+  // Derive selected palette from paletteId
+  const selectedPalette = useMemo((): ColorPalette | null => {
+    if (paletteId === "custom") {
+      return {
+        id: "custom",
+        name: "Custom",
+        colors: customColors,
+        isCustom: true,
+      };
+    }
+    return colorPalettes.find((p) => p.id === paletteId) || null;
+  }, [paletteId, customColors]);
 
   // Filter teams based on search
   const filteredTeams = useMemo(() => {
-    if (!teamSearchQuery.trim()) {
+    if (!teamSearchQuery?.trim()) {
       return allTeams;
     }
     const query = teamSearchQuery.toLowerCase();
@@ -93,11 +153,11 @@ export default function CreateJerseyPage() {
 
     // Randomize palette
     const randomPaletteIndex = Math.floor(Math.random() * colorPalettes.length);
-    setSelectedPalette(colorPalettes[randomPaletteIndex]);
+    setPaletteId(colorPalettes[randomPaletteIndex].id);
 
     // Randomize team
     const randomTeamIndex = Math.floor(Math.random() * allTeams.length);
-    setSelectedTeam(allTeams[randomTeamIndex]);
+    setTeamId(allTeams[randomTeamIndex].id);
 
     // Randomize player name
     const playerNames = [
@@ -113,11 +173,9 @@ export default function CreateJerseyPage() {
       "Taylor",
     ];
     const randomNameIndex = Math.floor(Math.random() * playerNames.length);
-    setPlayerName(playerNames[randomNameIndex]);
 
     // Randomize player number (1-99)
     const randomNumber = Math.floor(Math.random() * 99) + 1;
-    setPlayerNumber(randomNumber.toString());
 
     // Randomize description
     const descriptions = [
@@ -131,12 +189,18 @@ export default function CreateJerseyPage() {
       "Striking visual impact",
     ];
     const randomDescIndex = Math.floor(Math.random() * descriptions.length);
-    setDescription(descriptions[randomDescIndex]);
+
+    // Batch update personalization fields
+    setPersonalization({
+      playerName: playerNames[randomNameIndex],
+      playerNumber: randomNumber.toString(),
+      description: descriptions[randomDescIndex],
+    });
   };
 
   const handleGenerate = async () => {
     try {
-      setIsGenerating(true);
+      setIsGenerating("true");
       setGeneratedImage(null);
       window.scrollTo({ top: 0, behavior: "smooth" });
 
@@ -185,7 +249,7 @@ export default function CreateJerseyPage() {
       const randomImage = getRandomJerseyImage();
       setGeneratedImage(randomImage);
     } finally {
-      setIsGenerating(false);
+      setIsGenerating(null);
     }
   };
 
@@ -193,19 +257,14 @@ export default function CreateJerseyPage() {
     const newColors = [...customColors];
     newColors[index] = color;
     setCustomColors(newColors);
-    setSelectedPalette({
-      id: "custom",
-      name: "Custom",
-      colors: newColors,
-      isCustom: true,
-    });
+    setPaletteId("custom");
   };
 
   return (
     <div className="min-h-screen bg-background flex flex-col">
       <CreateHeader onRandomize={handleRandomize} />
       <JerseyPreview
-        isGenerating={isGenerating}
+        isGenerating={isGenerating === "true"}
         generatedImage={generatedImage}
       />
       <main className="container mx-auto px-4 py-6 space-y-8 flex-1">
@@ -221,28 +280,21 @@ export default function CreateJerseyPage() {
             <span className="text-sm text-muted-foreground">(optional)</span>
           </div>
           <TeamSelector
-            isOpen={isTeamDialogOpen}
-            setIsOpen={setIsTeamDialogOpen}
+            isOpen={isTeamDialogOpen === "true"}
+            setIsOpen={(open) => setIsTeamDialogOpen(open ? "true" : null)}
             selectedTeam={selectedTeam}
-            setSelectedTeam={setSelectedTeam}
+            setSelectedTeam={(team) => setTeamId(team?.id || null)}
             teamsByLeague={teamsByLeague}
             filteredTeams={filteredTeams}
-            teamSearchQuery={teamSearchQuery}
+            teamSearchQuery={teamSearchQuery || ""}
             setTeamSearchQuery={setTeamSearchQuery}
           />
         </section>
         <PaletteSelector
           selectedPalette={selectedPalette}
-          setSelectedPalette={setSelectedPalette}
+          setSelectedPalette={(palette) => setPaletteId(palette?.id || null)}
           customColors={customColors}
-          setSelectedCustom={() =>
-            setSelectedPalette({
-              id: "custom",
-              name: "Custom",
-              colors: customColors,
-              isCustom: true,
-            })
-          }
+          setSelectedCustom={() => setPaletteId("custom")}
         />
         {selectedPalette?.isCustom && (
           <CustomColorPicker
@@ -252,16 +304,25 @@ export default function CreateJerseyPage() {
         )}
         <PersonalizeSection
           playerName={playerName}
-          setPlayerName={setPlayerName}
+          setPlayerName={(name) =>
+            setPersonalization({ playerName: name || "" })
+          }
           playerNumber={playerNumber}
-          setPlayerNumber={setPlayerNumber}
+          setPlayerNumber={(num) =>
+            setPersonalization({ playerNumber: num || "" })
+          }
         />
         <DescriptionSection
           description={description}
-          setDescription={setDescription}
+          setDescription={(desc) =>
+            setPersonalization({ description: desc || "" })
+          }
         />
       </main>
-      <GenerateFooter onGenerate={handleGenerate} isGenerating={isGenerating} />
+      <GenerateFooter
+        onGenerate={handleGenerate}
+        isGenerating={isGenerating === "true" || isPending}
+      />
     </div>
   );
 }

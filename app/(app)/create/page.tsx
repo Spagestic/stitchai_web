@@ -96,9 +96,43 @@ export default function CreateJerseyPage() {
     const randomPaletteIndex = Math.floor(Math.random() * colorPalettes.length);
     setSelectedPalette(colorPalettes[randomPaletteIndex]);
 
-    // Optionally randomize a team
+    // Randomize team
     const randomTeamIndex = Math.floor(Math.random() * allTeams.length);
     setSelectedTeam(allTeams[randomTeamIndex]);
+
+    // Randomize player name
+    const playerNames = [
+      "Jordan",
+      "Smith",
+      "Williams",
+      "Johnson",
+      "Brown",
+      "Davis",
+      "Miller",
+      "Wilson",
+      "Moore",
+      "Taylor",
+    ];
+    const randomNameIndex = Math.floor(Math.random() * playerNames.length);
+    setPlayerName(playerNames[randomNameIndex]);
+
+    // Randomize player number (1-99)
+    const randomNumber = Math.floor(Math.random() * 99) + 1;
+    setPlayerNumber(randomNumber.toString());
+
+    // Randomize description
+    const descriptions = [
+      "Dynamic and energetic jersey design",
+      "Classic elegance with modern flair",
+      "Bold statement piece for champions",
+      "Sleek and professional appearance",
+      "Eye-catching vibrant design",
+      "Timeless sports tradition",
+      "Contemporary athletic style",
+      "Striking visual impact",
+    ];
+    const randomDescIndex = Math.floor(Math.random() * descriptions.length);
+    setDescription(descriptions[randomDescIndex]);
   };
 
   const handleGenerate = async () => {

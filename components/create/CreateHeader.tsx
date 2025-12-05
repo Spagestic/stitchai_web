@@ -24,8 +24,8 @@ export default function CreateHeader({ onRandomize }: CreateHeaderProps) {
           Create Your Jersey
         </h1>
         <div className="ml-auto flex items-center gap-2">
-          <Button variant="ghost" size="icon">
-            <RefreshCw className="" size={"icon"} onClick={onRandomize} />
+          <Button variant="ghost" size="icon" onClick={onRandomize}>
+            <RefreshCw className="" size={"icon"} />
           </Button>
         </div>
       </div>

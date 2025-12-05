@@ -102,12 +102,58 @@ export default function CreateJerseyPage() {
   };
 
   const handleGenerate = async () => {
-    setIsGenerating(true);
-    setGeneratedImage(null);
-    window.scrollTo({ top: 0, behavior: "smooth" });
-    await new Promise((resolve) => setTimeout(resolve, 2000));
-    setIsGenerating(false);
-    setGeneratedImage(getRandomJerseyImage());
+    try {
+      setIsGenerating(true);
+      setGeneratedImage(null);
+      window.scrollTo({ top: 0, behavior: "smooth" });
+
+      // Build the prompt from form data
+      const styleLabel = jerseyStyles.find((s) => s.id === selectedStyle)?.name;
+      const teamInfo = selectedTeam
+        ? `with ${selectedTeam.name} logo`
+        : "without a team logo";
+      const colorsInfo =
+        selectedPalette?.colors?.join(", ") ||
+        selectedPalette?.name ||
+        "vibrant colors";
+      const numberInfo = playerNumber ? ` with number ${playerNumber}` : "";
+      const nameInfo = playerName ? ` and name "${playerName}"` : "";
+
+      const prompt = `Create a professional ${styleLabel} style sports jersey design ${teamInfo}. 
+        Color scheme: ${colorsInfo}.
+        Jersey should feature: ${selectedPalette?.name || "custom colors"}.
+        ${numberInfo}${nameInfo}
+        Description/Theme: ${description || "Modern sports jersey"}
+        
+        The jersey should be front-facing, professional, clean design, suitable for sports teams.
+        Generate as a high-quality image with realistic fabric texture.`;
+
+      const response = await fetch("/api/genai/image", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ prompt }),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to generate jersey");
+      }
+
+      const data = await response.json();
+      if (data.imageUrl) {
+        setGeneratedImage(data.imageUrl);
+      } else {
+        throw new Error("No image URL in response");
+      }
+    } catch (error) {
+      console.error("Generation error:", error);
+      // Display a random jersey image on error
+      const randomImage = getRandomJerseyImage();
+      setGeneratedImage(randomImage);
+    } finally {
+      setIsGenerating(false);
+    }
   };
 
   const handleCustomColorChange = (index: number, color: string) => {

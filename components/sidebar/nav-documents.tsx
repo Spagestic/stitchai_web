@@ -20,30 +20,31 @@ import {
   useSidebar,
 } from "@/components/ui/sidebar";
 
+// Updated navDocumentsItems with real links to community creations
 const navDocumentsItems = [
   {
     name: "Classic Red & White",
-    url: "#",
+    url: "/jersey/2", // Classic Red (id: 2)
     image: "/jerseys/Classic_red_and_whit.png",
   },
   {
     name: "Modern Blue Gradient",
-    url: "#",
+    url: "/jersey/3", // Ocean Wave (id: 3)
     image: "/jerseys/Modern_blue_gradient.png",
   },
   {
     name: "Retro 90s Style",
-    url: "#",
+    url: "/jersey/4", // Retro Vibes (id: 4)
     image: "/jerseys/Retro_90s_style_jers.png",
   },
   {
     name: "Noel Diwali",
-    url: "#",
+    url: "/jersey/10", // Festive Flair (id: 10)
     image: "/jerseys/noel_diwali.png",
   },
   {
     name: "Velocity",
-    url: "#",
+    url: "/jersey/7", // Velocity (id: 7)
     image: "/jerseys/velocity.png",
   },
 ];

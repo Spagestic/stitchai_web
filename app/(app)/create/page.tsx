@@ -215,60 +215,22 @@ export default function CreateJerseyPage() {
           setSelectedStyle={setSelectedStyle}
           styleIcons={styleIcons}
         />
-        {/* Team Logo Selection Button */}
         <section>
           <div className="flex items-center gap-2 mb-4">
-            {/* Team logo icon and label */}
             <span className="size-5 text-muted-foreground">🏆</span>
             <h2 className="font-semibold">Team Logo</h2>
             <span className="text-sm text-muted-foreground">(optional)</span>
           </div>
-          <button
-            onClick={() => setIsTeamDialogOpen(true)}
-            className="w-full p-4 rounded-2xl border-2 border-dashed border-border hover:border-muted-foreground transition-colors bg-card"
-          >
-            {selectedTeam ? (
-              <div className="flex items-center gap-4">
-                <div className="flex items-center justify-center w-16 h-16 rounded-xl bg-muted/50 p-2">
-                  <Image
-                    src={selectedTeam.logo}
-                    alt={selectedTeam.name}
-                    width={48}
-                    height={48}
-                    className="object-contain"
-                  />
-                </div>
-                <div className="flex-1 text-left">
-                  <p className="font-semibold">{selectedTeam.name}</p>
-                  <p className="text-sm text-muted-foreground">
-                    {selectedTeam.league}
-                  </p>
-                </div>
-                <button
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    setSelectedTeam(null);
-                  }}
-                  className="p-2 rounded-full hover:bg-accent transition-colors"
-                >
-                  <span className="size-4 text-muted-foreground">✕</span>
-                </button>
-              </div>
-            ) : (
-              <div className="flex items-center gap-4">
-                <div className="flex items-center justify-center w-16 h-16 rounded-xl bg-muted/50">
-                  <span className="size-8 text-muted-foreground">🏆</span>
-                </div>
-                <div className="text-left">
-                  <p className="font-medium">Select a team logo</p>
-                  <p className="text-sm text-muted-foreground">
-                    Browse {allTeams.length} teams from{" "}
-                    {Object.keys(teamsByLeague).length} leagues
-                  </p>
-                </div>
-              </div>
-            )}
-          </button>
+          <TeamSelector
+            isOpen={isTeamDialogOpen}
+            setIsOpen={setIsTeamDialogOpen}
+            selectedTeam={selectedTeam}
+            setSelectedTeam={setSelectedTeam}
+            teamsByLeague={teamsByLeague}
+            filteredTeams={filteredTeams}
+            teamSearchQuery={teamSearchQuery}
+            setTeamSearchQuery={setTeamSearchQuery}
+          />
         </section>
         <PaletteSelector
           selectedPalette={selectedPalette}
@@ -301,16 +263,6 @@ export default function CreateJerseyPage() {
         />
       </main>
       <GenerateFooter onGenerate={handleGenerate} isGenerating={isGenerating} />
-      <TeamSelector
-        isOpen={isTeamDialogOpen}
-        setIsOpen={setIsTeamDialogOpen}
-        selectedTeam={selectedTeam}
-        setSelectedTeam={setSelectedTeam}
-        teamsByLeague={teamsByLeague}
-        filteredTeams={filteredTeams}
-        teamSearchQuery={teamSearchQuery}
-        setTeamSearchQuery={setTeamSearchQuery}
-      />
     </div>
   );
 }

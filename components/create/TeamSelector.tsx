@@ -1,15 +1,25 @@
-import { Check, Search } from "lucide-react";
-import {
-  Dialog,
-  DialogContent,
-  DialogHeader,
-  DialogTitle,
-} from "@/components/ui/dialog";
-import { Input } from "@/components/ui/input";
-import { ScrollArea } from "@/components/ui/scroll-area";
+"use client";
+
+import { ChevronDownIcon, Check } from "lucide-react";
+import { useId, useState } from "react";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 import { Team } from "@/constants/teams";
+import { Button } from "@/components/ui/button";
+import {
+  Command,
+  CommandEmpty,
+  CommandGroup,
+  CommandInput,
+  CommandItem,
+  CommandList,
+} from "@/components/ui/command";
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "@/components/ui/popover";
+import { ScrollArea } from "@/components/ui/scroll-area";
 
 interface TeamSelectorProps {
   isOpen: boolean;
@@ -32,6 +42,8 @@ export default function TeamSelector({
   teamSearchQuery,
   setTeamSearchQuery,
 }: TeamSelectorProps) {
+  const id = useId();
+
   const handleSelectTeam = (team: Team) => {
     setSelectedTeam(team);
     setIsOpen(false);
@@ -39,70 +51,93 @@ export default function TeamSelector({
   };
 
   return (
-    <Dialog open={isOpen} onOpenChange={setIsOpen}>
-      <DialogContent className="max-w-2xl h-[80vh] flex flex-col p-0">
-        <DialogHeader className="px-6 pt-6 pb-4 border-b border-border">
-          <DialogTitle>Select Team Logo</DialogTitle>
-          <div className="relative mt-4">
-            <Search className="absolute left-4 top-1/2 -translate-y-1/2 size-5 text-muted-foreground" />
-            <Input
-              type="text"
-              placeholder="Search teams..."
-              value={teamSearchQuery}
-              onChange={(e) => setTeamSearchQuery(e.target.value)}
-              className="pl-12 h-12 text-base rounded-xl bg-muted/50 border-0 focus-visible:ring-2 focus-visible:ring-ring"
-            />
-          </div>
-        </DialogHeader>
-        <ScrollArea className="flex-1 px-6">
-          <div className="py-4 space-y-6">
-            {Object.entries(teamsByLeague).map(([league, teams]) => (
-              <div key={league}>
-                <h3 className="text-sm font-semibold text-muted-foreground mb-3">
-                  {league}
-                </h3>
-                <div className="grid grid-cols-3 sm:grid-cols-4 gap-3">
-                  {teams.map((team) => (
-                    <button
-                      key={team.id}
-                      onClick={() => handleSelectTeam(team)}
-                      className={cn(
-                        "flex flex-col items-center p-3 rounded-xl border transition-all",
-                        selectedTeam?.id === team.id
-                          ? "border-foreground bg-foreground/5"
-                          : "border-border bg-card hover:bg-accent"
-                      )}
-                    >
-                      <div className="flex items-center justify-center w-12 h-12 mb-2">
-                        <Image
-                          src={team.logo}
-                          alt={team.name}
-                          width={40}
-                          height={40}
-                          className="object-contain"
-                        />
-                      </div>
-                      <span className="text-xs font-medium text-center line-clamp-2">
-                        {team.name}
-                      </span>
-                      {selectedTeam?.id === team.id && (
-                        <Check className="size-4 text-foreground mt-1" />
-                      )}
-                    </button>
-                  ))}
-                </div>
-              </div>
-            ))}
-            {filteredTeams.length === 0 && (
-              <div className="text-center py-12">
-                <p className="text-muted-foreground">
-                  No teams found for &quot;{teamSearchQuery}&quot;
-                </p>
-              </div>
-            )}
-          </div>
-        </ScrollArea>
-      </DialogContent>
-    </Dialog>
+    <Popover open={isOpen} onOpenChange={setIsOpen}>
+      <PopoverTrigger asChild>
+        <Button
+          aria-expanded={isOpen}
+          className="w-full justify-between border-input bg-background px-3 font-normal outline-none outline-offset-0 hover:bg-background focus-visible:outline-[3px]"
+          id={id}
+          role="combobox"
+          variant="outline"
+        >
+          {selectedTeam ? (
+            <span className="flex min-w-0 items-center gap-2">
+              <Image
+                src={selectedTeam.logo}
+                alt={selectedTeam.name}
+                width={20}
+                height={20}
+                className="object-contain"
+              />
+              <span className="truncate text-sm font-medium">
+                {selectedTeam.name}
+              </span>
+            </span>
+          ) : (
+            <span className="text-muted-foreground">Select team</span>
+          )}
+          <ChevronDownIcon
+            aria-hidden="true"
+            className="shrink-0 text-muted-foreground/80"
+            size={16}
+          />
+        </Button>
+      </PopoverTrigger>
+      <PopoverContent
+        align="start"
+        className="w-full min-w-[var(--radix-popper-anchor-width)] border-input p-0"
+      >
+        <Command>
+          <CommandInput
+            placeholder="Search teams..."
+            value={teamSearchQuery}
+            onValueChange={setTeamSearchQuery}
+          />
+          <CommandList>
+            <CommandEmpty>No teams found.</CommandEmpty>
+            <ScrollArea className="h-[300px]">
+              {Object.entries(teamsByLeague).map(([league, teams]) => {
+                const leagueTeams = teams.filter((team) =>
+                  team.name
+                    .toLowerCase()
+                    .includes(teamSearchQuery.toLowerCase())
+                );
+
+                if (leagueTeams.length === 0) return null;
+
+                return (
+                  <CommandGroup key={league} heading={league}>
+                    {leagueTeams.map((team) => (
+                      <CommandItem
+                        key={team.id}
+                        value={team.id}
+                        onSelect={() => handleSelectTeam(team)}
+                        className="flex items-center justify-between"
+                      >
+                        <div className="flex items-center gap-2">
+                          <Image
+                            src={team.logo}
+                            alt={team.name}
+                            width={24}
+                            height={24}
+                            className="object-contain"
+                          />
+                          <span className="text-sm font-medium">
+                            {team.name}
+                          </span>
+                        </div>
+                        {selectedTeam?.id === team.id && (
+                          <Check className="size-4 text-foreground" />
+                        )}
+                      </CommandItem>
+                    ))}
+                  </CommandGroup>
+                );
+              })}
+            </ScrollArea>
+          </CommandList>
+        </Command>
+      </PopoverContent>
+    </Popover>
   );
 }

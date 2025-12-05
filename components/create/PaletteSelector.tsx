@@ -1,7 +1,24 @@
-import { Palette, Plus } from "lucide-react";
-import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
+"use client";
+
+import { ChevronDownIcon, Palette, Plus } from "lucide-react";
+import { useId, useState } from "react";
 import { cn } from "@/lib/utils";
 import { colorPalettes, ColorPalette } from "@/constants/jersey";
+import { Button } from "@/components/ui/button";
+import {
+  Command,
+  CommandEmpty,
+  CommandGroup,
+  CommandInput,
+  CommandItem,
+  CommandList,
+} from "@/components/ui/command";
+import { Label } from "@/components/ui/label";
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "@/components/ui/popover";
 
 interface PaletteSelectorProps {
   selectedPalette: ColorPalette | null;
@@ -15,6 +32,25 @@ export default function PaletteSelector({
   setSelectedPalette,
   setSelectedCustom,
 }: PaletteSelectorProps) {
+  const id = useId();
+  const [open, setOpen] = useState<boolean>(false);
+  const [searchValue, setSearchValue] = useState<string>("");
+
+  const filteredPalettes = colorPalettes.filter((palette) =>
+    palette.name.toLowerCase().includes(searchValue.toLowerCase())
+  );
+
+  const handleSelect = (paletteId: string) => {
+    if (paletteId === "custom") {
+      setSelectedCustom();
+    } else {
+      const palette = colorPalettes.find((p) => p.id === paletteId);
+      if (palette) setSelectedPalette(palette);
+    }
+    setOpen(false);
+    setSearchValue("");
+  };
+
   return (
     <section>
       <div className="flex items-center gap-2 mb-4">
@@ -24,66 +60,89 @@ export default function PaletteSelector({
           ({colorPalettes.length} available)
         </span>
       </div>
-      <div className="flex gap-3 pb-2">
-        <ScrollArea className="">
-          <div
-            className="palette-selector-container"
-            style={{
-              maxWidth: "100vw",
-              overflowX: "auto",
-              padding: "8px 0",
-            }}
+      <Popover onOpenChange={setOpen} open={open}>
+        <PopoverTrigger asChild>
+          <Button
+            aria-expanded={open}
+            className="w-full justify-between border-input bg-background px-3 font-normal outline-none outline-offset-0 hover:bg-background focus-visible:outline-[3px]"
+            id={id}
+            role="combobox"
+            variant="outline"
           >
-            <div
-              className="palette-selector"
-              style={{
-                display: "flex",
-                gap: "1rem",
-                flexWrap: "nowrap",
-              }}
-            >
-              <button
-                onClick={setSelectedCustom}
-                className={cn(
-                  "flex flex-col items-center gap-2 min-w-[100px] p-3 rounded-xl border transition-all",
-                  selectedPalette?.id === "custom"
-                    ? "border-foreground bg-foreground/5"
-                    : "border-border bg-card hover:bg-accent"
-                )}
-              >
-                <div className="flex items-center justify-center w-12 h-12 rounded-full bg-muted/50">
-                  <Plus className="size-5 text-muted-foreground" />
+            {selectedPalette ? (
+              <span className="flex min-w-0 items-center gap-2">
+                <div className="flex -space-x-1">
+                  {selectedPalette.colors.map((color, index) => (
+                    <span
+                      key={index}
+                      className="w-4 h-4 rounded-full border border-background inline-block"
+                      style={{ backgroundColor: color }}
+                    />
+                  ))}
                 </div>
-                <span className="text-sm font-medium">Custom</span>
-              </button>
-              {colorPalettes.map((palette) => (
-                <button
-                  key={palette.id}
-                  onClick={() => setSelectedPalette(palette)}
-                  className={cn(
-                    "flex flex-col items-center gap-2 min-w-[100px] p-3 rounded-xl border transition-all",
-                    selectedPalette?.id === palette.id
-                      ? "border-foreground bg-foreground/5"
-                      : "border-border bg-card hover:bg-accent"
-                  )}
+                <span className="truncate text-sm font-medium">
+                  {selectedPalette.name}
+                </span>
+              </span>
+            ) : (
+              <span className="text-muted-foreground">Select palette</span>
+            )}
+            <ChevronDownIcon
+              aria-hidden="true"
+              className="shrink-0 text-muted-foreground/80"
+              size={16}
+            />
+          </Button>
+        </PopoverTrigger>
+        <PopoverContent
+          align="start"
+          className="w-full min-w-[var(--radix-popper-anchor-width)] border-input p-0"
+        >
+          <Command>
+            <CommandInput
+              placeholder="Search palettes..."
+              value={searchValue}
+              onValueChange={setSearchValue}
+            />
+            <CommandList>
+              <CommandEmpty>No palette found.</CommandEmpty>
+              <CommandGroup>
+                <CommandItem
+                  value="custom"
+                  onSelect={() => handleSelect("custom")}
+                  className="flex items-center gap-2"
                 >
-                  <div className="flex -space-x-1">
-                    {palette.colors.map((color, index) => (
-                      <div
-                        key={index}
-                        className="w-8 h-8 rounded-full border-2 border-background"
-                        style={{ backgroundColor: color }}
-                      />
-                    ))}
-                  </div>
-                  <span className="text-sm font-medium">{palette.name}</span>
-                </button>
-              ))}
-            </div>
-          </div>
-          <ScrollBar orientation="horizontal" />
-        </ScrollArea>
-      </div>
+                  <Plus className="size-4 text-muted-foreground" />
+                  <span className="text-sm font-medium">Custom</span>
+                </CommandItem>
+                {filteredPalettes.map((palette) => (
+                  <CommandItem
+                    key={palette.id}
+                    value={palette.id}
+                    onSelect={() => handleSelect(palette.id)}
+                    className="flex items-center justify-between"
+                  >
+                    <div className="flex items-center gap-2">
+                      <div className="flex -space-x-1">
+                        {palette.colors.map((color, index) => (
+                          <span
+                            key={index}
+                            className="w-4 h-4 rounded-full border border-background inline-block"
+                            style={{ backgroundColor: color }}
+                          />
+                        ))}
+                      </div>
+                      <span className="text-sm font-medium">
+                        {palette.name}
+                      </span>
+                    </div>
+                  </CommandItem>
+                ))}
+              </CommandGroup>
+            </CommandList>
+          </Command>
+        </PopoverContent>
+      </Popover>
     </section>
   );
 }

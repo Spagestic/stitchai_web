@@ -4,6 +4,7 @@ import { useMemo, useTransition } from "react";
 import { useQueryState, useQueryStates, parseAsString } from "nuqs";
 import { colorPalettes, jerseyStyles, ColorPalette } from "@/constants/jersey";
 import { allTeams, Team } from "@/constants/teams";
+import { generateJerseyImage } from "@/lib/actions/generateJersey";
 import StyleSelector from "@/components/create/StyleSelector";
 import TeamSelector from "@/components/create/TeamSelector";
 import PaletteSelector from "@/components/create/PaletteSelector";
@@ -184,44 +185,17 @@ export default function CreateJerseyPage() {
       setGeneratedImage(null);
       window.scrollTo({ top: 0, behavior: "smooth" });
 
-      // Build the prompt from form data
-      const styleLabel = jerseyStyles.find((s) => s.id === selectedStyle)?.name;
-      const teamInfo = selectedTeam
-        ? `with ${selectedTeam.name} logo`
-        : "without a team logo";
-      const colorsInfo =
-        selectedPalette?.colors?.join(", ") ||
-        selectedPalette?.name ||
-        "vibrant colors";
-      const numberInfo = playerNumber ? ` with number ${playerNumber}` : "";
-      const nameInfo = playerName ? ` and name "${playerName}"` : "";
+      const imageUrl = await generateJerseyImage(
+        selectedStyle,
+        selectedTeam,
+        selectedPalette,
+        playerNumber,
+        playerName,
+        description
+      );
 
-      const prompt = `Create a professional ${styleLabel} style sports jersey design ${teamInfo}. 
-        Color scheme: ${colorsInfo}.
-        Jersey should feature: ${selectedPalette?.name || "custom colors"}.
-        ${numberInfo}${nameInfo}
-        Description/Theme: ${description || "Modern sports jersey"}
-        
-        The jersey should be front-facing, professional, clean design, suitable for sports teams.
-        Generate as a high-quality image with realistic fabric texture.`;
-
-      const response = await fetch("/api/genai/image", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ prompt }),
-      });
-
-      if (!response.ok) {
-        throw new Error("Failed to generate jersey");
-      }
-
-      const data = await response.json();
-      if (data.imageUrl) {
-        setGeneratedImage(data.imageUrl);
-      } else {
-        throw new Error("No image URL in response");
+      if (imageUrl) {
+        setGeneratedImage(imageUrl);
       }
     } catch (error) {
       console.error("Generation error:", error);

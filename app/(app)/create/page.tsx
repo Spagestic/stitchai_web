@@ -1,18 +1,13 @@
 "use client";
 
 import { useMemo, useTransition } from "react";
-import {
-  useQueryState,
-  useQueryStates,
-  parseAsString,
-  parseAsArrayOf,
-} from "nuqs";
+import { useQueryState, useQueryStates, parseAsString } from "nuqs";
 import { colorPalettes, jerseyStyles, ColorPalette } from "@/constants/jersey";
 import { allTeams, Team } from "@/constants/teams";
 import StyleSelector from "@/components/create/StyleSelector";
 import TeamSelector from "@/components/create/TeamSelector";
 import PaletteSelector from "@/components/create/PaletteSelector";
-import CustomColorPicker from "@/components/create/CustomColorPicker";
+
 import PersonalizeSection from "@/components/create/PersonalizeSection";
 import DescriptionSection from "@/components/create/DescriptionSection";
 import JerseyPreview from "@/components/create/JerseyPreview";
@@ -66,13 +61,6 @@ export default function CreateJerseyPage() {
     })
   );
 
-  const [customColors, setCustomColors] = useQueryState(
-    "colors",
-    parseAsArrayOf(parseAsString)
-      .withDefault(["#FFFFFF", "#000000", "#FF0000"])
-      .withOptions({ startTransition })
-  );
-
   const [{ playerName, playerNumber, description }, setPersonalization] =
     useQueryStates(
       {
@@ -110,16 +98,8 @@ export default function CreateJerseyPage() {
 
   // Derive selected palette from paletteId
   const selectedPalette = useMemo((): ColorPalette | null => {
-    if (paletteId === "custom") {
-      return {
-        id: "custom",
-        name: "Custom",
-        colors: customColors,
-        isCustom: true,
-      };
-    }
     return colorPalettes.find((p) => p.id === paletteId) || null;
-  }, [paletteId, customColors]);
+  }, [paletteId]);
 
   // Filter teams based on search
   const filteredTeams = useMemo(() => {
@@ -253,13 +233,6 @@ export default function CreateJerseyPage() {
     }
   };
 
-  const handleCustomColorChange = (index: number, color: string) => {
-    const newColors = [...customColors];
-    newColors[index] = color;
-    setCustomColors(newColors);
-    setPaletteId("custom");
-  };
-
   return (
     <div className="min-h-screen bg-background flex flex-col">
       <CreateHeader onRandomize={handleRandomize} />
@@ -293,15 +266,7 @@ export default function CreateJerseyPage() {
         <PaletteSelector
           selectedPalette={selectedPalette}
           setSelectedPalette={(palette) => setPaletteId(palette?.id || null)}
-          customColors={customColors}
-          setSelectedCustom={() => setPaletteId("custom")}
         />
-        {selectedPalette?.isCustom && (
-          <CustomColorPicker
-            customColors={customColors}
-            handleCustomColorChange={handleCustomColorChange}
-          />
-        )}
         <PersonalizeSection
           playerName={playerName}
           setPlayerName={(name) =>

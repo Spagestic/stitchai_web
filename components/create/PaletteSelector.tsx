@@ -1,6 +1,6 @@
 "use client";
 
-import { ChevronDownIcon, Palette, Plus } from "lucide-react";
+import { ChevronDownIcon, Palette } from "lucide-react";
 import { useId, useState } from "react";
 import { colorPalettes, ColorPalette } from "@/constants/jersey";
 import { Button } from "@/components/ui/button";
@@ -21,30 +21,23 @@ import {
 interface PaletteSelectorProps {
   selectedPalette: ColorPalette | null;
   setSelectedPalette: (palette: ColorPalette) => void;
-  customColors: string[];
-  setSelectedCustom: () => void;
 }
 
 export default function PaletteSelector({
   selectedPalette,
   setSelectedPalette,
-  setSelectedCustom,
 }: PaletteSelectorProps) {
   const id = useId();
   const [open, setOpen] = useState<boolean>(false);
   const [searchValue, setSearchValue] = useState<string>("");
 
-  const filteredPalettes = colorPalettes.filter((palette) =>
+  const filteredPalettes = colorPalettes.filter((palette: ColorPalette) =>
     palette.name.toLowerCase().includes(searchValue.toLowerCase())
   );
 
   const handleSelect = (paletteId: string) => {
-    if (paletteId === "custom") {
-      setSelectedCustom();
-    } else {
-      const palette = colorPalettes.find((p) => p.id === paletteId);
-      if (palette) setSelectedPalette(palette);
-    }
+    const palette = colorPalettes.find((p) => p.id === paletteId);
+    if (palette) setSelectedPalette(palette);
     setOpen(false);
     setSearchValue("");
   };
@@ -105,14 +98,7 @@ export default function PaletteSelector({
             <CommandList>
               <CommandEmpty>No palette found.</CommandEmpty>
               <CommandGroup>
-                <CommandItem
-                  value="custom"
-                  onSelect={() => handleSelect("custom")}
-                  className="flex items-center gap-2"
-                >
-                  <Plus className="size-4 text-muted-foreground" />
-                  <span className="text-sm font-medium">Custom</span>
-                </CommandItem>
+                {/* Custom palette option removed */}
                 {filteredPalettes.map((palette) => (
                   <CommandItem
                     key={palette.id}

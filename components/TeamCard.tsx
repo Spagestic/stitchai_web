@@ -9,7 +9,7 @@ type TeamCardProps = {
 export const TeamCard = ({ team }: TeamCardProps) => {
   return (
     <Link
-      href={`/teams/${team.id}`}
+      href={`/create?team=${team.id}`}
       className="flex flex-col items-center gap-2 min-w-[100px] group"
     >
       <div className="flex items-center justify-center w-24 h-24 rounded-2xl border border-border bg-card hover:bg-accent transition-colors p-3">

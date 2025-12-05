@@ -28,7 +28,7 @@ export default function TeamsPage() {
       {/* Header */}
       <header className="sticky top-0 z-50 bg-background/80 backdrop-blur-sm border-b border-border">
         <div className="container mx-auto px-4 py-4 flex items-center gap-4">
-          <Link href="/">
+          <Link href="/dashboard">
             <button className="p-2 rounded-full hover:bg-accent transition-colors">
               <ArrowLeft className="size-5" />
             </button>
@@ -62,7 +62,8 @@ export default function TeamsPage() {
             {filteredTeams.map((team) => (
               <Link
                 key={team.id}
-                href={`/teams/${team.id}`}
+                // Updated to point to the create page with the team ID in the query string
+                href={`/create?team=${team.id}`}
                 className="flex flex-col items-center p-4 rounded-2xl border border-border bg-card hover:bg-accent transition-colors group"
               >
                 <div className="flex items-center justify-center w-20 h-20 mb-3">

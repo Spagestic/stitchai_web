@@ -160,7 +160,7 @@ export default async function JerseyDetailPage({ params }: Props) {
       {/* Header */}
       <header className="sticky top-0 z-50 bg-background/80 backdrop-blur-sm border-b border-border">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-          <Link href="/">
+          <Link href="/dashboard">
             <Button variant="ghost" size="icon">
               <ArrowLeft className="size-5" />
             </Button>

@@ -1,13 +1,6 @@
 // Randomized and interleaved to avoid grouping similar themes together
 export const communityCreations = [
   {
-    id: 1,
-    source: "/jerseys/black_jersey.png",
-    name: "Midnight Edition",
-    creator: "Alex",
-    tags: ["Modern", "Bold"],
-  },
-  {
     id: 19,
     source: "/jerseys/hk_1.jpg",
     name: "Bayern Munich Dragon",
@@ -55,6 +48,13 @@ export const communityCreations = [
     name: "Bayern Munich Dragon 2",
     creator: "Jamie",
     tags: ["Bayern Munich", "Chinese Dragon", "Special Edition"],
+  },
+  {
+    id: 1,
+    source: "/jerseys/black_jersey.png",
+    name: "Midnight Edition",
+    creator: "Alex",
+    tags: ["Modern", "Bold"],
   },
   {
     id: 29,

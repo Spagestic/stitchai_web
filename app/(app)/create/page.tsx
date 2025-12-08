@@ -15,20 +15,11 @@ import JerseyPreview from "@/components/create/JerseyPreview";
 import CreateHeader from "@/components/create/CreateHeader";
 import GenerateFooter from "@/components/create/GenerateFooter";
 
-// Dummy list of jersey images (should match files in public/jerseys/)
-const jerseyImageList = [
-  "Classic_red_and_whit.png",
-  "hunyuan.png",
-  "Modern_blue_gradient.png",
-  "Retro_90s_style_jers.png",
-  "velocity.png",
-  "black_jersey.png",
-  "base.png",
-];
+import { communityCreations } from "../dashboard/communityCreations";
 
 function getRandomJerseyImage() {
-  const index = Math.floor(Math.random() * jerseyImageList.length);
-  return `/jerseys/${jerseyImageList[index]}`;
+  const index = Math.floor(Math.random() * communityCreations.length);
+  return communityCreations[index].source;
 }
 
 import { Shirt, Zap, Clock, Sparkles, Palette } from "lucide-react";

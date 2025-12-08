@@ -50,7 +50,7 @@ export default function JerseyPreview({
               alt="Generated Jersey"
               width={380}
               height={380}
-              className="rounded-2xl aspect-square shadow-md object-contain"
+              className="rounded-2xl aspect-square shadow-md object-cover"
             />
           )}
         </div>

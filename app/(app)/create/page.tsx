@@ -252,6 +252,7 @@ export default function CreateJerseyPage() {
       <GenerateFooter
         onGenerate={handleGenerate}
         isGenerating={isGenerating === "true" || isPending}
+        generatedImage={generatedImage}
       />
     </div>
   );

@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useTransition } from "react";
+import { useMemo, useTransition, useState } from "react";
 import { useQueryState, useQueryStates, parseAsString } from "nuqs";
 import { colorPalettes, jerseyStyles, ColorPalette } from "@/constants/jersey";
 import { allTeams, Team } from "@/constants/teams";
@@ -34,6 +34,7 @@ const styleIcons = {
 
 export default function CreateJerseyPage() {
   const [isPending, startTransition] = useTransition();
+  const [isPreviewLoading, setIsPreviewLoading] = useState(false);
 
   // Form state synced with URL using nuqs
   const [selectedStyle, setSelectedStyle] = useQueryState(
@@ -173,6 +174,7 @@ export default function CreateJerseyPage() {
   const handleGenerate = async () => {
     try {
       setIsGenerating("true");
+      setIsPreviewLoading(true);
       setGeneratedImage(null);
       window.scrollTo({ top: 0, behavior: "smooth" });
 
@@ -204,6 +206,7 @@ export default function CreateJerseyPage() {
       <JerseyPreview
         isGenerating={isGenerating === "true"}
         generatedImage={generatedImage}
+        onPreviewLoaded={() => setIsPreviewLoading(false)}
       />
       <main className="container mx-auto px-4 py-6 space-y-8 flex-1">
         <StyleSelector
@@ -251,7 +254,7 @@ export default function CreateJerseyPage() {
       </main>
       <GenerateFooter
         onGenerate={handleGenerate}
-        isGenerating={isGenerating === "true" || isPending}
+        isGenerating={isGenerating === "true" || isPreviewLoading || isPending}
         generatedImage={generatedImage}
       />
     </div>

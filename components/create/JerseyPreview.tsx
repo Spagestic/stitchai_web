@@ -6,11 +6,13 @@ import { useEffect, useState } from "react";
 interface JerseyPreviewProps {
   isGenerating: boolean;
   generatedImage: string | null;
+  onPreviewLoaded?: () => void; // Called when the preview finishes its internal loading and shows the image
 }
 
 export default function JerseyPreview({
   isGenerating,
   generatedImage,
+  onPreviewLoaded,
 }: JerseyPreviewProps) {
   // Local loading state for error fallback
   const [showImage, setShowImage] = useState(false);
@@ -27,6 +29,13 @@ export default function JerseyPreview({
       };
     }
   }, [isGenerating, generatedImage]);
+
+  // Notify parent when the image is actually shown (i.e., preview loading is finished)
+  useEffect(() => {
+    if (showImage && onPreviewLoaded) {
+      onPreviewLoaded();
+    }
+  }, [showImage, onPreviewLoaded]);
 
   return (
     <div className="container px-4 pt-6">

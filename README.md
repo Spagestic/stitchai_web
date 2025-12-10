@@ -32,8 +32,8 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - **Framework**: [Next.js](https://nextjs.org) (App Router)
 - **Styling**: Tailwind CSS
 - **UI Components**: shadcn/ui
-- **Authentication**: Appwrite
-- **AI**: Generative AI image models for jersey design creation
+- **Authentication**: Supabase
+- **AI**: GEMINI image models for jersey design creation
 
 ## 📁 Project Structure
 
@@ -49,7 +49,8 @@ components/
 ├── auth/           # Authentication components
 └── ui/             # Reusable UI components (shadcn/ui)
 lib/
-├── appwrite.ts     # Appwrite client configuration
+├── actions/
+│   └── supabase/   # Supabase client and auth actions
 └── utils.ts        # Utility functions
 ```
 
@@ -57,11 +58,21 @@ lib/
 
 Copy `example.env` to `.env.local` and configure your environment variables.
 
+If you're using Supabase for authentication, make sure to add the following to your `.env.local`:
+
+```env
+# Supabase public client (front-end)
+NEXT_PUBLIC_SUPABASE_URL=your-supabase-url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your-supabase-anon-key
+
+# (Optional) service role key for server-side operations
+SUPABASE_SERVICE_ROLE_KEY=your-service-role-key
+```
+
 ## 📚 Learn More
 
 - [Next.js Documentation](https://nextjs.org/docs) - Learn about Next.js features and API
 - [shadcn/ui](https://ui.shadcn.com) - Re-usable components built with Radix UI and Tailwind CSS
-- [Appwrite](https://appwrite.io) - Backend as a Service for authentication
 
 ## 🚢 Deploy
 
